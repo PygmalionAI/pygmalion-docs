@@ -2,10 +2,14 @@ input: .
 output: .retype
 url: # Add your website address here
 branding:
+  logo: /static/pyg-logo.svg
   title: PygmalionAI Guides
   label: Docs
 links:
-- text: Getting Started
-  link: https://retype.com/guides/getting-started/
+- text: Home
+  link: /introduction.md
 footer:
   copyright: "&copy; Copyright {{ year }}. All rights reserved."
+  links:
+    - text: What is PygmalionAI?
+      link: introduction.md
