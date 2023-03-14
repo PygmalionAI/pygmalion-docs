@@ -1,5 +1,5 @@
 ---
-order: 100
+order: 10000
 icon: book
 ---
 
@@ -19,11 +19,16 @@ There are currently two backends to run the Pygmalion 6B model - [KoboldAI](http
 If you're on Mobile, use either oobabooga's TextGen or TavernAI.
 !!!
 
-+++ KoboldAI
+=== KoboldAI
 Click [here](https://colab.research.google.com/github/koboldai/KoboldAI-Client/blob/main/colab/GPU.ipynb) for the notebook link, and [here](http://127.0.0.1:5005/google-colab/kobold) for the guide.
-+++ oobabooga (TextGen)
+=== oobabooga (TextGen)
 :iphone:    [Click here.](https://colab.research.google.com/github/oobabooga/AI-Notebooks/blob/main/Colab-TextGen-GPU.ipynb) 
-+++ TavernAI
+=== TavernAI
 :computer:  [Click here.](https://colab.research.google.com/github/TavernAI/TavernAI/blob/main/colab/GPU.ipynb) 
+===
 
-
+!!!danger Terminate your session!
+When you're done using Pygmalion, please terminate your Colab session! You'll waste your quota otherwise, and might find yourself unable to connect to a GPU backend the next time you login.
+![](/static/cloud1.png)
+![](/static/cloud2.png)
+!!!
