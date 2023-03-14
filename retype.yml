@@ -2,12 +2,12 @@ input: .
 output: .retype
 url: http://localhost:5000
 branding:
-  logo: /static/pyg-logo.svg
-  logoDark: /static/pyg-logo.svg
+  logo: /static/icons/pyg-logo.svg
+  logoDark: /static/icons/pyg-logo.svg
   title: PygmalionAI
   label: Docs
 
-favicon: /static/pyg-logo.svg
+favicon: /static/icons/pyg-logo.svg
 
 poweredByRetype: true
 
@@ -19,13 +19,13 @@ edit:
 
 links:
   - text: Discord
-    icon: /static/discord-logo.svg
+    icon: /static/icons/discord-logo.svg
     link: https://discord.gg/invite/pygmalionai
   - text: HuggingFace
-    icon: /static/hf-logo.svg
+    icon: /static/icons/hf-logo.svg
     link: https://huggingface.co/PygmalionAI
   - text: GitHub
-    icon: /static/github-mark.svg
+    icon: /static/icons/github-mark.svg
     link: https://github.com/PygmalionAI
 
 
