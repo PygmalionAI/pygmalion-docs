@@ -77,7 +77,7 @@ makepkg -si
 paru -S rocm-hip-sdk rocm-opencl-sdk
 ```
 
-#### I don't have Arch Linux
+#### Not using Arch Linux?
 AMD has a comprehensive guide for installing ROCm. Please refere to their guide on the installation.
 
 [!button icon="/static/icons/amd.svg" target="blank" text="ROCm Install Guide"](https://docs.amd.com/bundle/ROCm-Getting-Started-Guide-v5.3/page/How_to_Install_ROCm.html)
