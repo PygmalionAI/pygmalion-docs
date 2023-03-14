@@ -5,7 +5,9 @@ icon: cloud
 
 # KoboldAI
 
-Each Colab notebook will greet you with a guide. For the sake of simplicity, visual guides will be included below.
+![](/static/KoboldAI-newui.PNG)
+
+Each Colab notebook will greet you with a guide. For the sake of simplicity, visual guides will be included below. You can find the notebook [here](https://colab.research.google.com/github/koboldai/KoboldAI-Client/blob/main/colab/GPU.ipynb). **Middle click** or right-click and open in a new tab if you want to follow along with this guide!
 
 - Make sure you're signed in to your Google Account before you attempt running any of the notebooks.
 - Scroll down and select the highlighted options, and then run the cell:
@@ -17,6 +19,8 @@ You might be warned that the notebook is not authored by Google - you can ignore
 - Wait for the notebook to finish running. This can take up to 5 or 10 minutes.
 - Once it's loaded, two URLs will appear. If you wish to use KoboldAI with Tavern, please *copy* the first URL. If you wish to use Kobold by itself, please *click* on the second URL.
 ![](/static/kobold-cloud2.PNG)
-- You're done! You can start using Pygmalion if you clicked on the second link. If you want to use it with Tavern, please refer to the TavernAI guide included here.
 
+!!!success You're done! 
+You can start using Pygmalion if you clicked on the second link. If you want to use it with Tavern, please refer to the TavernAI guide included here.
+!!!
 

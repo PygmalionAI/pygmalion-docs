@@ -37,3 +37,7 @@ footer:
 server:
   host: 127.0.0.1
   port: 5005
+  watch:
+    mode: disk
+    polling: true
+    validation: fast
