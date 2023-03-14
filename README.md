@@ -20,3 +20,5 @@ npm install retypeapp --global
 ```
 retype watch
 ```
+
+Please regularly update with `git pull`. This is still a WIP so updates are expected at an hourly basis.
