@@ -1,4 +1,4 @@
-input: .
+input: ./src
 output: .retype
 url: http://localhost:5000
 branding:
