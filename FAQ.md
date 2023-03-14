@@ -24,52 +24,62 @@ The character will mimic the example chats and greeting message's style. Keep th
 Your Temperature or Repetition Penalty settings are likely too high. The recommended range for Temperature (for chatbots) is between `0.5` to `0.9`. The range for Repetition Penalty is between `1.1` to `1.2`.
 
 ### My character is not responding anymore!
-You have probably run out of memory (VRAM)
-If you are using a free access to a Colab notebooks, the GPU provide by Google can't handle a max out context size (2048 tokens). The VRAM is filled quickly and the model can't generate anything more.
-The fix depend of which UI you are using.
+You have probably run out of memory (VRAM).
+If you are using the free Google Colab plan, the GPU provided by Google can't handle the maximum context size (2048 tokens). If you have 16GB of VRAM, please tweak the context size to 1400-1600 (proportionally lower according to your VRAM size).
+##### For Text-Gen (Oobabooga) you need to check the `load_in_8bit` option under the 3rd cell before running it.
 
-##### For Text-Gen (Oobabooga) you need to check the "load_in_8bit" option under the 3rd cell before running it.
+![](/static/oobactx.png)
 
-(Ooba context size)
+##### For TavernAI, running the model in 8bit is not available. The only solution is to slide down the context size to around 1400 (or 1600) in the settings tab.
 
-##### For TavernAI, running the model in 8bit is not available. The only solution is to slide down the context size to around 1400 in the settings tab.
-
-(Tavern context size)
+![](/static/tavernctx.png)
 
 ### Do you keep/share any of my data/chat?
 The Pygmalion project team does not collect any data other than the chat logs you explicitly consent to donating for the training dataset.
-This project is done out of passion, and no one has any intention of collecting, analyzing, or selling any of your data.
-(ALPIN Tho to be fair I don't know how much "access" google have on the activity of their GPU/TPU, so to be totally transparent wa should add something about that, if you have more info)
+This project is done out of passion, and no one has any intention of collecting, analyzing, or selling any of your data. The Colab notebook automatically passes the `--quiet` argument in KoboldAI, which means your/the bot's responses aren't printed out for Google to see. 
 
-### I always hear about Softprompt, what are they ? How are they made ?
+### What are Softprompts? Do I need them?
 A soft prompt is a way to modify the style and behavior of your AI. 
-A softprompt is made by taking a (possibly) huge amount of information, and making it more tokens efficient.
-Even if people tend to use it that way, softprompt are not made to add context, lore, etc to the story. But yes, it might work for that if the dataset use to make the softprompt was big enough and made of good quality data.
-(ALPIN tell me if we should add a "How to make a SP" Tho it's not really Pyg related and there's rentry about that already)
 
-### Which UI should I use, there's so many of them ?
-TavernAI, Text-gen (Oobabooga), KoboldAI, other
+They're made by taking a (possibly) huge amount of information, and compressing them into a small number of tokens.
+Even if people tend to use it that way, softprompt are not made to add context, lore, etc to the story. But yes, it might work for that if the dataset use to make the softprompt was big enough and made use of good quality data.
+
+### How do I use Softprompts?
+- Download your SP of choice from either the Discord or [this Rentry](https://rentry.org/pygsoft) a generous anon is maintaining.
+- **If you're running locally**: place the `.zip` file (don't extract!) inside the `softprompts` folder - both Oobabooga and KoboldAI have the same folder.
+- **If you're using Google Colab**, open your [Google Drive](https://drive.google.com) and find the `KoboldAI/softprompts` folder and upload your `.zip` file there.
+- Make sure Pygmalion is loaded, then an option for Softprompts should appear.
+
+### Which UI should I use? There's so many of them.
 It's up to you, every UI tend to add the same features as the other and try to be compatible with character from other UI as well.
-(ALPIN, should we talk about the fat that Tavern don't throw the raw output of the model etc ?)
+If you want to focus on Story Generation, we recommend using KoboldAI. For chat purposes, TavernAI has the best user interface, followed by Oobabooga. There are other TavernAI alternatives (e.g. miku.gg), but it's up to you in the end. Please refer to their Colab Pages for a preview of the UI.
 
-### I'm using Google Colab, how much quota I have ?
-The amount of time you can use when using a free access to Google Colab highly depend of the traffic and your usage patterns.
-Google say that you can use a Colab Notebook for at most 12 hours if you don't have Compute Unit. Pygmalion users tend to say it's less.
+[!button text="KoboldAI"](http://127.0.0.1:5005/google-colab/kobold)
 
-#### How to avoid running out of quota ?
-First, when you use a Colab Notebook, use it. Running a Notebook and doing something beside is not really worth it. But the most common mistake made by user is to forget to PROPERLY closed stop their Runtime. Closing the Colab's tab is not enough, and can consume your Quota, or worse your Compute Unit if you have some.
-For that, when you STOP using the AI, you should close your session like this :
-(shutdown image)
+[!button text="Text-Gen-WebUI"](http://127.0.0.1:5005//google-colab/oobabooga)
+
+[!button text="TavernAI"](http://127.0.0.1:5005//google-colab/tavern)
+
+### I'm using Google Colab, how much quota do I have?
+The amount of time you can use when using the free plan for Google Colab highly depends on the traffic and your usage patterns.
+Google says that you can use a Colab Notebook for at most 12 hours if you don't have Compute Unit. Pygmalion users tend to say it's less.
+
+#### How to avoid running out of quota?
+When you're done using Pygmalion, please terminate your Colab session! You'll waste your quota otherwise, and might find yourself unable to connect to a GPU backend the next time you login.
+![](/static/cloud1.png)
+![](/static/cloud2.png)
 
 
 
-#### I run out of Quota, what do I do now ?
-If you run out of quota, there's different solution. For the more patient of you, you can just wait, your account should have access to a GPU in less than a day.
-If you don't want to wait, you can just switch to another google account that don't run out of free access. With 2 or 3 Google Account you should be able to use have access to a GPU to run the notebook without problem.
+#### I've out of Quota, what do I do now?
+If you've run out of quota, you can do nothing but wait for your quota to reset. Alternatively, you can purchase Colab Pro to increase your daily/weekly quota.
 
-#### What's a Compute Unit (CU) ? Should I buy some ?
-A CU is a unit that you can buy to be sure to be granted access to a GPU, and even better one.
+
+#### What's a Compute Unit (CU)? Should I buy one?
+A CU is a unit that you can buy to be sure to be granted access to a powerful GPU.
 Pricing for Compute Engine is based on per-second usage of the machine types, persistent disks, and other resources that you select for your virtual machines.
 So it's up to you.
-(ALPIN, should we talk about Horde as well ?)
+
+#### I've run out of quota, but I can't buy a Compute Unit! What do I do?
+In that case, you can use [Kobold Horde](https://lite.koboldai.net). Generous users are donating their GPU power to the Horde, so that people can use them to run Language Models. Pygmalion is a popular model, so you'll always find people hosting it. Keep in mind that there are more Horde users than Workers, so you might have to wait a bit longer for responses.
 

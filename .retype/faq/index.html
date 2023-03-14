@@ -21,12 +21,14 @@
     <meta property="og:url" content="http://localhost:5000/faq/">
     <meta property="og:title" content="FAQ - Pygmalion AI">
     <meta property="og:description" content="This could be due to the limited context size. Pygmalion 6B has a maximum context size of 2048 tokens">
+    <meta property="og:image" content="http://localhost:5000/static/oobactx.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="http://localhost:5000/faq/">
     <meta property="twitter:title" content="FAQ - Pygmalion AI">
     <meta property="twitter:description" content="This could be due to the limited context size. Pygmalion 6B has a maximum context size of 2048 tokens">
+    <meta property="twitter:image" content="http://localhost:5000/static/oobactx.png">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -249,6 +251,129 @@
     </h3>
 </doc-anchor-target>
 <p>Your Temperature or Repetition Penalty settings are likely too high. The recommended range for Temperature (for chatbots) is between <code v-pre>0.5</code> to <code v-pre>0.9</code>. The range for Repetition Penalty is between <code v-pre>1.1</code> to <code v-pre>1.2</code>.</p>
+<doc-anchor-target id="my-character-is-not-responding-anymore">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#my-character-is-not-responding-anymore">#</doc-anchor-trigger>
+        <span>My character is not responding anymore!</span>
+    </h3>
+</doc-anchor-target>
+<p>You have probably run out of memory (VRAM).
+If you are using the free Google Colab plan, the GPU provided by Google can&#x27;t handle the maximum context size (2048 tokens). If you have 16GB of VRAM, please tweak the context size to 1400-1600 (proportionally lower according to your VRAM size).</p>
+<doc-anchor-target id="for-text-gen-oobabooga-you-need-to-check-the-load_in_8bit-option-under-the-3rd-cell-before-running-it">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#for-text-gen-oobabooga-you-need-to-check-the-load_in_8bit-option-under-the-3rd-cell-before-running-it">#</doc-anchor-trigger>
+        <span>For Text-Gen (Oobabooga) you need to check the <code v-pre>load_in_8bit</code> option under the 3rd cell before running it.</span>
+    </h5>
+</doc-anchor-target>
+<p><figure class="content-center">
+    <img src="../static/oobactx.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<doc-anchor-target id="for-tavernai-running-the-model-in-8bit-is-not-available-the-only-solution-is-to-slide-down-the-context-size-to-around-1400-or-1600-in-the-settings-tab">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#for-tavernai-running-the-model-in-8bit-is-not-available-the-only-solution-is-to-slide-down-the-context-size-to-around-1400-or-1600-in-the-settings-tab">#</doc-anchor-trigger>
+        <span>For TavernAI, running the model in 8bit is not available. The only solution is to slide down the context size to around 1400 (or 1600) in the settings tab.</span>
+    </h5>
+</doc-anchor-target>
+<p><figure class="content-center">
+    <img src="../static/tavernctx.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<doc-anchor-target id="do-you-keepshare-any-of-my-datachat">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#do-you-keepshare-any-of-my-datachat">#</doc-anchor-trigger>
+        <span>Do you keep/share any of my data/chat?</span>
+    </h3>
+</doc-anchor-target>
+<p>The Pygmalion project team does not collect any data other than the chat logs you explicitly consent to donating for the training dataset.
+This project is done out of passion, and no one has any intention of collecting, analyzing, or selling any of your data. The Colab notebook automatically passes the <code v-pre>--quiet</code> argument in KoboldAI, which means your/the bot&#x27;s responses aren&#x27;t printed out for Google to see.</p>
+<doc-anchor-target id="what-are-softprompts-do-i-need-them">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#what-are-softprompts-do-i-need-them">#</doc-anchor-trigger>
+        <span>What are Softprompts? Do I need them?</span>
+    </h3>
+</doc-anchor-target>
+<p>A soft prompt is a way to modify the style and behavior of your AI.</p>
+<p>They&#x27;re made by taking a (possibly) huge amount of information, and compressing them into a small number of tokens.
+Even if people tend to use it that way, softprompt are not made to add context, lore, etc to the story. But yes, it might work for that if the dataset use to make the softprompt was big enough and made use of good quality data.</p>
+<doc-anchor-target id="how-do-i-use-softprompts">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-do-i-use-softprompts">#</doc-anchor-trigger>
+        <span>How do I use Softprompts?</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Download your SP of choice from either the Discord or <a href="https://rentry.org/pygsoft">this Rentry</a> a generous anon is maintaining.</li>
+<li><strong>If you&#x27;re running locally</strong>: place the <code v-pre>.zip</code> file (don&#x27;t extract!) inside the <code v-pre>softprompts</code> folder - both Oobabooga and KoboldAI have the same folder.</li>
+<li><strong>If you&#x27;re using Google Colab</strong>, open your <a href="https://drive.google.com">Google Drive</a> and find the <code v-pre>KoboldAI/softprompts</code> folder and upload your <code v-pre>.zip</code> file there.</li>
+<li>Make sure Pygmalion is loaded, then an option for Softprompts should appear.</li>
+</ul>
+<doc-anchor-target id="which-ui-should-i-use-theres-so-many-of-them">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#which-ui-should-i-use-theres-so-many-of-them">#</doc-anchor-trigger>
+        <span>Which UI should I use? There&#x27;s so many of them.</span>
+    </h3>
+</doc-anchor-target>
+<p>It&#x27;s up to you, every UI tend to add the same features as the other and try to be compatible with character from other UI as well.
+If you want to focus on Story Generation, we recommend using KoboldAI. For chat purposes, TavernAI has the best user interface, followed by Oobabooga. There are other TavernAI alternatives (e.g. miku.gg), but it&#x27;s up to you in the end. Please refer to their Colab Pages for a preview of the UI.</p>
+<p><a href="http://127.0.0.1:5005/google-colab/kobold" class="no-link inline-flex items-center font-medium cursor-pointer transition-colors duration-200 ease-out focus:outline-none bg-blue-500 hover:bg-blue-700 text-white px-4 h-10 text-sm rounded-md">
+    <span>KoboldAI</span>
+</a></p>
+<p><a href="http://127.0.0.1:5005//google-colab/oobabooga" class="no-link inline-flex items-center font-medium cursor-pointer transition-colors duration-200 ease-out focus:outline-none bg-blue-500 hover:bg-blue-700 text-white px-4 h-10 text-sm rounded-md">
+    <span>Text-Gen-WebUI</span>
+</a></p>
+<p><a href="http://127.0.0.1:5005//google-colab/tavern" class="no-link inline-flex items-center font-medium cursor-pointer transition-colors duration-200 ease-out focus:outline-none bg-blue-500 hover:bg-blue-700 text-white px-4 h-10 text-sm rounded-md">
+    <span>TavernAI</span>
+</a></p>
+<doc-anchor-target id="im-using-google-colab-how-much-quota-do-i-have">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#im-using-google-colab-how-much-quota-do-i-have">#</doc-anchor-trigger>
+        <span>I&#x27;m using Google Colab, how much quota do I have?</span>
+    </h3>
+</doc-anchor-target>
+<p>The amount of time you can use when using the free plan for Google Colab highly depends on the traffic and your usage patterns.
+Google says that you can use a Colab Notebook for at most 12 hours if you don&#x27;t have Compute Unit. Pygmalion users tend to say it&#x27;s less.</p>
+<doc-anchor-target id="how-to-avoid-running-out-of-quota">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-avoid-running-out-of-quota">#</doc-anchor-trigger>
+        <span>How to avoid running out of quota?</span>
+    </h4>
+</doc-anchor-target>
+<p>When you&#x27;re done using Pygmalion, please terminate your Colab session! You&#x27;ll waste your quota otherwise, and might find yourself unable to connect to a GPU backend the next time you login.
+<figure class="content-center">
+    <img src="../static/cloud1.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+<figure class="content-center">
+    <img src="../static/cloud2.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<doc-anchor-target id="ive-out-of-quota-what-do-i-do-now">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#ive-out-of-quota-what-do-i-do-now">#</doc-anchor-trigger>
+        <span>I&#x27;ve out of Quota, what do I do now?</span>
+    </h4>
+</doc-anchor-target>
+<p>If you&#x27;ve run out of quota, you can do nothing but wait for your quota to reset. Alternatively, you can purchase Colab Pro to increase your daily/weekly quota.</p>
+<doc-anchor-target id="whats-a-compute-unit-cu-should-i-buy-one">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#whats-a-compute-unit-cu-should-i-buy-one">#</doc-anchor-trigger>
+        <span>What&#x27;s a Compute Unit (CU)? Should I buy one?</span>
+    </h4>
+</doc-anchor-target>
+<p>A CU is a unit that you can buy to be sure to be granted access to a powerful GPU.
+Pricing for Compute Engine is based on per-second usage of the machine types, persistent disks, and other resources that you select for your virtual machines.
+So it&#x27;s up to you.</p>
+<doc-anchor-target id="ive-run-out-of-quota-but-i-cant-buy-a-compute-unit-what-do-i-do">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#ive-run-out-of-quota-but-i-cant-buy-a-compute-unit-what-do-i-do">#</doc-anchor-trigger>
+        <span>I&#x27;ve run out of quota, but I can&#x27;t buy a Compute Unit! What do I do?</span>
+    </h4>
+</doc-anchor-target>
+<p>In that case, you can use <a href="https://lite.koboldai.net">Kobold Horde</a>. Generous users are donating their GPU power to the Horde, so that people can use them to run Language Models. Pygmalion is a popular model, so you&#x27;ll always find people hosting it. Keep in mind that there are more Horde users than Workers, so you might have to wait a bit longer for responses.</p>
 
                                 
                                 <!-- Required only on API pages -->
