@@ -11,7 +11,7 @@
     <!-- Primary Meta Tags -->
     <title>FAQ - Pygmalion AI</title>
     <meta name="title" content="FAQ - Pygmalion AI">
-    <meta name="description" content="This could be due to the limited context size. Pygmalion 6B has a maximum context size of 2048 tokens" />
+    <meta name="description" content="If you're running on google Colab, all notebooks have an option for downloading the dev(beta) model. Look for either" />
 
     <!-- Canonical -->
     <link rel="canonical" href="http://localhost:5005/faq/" />
@@ -20,14 +20,14 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://localhost:5005/faq/">
     <meta property="og:title" content="FAQ - Pygmalion AI">
-    <meta property="og:description" content="This could be due to the limited context size. Pygmalion 6B has a maximum context size of 2048 tokens">
+    <meta property="og:description" content="If you're running on google Colab, all notebooks have an option for downloading the dev(beta) model. Look for either">
     <meta property="og:image" content="http://localhost:5005/static/oobactx.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="http://localhost:5005/faq/">
     <meta property="twitter:title" content="FAQ - Pygmalion AI">
-    <meta property="twitter:description" content="This could be due to the limited context size. Pygmalion 6B has a maximum context size of 2048 tokens">
+    <meta property="twitter:description" content="If you're running on google Colab, all notebooks have an option for downloading the dev(beta) model. Look for either">
     <meta property="twitter:image" content="http://localhost:5005/static/oobactx.png">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
@@ -209,6 +209,18 @@
         <span>Frequently Asked Questions</span>
     </h1>
 </doc-anchor-target>
+<doc-anchor-target id="how-do-i-use-the-latest-dev-v8-version">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-do-i-use-the-latest-dev-v8-version">#</doc-anchor-trigger>
+        <span>How do I use the latest <code v-pre>dev</code> (v8) version?</span>
+    </h3>
+</doc-anchor-target>
+<p>If you&#x27;re running on google Colab, all notebooks have an option for downloading the <code v-pre>dev</code> (beta) model. Look for either <code v-pre>Pygmalion 6B Dev</code> or <code v-pre>Pygmalion 6B Experimental</code>.</p>
+<p>If you&#x27;re running locally, make sure <code v-pre>git</code> is installed and run the following command inside your <code v-pre>KoboldAI/models</code> or <code v-pre>text-generation-webui/models</code> folder:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">git lfs clone https://huggingface.co/PygmalionAI/pygmalion-6b --branch dev</code></pre>
+</doc-codeblock></div>
+<p>If it says <code v-pre>git lfs</code> was not recognized as a command, please install <code v-pre>git-lfs</code> with your package manager (Linux) or download <a href="https://git-lfs.com/">the installer</a> for Windows.</p>
 <doc-anchor-target id="my-character-has-terrible-memory">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#my-character-has-terrible-memory">#</doc-anchor-trigger>

@@ -6,6 +6,16 @@ title: FAQ
 
 # Frequently Asked Questions
 
+### How do I use the latest `dev` (v8) version?
+
+If you're running on google Colab, all notebooks have an option for downloading the `dev` (beta) model. Look for either `Pygmalion 6B Dev` or `Pygmalion 6B Experimental`. 
+
+If you're running locally, make sure `git` is installed and run the following command inside your `KoboldAI/models` or `text-generation-webui/models` folder:
+```
+git lfs clone https://huggingface.co/PygmalionAI/pygmalion-6b --branch dev
+```
+If it says `git lfs` was not recognized as a command, please install `git-lfs` with your package manager (Linux) or download [the installer](https://git-lfs.com/) for Windows.
+
 ### My character has terrible memory!
 This could be due to the limited context size. Pygmalion 6B has a maximum context size of 2048 [tokens](https://en.wikipedia.org/wiki/Lexical_analysis#Tokenization). This includes your character description, example messages, and all your chatlogs. The description and examples are placed at the top of the context memory - all your subsequent chat logs are placed beneath them. This means that if your character description + examples chats are 400 tokens, you'll only have 1648 tokens left for your messages. The bot will forgot everything past those 1648 tokens.
 
