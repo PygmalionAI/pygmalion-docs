@@ -7,9 +7,10 @@ branding:
   label: Docs
 links:
 - text: Home
-  link: /introduction.md
+  link: ./introduction.md
 footer:
   copyright: "&copy; Copyright {{ year }}. All rights reserved."
   links:
-    - text: What is PygmalionAI?
-      link: introduction.md
+    - text: Discord
+      icon: /static/discord-logo.svg
+      link: https://discord.gg/invite/pygmalionai
