@@ -3,8 +3,13 @@ output: .retype
 url: http://localhost:5000
 branding:
   logo: /static/pyg-logo.svg
-  title: PygmalionAI Guides
+  logoDark: /static/pyg-logo.svg
+  title: PygmalionAI
   label: Docs
+
+favicon: /static/pyg-logo.svg
+
+poweredByRetype: true
 
 meta:
   title: " - Pygmalion AI"
@@ -28,4 +33,7 @@ navigation:
     - title: 
 footer:
   copyright: "&copy; Copyright {{ year }}. All rights reserved."
-  
+
+server:
+  host: 127.0.0.1
+  port: 5005

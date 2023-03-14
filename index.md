@@ -1,6 +1,6 @@
 ---
-order: 100
-icon: rocket
+order: 100000
+icon: home
 ---
 # What is PygmalionAI?
 
