@@ -9,16 +9,12 @@ To run the docs locally:
 ##### Installation 
 
 - Clone the repo:
-```
+```bash
 git clone https://github.com/AlpinDale/pygmalion-docs
 ```
-- Install ReType
-```
-npm install retypeapp --global
-```
-- Run the docs:
-```
-retype watch
+- Run the docs using retypeapp
+```bash
+npx retypeapp watch
 ```
 
 Please regularly update with `git pull`. This is still a WIP so updates are expected at an hourly basis.
