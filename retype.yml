@@ -1,16 +1,31 @@
 input: .
 output: .retype
-url: # Add your website address here
+url: http://localhost:5000
 branding:
   logo: /static/pyg-logo.svg
   title: PygmalionAI Guides
   label: Docs
+
+meta:
+  title: " - Pygmalion AI"
+
+edit:
+  repo: github.com/AlpinDale/pygmalion-docs
+
 links:
-- text: Home
-  link: ./introduction.md
+  - text: Discord
+    icon: /static/discord-logo.svg
+    link: https://discord.gg/invite/pygmalionai
+  - text: HuggingFace
+    icon: /static/hf-logo.svg
+    link: https://huggingface.co/PygmalionAI
+  - text: GitHub
+    icon: /static/github-mark.svg
+    link: https://github.com/PygmalionAI
+
+
+navigation:
+    - title: 
 footer:
   copyright: "&copy; Copyright {{ year }}. All rights reserved."
-  links:
-    - text: Discord
-      icon: /static/discord-logo.svg
-      link: https://discord.gg/invite/pygmalionai
+  
