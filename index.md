@@ -6,7 +6,7 @@ icon: home
 
 PygmalionAI is an open-source `L`arge `L`anguage `M`odel (LLM) based on EleutherAI's [GPT-J 6B](https://huggingface.co/EleutherAI/gpt-j-6b). 
 
-In simple terms, Pygmalion is a language AI fine-tuned for chatting and Role-Playing purposes. The current actively supported Pygmalion AI model is the 6B (6 Billion Parameters) model. 
+In simple terms, Pygmalion is an AI fine-tuned for chatting and Role-Playing purposes. The current actively supported Pygmalion AI model is the 6B (6 Billion Parameters) variant. 
 
 ## How do I use Pygmalion?
 
