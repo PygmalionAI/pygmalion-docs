@@ -20,10 +20,10 @@ If you're on Mobile, use either oobabooga's TextGen or TavernAI.
 !!!
 
 +++ KoboldAI
-[Click here.](https://colab.research.google.com/github/koboldai/KoboldAI-Client/blob/main/colab/GPU.ipynb)
+Click [here](https://colab.research.google.com/github/koboldai/KoboldAI-Client/blob/main/colab/GPU.ipynb) for the notebook link, and [here](http://127.0.0.1:5005/google-colab/kobold) for the guide.
 +++ oobabooga (TextGen)
-[Click here.](https://colab.research.google.com/github/oobabooga/AI-Notebooks/blob/main/Colab-TextGen-GPU.ipynb)
+:iphone:    [Click here.](https://colab.research.google.com/github/oobabooga/AI-Notebooks/blob/main/Colab-TextGen-GPU.ipynb) 
 +++ TavernAI
-[Click here.](https://colab.research.google.com/github/TavernAI/TavernAI/blob/main/colab/GPU.ipynb)
+:computer:  [Click here.](https://colab.research.google.com/github/TavernAI/TavernAI/blob/main/colab/GPU.ipynb) 
 
 
