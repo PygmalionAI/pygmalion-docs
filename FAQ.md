@@ -30,11 +30,11 @@ The fix depend of which UI you are using.
 
 ##### For Text-Gen (Oobabooga) you need to check the "load_in_8bit" option under the 3rd cell before running it.
 
-![ContextSizeOoba'](https://user-images.githubusercontent.com/127881989/225087631-c4e6c91d-6a20-417c-a321-7cc7a5660216.png)
+(Ooba context size)
 
 ##### For TavernAI, running the model in 8bit is not available. The only solution is to slide down the context size to around 1400 in the settings tab.
 
-![Contextsize Tavern](https://user-images.githubusercontent.com/127881989/225088042-24837247-e9a6-45ed-82cb-8ff7e214e159.png)
+(Tavern context size)
 
 ### Do you keep/share any of my data/chat?
 The Pygmalion project team does not collect any data other than the chat logs you explicitly consent to donating for the training dataset.
@@ -59,7 +59,7 @@ Google say that you can use a Colab Notebook for at most 12 hours if you don't h
 #### How to avoid running out of quota ?
 First, when you use a Colab Notebook, use it. Running a Notebook and doing something beside is not really worth it. But the most common mistake made by user is to forget to PROPERLY closed stop their Runtime. Closing the Colab's tab is not enough, and can consume your Quota, or worse your Compute Unit if you have some.
 For that, when you STOP using the AI, you should close your session like this :
-![Shutdown](https://user-images.githubusercontent.com/127881989/225102379-b863a77e-b8e2-41aa-a0bd-b3dcf22775e2.png)
+(shutdown image)
 
 
 
