@@ -1,6 +1,6 @@
 input: ./src
 output: .retype
-url: http://localhost:5000
+url: http://localhost:5005
 branding:
   logo: /static/icons/pyg-logo.svg
   logoDark: /static/icons/pyg-logo.svg
