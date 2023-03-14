@@ -17,7 +17,7 @@ git lfs clone https://huggingface.co/PygmalionAI/pygmalion-6b --branch dev
 If it says `git lfs` was not recognized as a command, please install `git-lfs` with your package manager (Linux) or download [the installer](https://git-lfs.com/) for Windows.
 
 ### My character has terrible memory!
-This could be due to the limited context size. Pygmalion 6B has a maximum context size of 2048 [tokens](https://en.wikipedia.org/wiki/Lexical_analysis#Tokenization). This includes your character description, example messages, and all your chatlogs. The description and examples are placed at the top of the context memory - all your subsequent chat logs are placed beneath them. This means that if your character description + examples chats are 400 tokens, you'll only have 1648 tokens left for your messages. The bot will forgot everything past those 1648 tokens.
+This could be due to the limited context size. Pygmalion 6B has a maximum context size of 2048 [tokens](https://en.wikipedia.org/wiki/Lexical_analysis#Tokenization){ target="_blank" }. This includes your character description, example messages, and all your chatlogs. The description and examples are placed at the top of the context memory - all your subsequent chat logs are placed beneath them. This means that if your character description + examples chats are 400 tokens, you'll only have 1648 tokens left for your messages. The bot will forgot everything past those 1648 tokens.
 
 Character editors/creators such as TavernAI's will give you a token count for your character, but you can also use OpenAI's tokenizer service.
 
@@ -55,19 +55,17 @@ They're made by taking a (possibly) huge amount of information, and compressing 
 Even if people tend to use it that way, softprompt are not made to add context, lore, etc to the story. But yes, it might work for that if the dataset use to make the softprompt was big enough and made use of good quality data.
 
 ### How do I use Softprompts?
-- Download your SP of choice from either the Discord or [this Rentry](https://rentry.org/pygsoft) a generous anon is maintaining.
+- Download your SP of choice from either the Discord or [this Rentry](https://rentry.org/pygsoft){ target="_blank" } a generous anon is maintaining.
 - **If you're running locally**: place the `.zip` file (don't extract!) inside the `softprompts` folder - both Oobabooga and KoboldAI have the same folder.
-- **If you're using Google Colab**, open your [Google Drive](https://drive.google.com) and find the `KoboldAI/softprompts` folder and upload your `.zip` file there.
+- **If you're using Google Colab**, open your [Google Drive](https://drive.google.com){ target="_blank" } and find the `KoboldAI/softprompts` folder and upload your `.zip` file there.
 - Make sure Pygmalion is loaded, then an option for Softprompts should appear.
 
 ### Which UI should I use? There's so many of them.
 It's up to you, every UI tend to add the same features as the other and try to be compatible with character from other UI as well.
 If you want to focus on Story Generation, we recommend using KoboldAI. For chat purposes, TavernAI has the best user interface, followed by Oobabooga. There are other TavernAI alternatives (e.g. miku.gg), but it's up to you in the end. Please refer to their Colab Pages for a preview of the UI.
 
-[!button text="KoboldAI"](http://127.0.0.1:5005/google-colab/kobold)
-
-[!button text="Text-Gen-WebUI"](http://127.0.0.1:5005//google-colab/oobabooga)
-
+[!button text="KoboldAI"](http://127.0.0.1:5005/google-colab/kobold) - 
+[!button text="Text-Gen-WebUI"](http://127.0.0.1:5005//google-colab/oobabooga) - 
 [!button text="TavernAI"](http://127.0.0.1:5005//google-colab/tavern)
 
 ### I'm using Google Colab, how much quota do I have?
@@ -91,5 +89,5 @@ Pricing for Compute Engine is based on per-second usage of the machine types, pe
 So it's up to you.
 
 #### I've run out of quota, but I can't buy a Compute Unit! What do I do?
-In that case, you can use [Kobold Horde](https://lite.koboldai.net). Generous users are donating their GPU power to the Horde, so that people can use them to run Language Models. Pygmalion is a popular model, so you'll always find people hosting it. Keep in mind that there are more Horde users than Workers, so you might have to wait a bit longer for responses.
+In that case, you can use [Kobold Horde](https://lite.koboldai.net){ target="_blank" }. Generous users are donating their GPU power to the Horde, so that people can use them to run Language Models. Pygmalion is a popular model, so you'll always find people hosting it. Keep in mind that there are more Horde users than Workers, so you might have to wait a bit longer for responses.
 

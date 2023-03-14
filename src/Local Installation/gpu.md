@@ -1,5 +1,5 @@
 ---
-order: 100
+order: 100000
 icon: gear
 title: Setting up your GPU
 ---
@@ -11,9 +11,8 @@ Keep in mind that the most important factor for AI is VRAM (Video Memory), not t
 !!!
 Please refer to the links below to check if your GPU is compatible:
 
-[!ref icon="/static/icons/nvidia.svg" text="NVIDIA" target="blank"](https://developer.nvidia.com/cuda-gpus)
-
-[!ref icon="/static/icons/amd.svg"text="AMD" target="blank"](https://github.com/ROCm/ROCm.github.io/blob/master/hardware.md)
+[!button icon="/static/icons/nvidia.svg" text="NVIDIA" target="blank"](https://developer.nvidia.com/cuda-gpus) - 
+[!button icon="/static/icons/amd.svg"text="AMD" target="blank"](https://github.com/ROCm/ROCm.github.io/blob/master/hardware.md)
 
 If your GPU is supported, please proceed with the installation.
 
@@ -69,7 +68,7 @@ Installing Arch Linux is not easy for a beginner, therefore look into [Manjaro](
 - Install an AUR Helper. We'll use [paru](https://aur.archlinux.org/packages/paru) for this guide:
 ```
 sudo pacman -S git
-git clone https://aur.archlinux.org/packages/paru.git && cd paru
+git clone https://aur.archlinux.org/paru.git && cd paru
 makepkg -si
 ```
 - Install ROCm:

@@ -25,7 +25,7 @@ links:
     icon: /static/icons/hf-logo.svg
     link: https://huggingface.co/PygmalionAI
   - text: GitHub
-    icon: /static/icons/github-mark.svg
+    icon: mark-github
     link: https://github.com/PygmalionAI
 
 
