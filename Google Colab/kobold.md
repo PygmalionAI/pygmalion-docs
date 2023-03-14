@@ -13,7 +13,7 @@ Each Colab notebook will greet you with a guide. For the sake of simplicity, vis
 !!!
 You might be warned that the notebook is not authored by Google - you can ignore it and click on `Run anyway`.
 !!!
-- You'll be prompted to give the notebook access to your Google Drive files. Click on `Connect to Google Drive`. This will open a pop-up browser window where you'll give Colab access to your Google Account. **Scroll down and click on "Allow"**.
+- You'll be prompted to give the notebook access to your Google Drive files. Click on `Connect to Google Drive`. This will open a pop-up browser window where you'll give Colab access to your Google Account. **Select the account you wish to use, then scroll down and click on "Allow"**.
 - Wait for the notebook to finish running. This can take up to 5 or 10 minutes.
 - Once it's loaded, two URLs will appear. If you wish to use KoboldAI with Tavern, please *copy* the first URL. If you wish to use Kobold by itself, please *click* on the second URL.
 ![](/static/kobold-cloud2.PNG)
