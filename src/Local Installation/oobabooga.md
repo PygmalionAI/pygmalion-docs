@@ -74,3 +74,8 @@ By default, oobabooga's TextGen will load the first model (in alphabetical order
 
 The `PygmalionAI/` part is for if you want to download the model first. If you already have `pygmalion-6b` downloaded in your models folder, then simply do `--model pygmalion-6b`.
 !!!
+!!!warning Do you have less than 16GB VRAM?
+Please don't forget to pass the `--load-in-8bit` argument too if you have a low VRAM PC! `--auto-devices` should take care of the memory assignment if you have less 10GB VRAM.
+!!!
+
+You can view the full list of commands [here](https://github.com/oobabooga/text-generation-webui#starting-the-web-ui){target="_blank"}

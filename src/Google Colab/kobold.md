@@ -7,7 +7,7 @@ icon: cloud
 
 ![](/static/KoboldAI-newui.PNG)
 
-Each Colab notebook will greet you with a guide. For the sake of simplicity, visual guides will be included below. You can find the notebook [here](https://colab.research.google.com/github/koboldai/KoboldAI-Client/blob/main/colab/GPU.ipynb). **Middle click** or right-click and open in a new tab if you want to follow along with this guide!
+Each Colab notebook will greet you with a guide. For the sake of simplicity, visual guides will be included below. You can find the notebook [here](https://colab.research.google.com/github/koboldai/KoboldAI-Client/blob/main/colab/GPU.ipynb){target="_blank"}.
 
 - Make sure you're signed in to your Google Account before you attempt running any of the notebooks.
 - Scroll down and select the highlighted options, and then run the cell:
