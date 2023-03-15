@@ -1,7 +1,7 @@
 ---
 tags: [settings]
 icon: dot
-title: Top_P_Sampling
+title: Top P Sampling
 order: 10000000000000000
 ---
 `Top_P` is a way of generating text with an AI model that helps to make the output more diverse and interesting. When using `Top_P`, you select the most likely words to come next based on their probability of occurring, but only up to a certain cumulative probability threshold. This means that instead of always selecting the most likely word, the language model can choose from a wider range of words that are still reasonably likely to occur.
