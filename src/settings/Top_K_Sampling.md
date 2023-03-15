@@ -10,7 +10,7 @@ For example, if you set `Top_K` to 5, the language model will only consider the 
 
 You can use `Top_K` to control the amount of diversity in the model output. By limiting the selection to a small number of the most likely words, the language model can produce more predictable and conservative text. However, by increasing k, you can allow for more unexpected and creative choices in the generated text.
 
-Overall, `Top_k` can be useful for balancing the tradeoff between predictability and creativity in language model output.
+Overall, `Top_K` can be useful for balancing the tradeoff between predictability and creativity in language model output.
 
 
 ### Combining `Top_K` with `Top_P`
