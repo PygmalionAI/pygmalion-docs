@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.732212325771">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.732214910359">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
 
     <!-- Primary Meta Tags -->
-    <title>Top_K_Sampling - Pygmalion AI</title>
-    <meta name="title" content="Top_K_Sampling - Pygmalion AI">
-    <meta name="description" content="\"Top k\" is another way of generating text with a language model that helps to make the output more diverse and interesting." />
+    <title>Top K Sampling - Pygmalion AI</title>
+    <meta name="title" content="Top K Sampling - Pygmalion AI">
+    <meta name="description" content="Top_k is another way of generating text with a language model that helps to make the output more diverse and interesting." />
 
     <!-- Canonical -->
     <link rel="canonical" href="http://localhost:5005/settings/top_k_sampling/" />
@@ -19,23 +19,23 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://localhost:5005/settings/top_k_sampling/">
-    <meta property="og:title" content="Top_K_Sampling - Pygmalion AI">
-    <meta property="og:description" content="\"Top k\" is another way of generating text with a language model that helps to make the output more diverse and interesting.">
+    <meta property="og:title" content="Top K Sampling - Pygmalion AI">
+    <meta property="og:description" content="Top_k is another way of generating text with a language model that helps to make the output more diverse and interesting.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="http://localhost:5005/settings/top_k_sampling/">
-    <meta property="twitter:title" content="Top_K_Sampling - Pygmalion AI">
-    <meta property="twitter:description" content="\"Top k\" is another way of generating text with a language model that helps to make the output more diverse and interesting.">
+    <meta property="twitter:title" content="Top K Sampling - Pygmalion AI">
+    <meta property="twitter:description" content="Top_k is another way of generating text with a language model that helps to make the output more diverse and interesting.">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/icons/pyggy.svg" rel="icon" />
-    <link href="../../resources/css/retype.css?v=2.4.0.732212325771" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.732214910359" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.732212325771" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.732214910359" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.732212325771" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.732214910359" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -209,28 +209,27 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="top_k_sampling" class="break-words">
+<doc-anchor-target id="top-k-sampling" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#top_k_sampling">#</doc-anchor-trigger>
-        <span>Top_K_Sampling</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#top-k-sampling">#</doc-anchor-trigger>
+        <span>Top K Sampling</span>
     </h1>
 </doc-anchor-target>
-<p>&quot;Top k&quot; is another way of generating text with a language model that helps to make the output more diverse and interesting. When using &quot;top k&quot;, you select the top k most likely words to come next based on their probability of occurring, where k is a fixed number that you specify.</p>
-<p>For example, if you set &quot;top k&quot; to 5, the language model will only consider the five most likely words to come next, rather than all the words in its vocabulary.</p>
-<p>You can use &quot;top k&quot; to control the amount of diversity in the model output. By limiting the selection to a small number of the most likely words, the language model can produce more predictable and conservative text. However, by increasing k, you can allow for more unexpected and creative choices in the generated text.</p>
-<p>Overall, &quot;top k&quot; can be useful for balancing the tradeoff between predictability and creativity in language model output.</p>
+<p><code v-pre>Top_k</code> is another way of generating text with a language model that helps to make the output more diverse and interesting. When using &quot;top k&quot;, you select the top k most likely words to come next based on their probability of occurring, where k is a fixed number that you specify.</p>
+<p>For example, if you set <code v-pre>Top_k</code> to 5, the language model will only consider the five most likely words to come next, rather than all the words in its vocabulary.</p>
+<p>You can use <code v-pre>Top_k</code> to control the amount of diversity in the model output. By limiting the selection to a small number of the most likely words, the language model can produce more predictable and conservative text. However, by increasing k, you can allow for more unexpected and creative choices in the generated text.</p>
+<p>Overall, <code v-pre>Top_k</code> can be useful for balancing the tradeoff between predictability and creativity in language model output.</p>
 <doc-anchor-target id="combining-top_k-with-top_p">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#combining-top_k-with-top_p">#</doc-anchor-trigger>
-        <span>Combining top_k with top_p</span>
+        <span>Combining <code v-pre>Top_k</code> with <code v-pre>Top_p</code></span>
     </h3>
 </doc-anchor-target>
-<p>Combining &quot;top k&quot; and &quot;top p&quot; is a technique called nucleus sampling or top-p sampling with top-k cutoff. This technique allows you to use both methods together to generate even more diverse and interesting text.</p>
-<p>Here&#x27;s how it works: first, the model uses &quot;top p&quot; to select the most likely words up to a certain cumulative probability threshold, as explained in the (look at the note)</p>
-<!-- (ALPIN) "Insert the top_p link or smth ?". -->
-<p>Then, it applies a &quot;top k&quot; cutoff to this set of words, selecting only the top k most likely words from the &quot;top p&quot; selection.</p>
-<p>By using both techniques together, you can generate text that is both diverse and controlled. The &quot;top p&quot; selection ensures that the language model has the freedom to choose from a range of plausible words, while the &quot;top k&quot; cutoff limits the number of choices to a manageable set of highly likely words.</p>
-<p>The specific values of &quot;top p&quot; and &quot;top k&quot; can be adjusted to achieve different levels of diversity and control in the generated text. For example, a higher &quot;top p&quot; value will allow for more diverse choices, while a lower &quot;top k&quot; value will provide more control over the output. It&#x27;s important to experiment with different settings to find the right balance for your specific use case.</p>
+<p>Combining <code v-pre>Top_k</code> and <code v-pre>Top_p</code> is a technique called nucleus sampling or Top_p sampling with Top_k cutoff. This technique allows you to use both methods together to generate even more diverse and interesting text.</p>
+<p>Here&#x27;s how it works: first, the model uses <code v-pre>Top_p</code> to select the most likely words up to a certain cumulative probability threshold, as explained in the <a href="http://127.0.0.1:5005/settings/top_p"><code v-pre>Top_p</code> page</a></p>
+<p>Then, it applies a <code v-pre>Top_k</code> cutoff to this set of words, selecting only the top k most likely words from the <code v-pre>Top_p</code> selection.</p>
+<p>By using both techniques together, you can generate text that is both diverse and controlled. The <code v-pre>Top_p</code> selection ensures that the language model has the freedom to choose from a range of plausible words, while the <code v-pre>Top_k</code> cutoff limits the number of choices to a manageable set of highly likely words.</p>
+<p>The specific values of <code v-pre>Top_p</code> and <code v-pre>Top_k</code> can be adjusted to achieve different levels of diversity and control in the generated text. For example, a higher <code v-pre>Top_p</code> value will allow for more diverse choices, while a lower <code v-pre>Top_k</code> value will provide more control over the output. It&#x27;s important to experiment with different settings to find the right balance for your specific use case.</p>
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
                                     <span>
@@ -256,20 +255,20 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../settings/top_a_sampling/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../settings/top_p/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Top_​A_​Sampling</span>
+                                                <span class="block mt-1">Top P Sampling</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../settings/top_p/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../settings/tail_free_sampling/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Top_​p</span>
+                                                <span class="block mt-1">Tail Free Sampling</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -313,6 +312,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Top_K_Sampling", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "Top K Sampling", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>
