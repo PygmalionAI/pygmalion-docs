@@ -10,7 +10,7 @@ KoboldAI also supports PygmalionAI - although most primarily use it to load Pygm
 
 ![](/static/KoboldAI-newui.PNG)
 
-## KoboldAI Installation
+## Installation
 
 Please make sure you've read the Overview and Setting up your GPU pages first. 
 
