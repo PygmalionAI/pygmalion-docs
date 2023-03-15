@@ -4,7 +4,7 @@ icon: dot
 title: Top K Sampling
 order: 1000000000000000
 ---
-`Top_K` is another way of generating text with a language model that helps to make the output more diverse and interesting. When using "top k", you select the top k most likely words to come next based on their probability of occurring, where k is a fixed number that you specify.
+When using "top k", you select the top k most likely words to come next based on their probability of occurring, where k is a fixed number that you specify.
 
 For example, if you set `Top_K` to 5, the language model will only consider the five most likely words to come next, rather than all the words in its vocabulary.
 
