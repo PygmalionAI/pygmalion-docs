@@ -1,7 +1,7 @@
 ---
 order: 100
 icon: cloud
-title: Oobabooga
+title: TextGen WebUI
 ---
 
 # Text Generation WebUI
