@@ -34,7 +34,7 @@ CUDA installation is relatively easy for Linux (unless you're on Fedora). For th
 pacman -S nvidia
 ```
 !!!warning Are you using the LTS kernel?
-If you're on the LTS Arch Linux Kernel, then please install `nvidia-lts` instead. You can find out your Kernel by running `uname -r`
+If you're on the LTS Arch Linux Kernel, then please install `nvidia-lts` instead. You can find what Kernel you're using by running `uname -r`
 !!!
 - Install CUDA and (optionally) cuDNN:
 ```

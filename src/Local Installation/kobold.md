@@ -48,6 +48,6 @@ Once you've launched KoboldAI, click on `AI` on the top-left corner of the scree
 
 ![](/static/kobold-local.png)
 
-!!!info Is your VRAM less than 16GB?
+!!!danger Is your VRAM less than 16GB?
 Loading 28/28 layers on GPU needs around 16GB VRAM. You can assign fewer layers based on how much VRAM your GPU has access to. **Do not put any layers on Disk!**
 !!!

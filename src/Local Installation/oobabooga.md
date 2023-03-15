@@ -12,7 +12,7 @@ Unlike KoboldAI, it can be used as a standalone front-end - more importantly, yo
 
 
 ## Automatic Installation
-Please make sure you've read the Overview and Setting up your GPU pages first. 
+Please make sure you've read the [Overview](http://127.0.0.1:5005/local-installation-overview) and [Setting up your GPU](http://127.0.0.1:5005/local-installation/gpu) pages first. 
 
 ### Windows
 
