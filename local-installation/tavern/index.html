@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.732195169213">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.732196751196">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -11,6 +11,7 @@
     <!-- Primary Meta Tags -->
     <title>TavernAI - Pygmalion AI</title>
     <meta name="title" content="TavernAI - Pygmalion AI">
+    <meta name="description" content="TavernAI is an atmospheric front-end that connects to KoboldAI, NovelAI, or OpenAI (but doesn't run the models itself, as opposed to KoboldAI and..." />
 
     <!-- Canonical -->
     <link rel="canonical" href="http://localhost:5005/local-installation/tavern/" />
@@ -19,20 +20,24 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://localhost:5005/local-installation/tavern/">
     <meta property="og:title" content="TavernAI - Pygmalion AI">
+    <meta property="og:description" content="TavernAI is an atmospheric front-end that connects to KoboldAI, NovelAI, or OpenAI (but doesn't run the models itself, as opposed to KoboldAI and...">
+    <meta property="og:image" content="http://localhost:5005/static/tavern-local1.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="http://localhost:5005/local-installation/tavern/">
     <meta property="twitter:title" content="TavernAI - Pygmalion AI">
+    <meta property="twitter:description" content="TavernAI is an atmospheric front-end that connects to KoboldAI, NovelAI, or OpenAI (but doesn't run the models itself, as opposed to KoboldAI and...">
+    <meta property="twitter:image" content="http://localhost:5005/static/tavern-local1.png">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/icons/pyggy.svg" rel="icon" />
-    <link href="../../resources/css/retype.css?v=2.4.0.732195169213" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.732196751196" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.732195169213" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.732196751196" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.732195169213" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.732196751196" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -212,6 +217,148 @@
         <span>TavernAI</span>
     </h1>
 </doc-anchor-target>
+<p>TavernAI is an atmospheric front-end that connects to KoboldAI, NovelAI, or OpenAI (but doesn&#x27;t run the models itself, as opposed to KoboldAI and Oobabooga&#x27;s TextGen).</p>
+<p><figure class="content-center">
+    <img src="../../static/tavernai.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<doc-anchor-target id="installation">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#installation">#</doc-anchor-trigger>
+        <span>Installation</span>
+    </h2>
+</doc-anchor-target>
+<p>Installing TavernAI is simple. It <em>officially</em> supports the following operating systems:</p>
+<ul>
+<li>Windows x64</li>
+<li>Linux x64</li>
+<li>MacOS (Darwin x64)</li>
+</ul>
+<doc-anchor-target id="windows-installation">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#windows-installation">#</doc-anchor-trigger>
+        <span>Windows Installation</span>
+    </h3>
+</doc-anchor-target>
+<p>Download TavernAI and run the installer:</p>
+<p>
+<div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
+    <div class="flex items-center text-blue-500 dark:text-blue-400">
+        <span class="inline-block mb-px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"/><path d="M21 14c-.55 0-1 .45-1 1v4c0 .55-.45 1-1 1H5c-.55 0-1-.45-1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-4c0-.55-.45-1-1-1z"/><path d="M11.29 15.71c.09.09.2.17.33.22.12.04.25.07.38.07s.26-.03.38-.08.23-.12.33-.22l5-5a.996.996 0 10-1.41-1.41l-3.3 3.3V3c0-.55-.45-1-1-1s-1 .45-1 1v9.59l-3.29-3.3A.996.996 0 106.3 10.7l4.99 5.01z"/></svg>
+        </span>
+        <span class="inline-block font-medium ml-2">TavernAI</span>
+    </div>
+    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
+        <span>download</span>
+    </div>
+    <a href="https://sourceforge.net/projects/tavernaimain/files/TavernAI.rar/download" class="absolute block inset-0"></a>
+</div>
+</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-300" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>You&#x27;ll need a program such as <a href="https://www.7-zip.org/download.html" target="blank">7zip</a> to extract the installer.</p>
+        </div>
+    </div>
+</div>
+<doc-anchor-target id="linuxmacos-installation">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#linuxmacos-installation">#</doc-anchor-trigger>
+        <span>Linux/MacOS Installation</span>
+    </h3>
+</doc-anchor-target>
+<p>If you&#x27;re on Linux, an automatic installer script is available in the main Tavern repo now. It&#x27;s still recommended to use your package manager, as the script might mess up if your environment is very custom-made (or you&#x27;re using NixOS). If you already have nodejs installed, or would like to use the script, please skip the <code v-pre>nodejs</code> installation section.</p>
+<doc-anchor-target id="requirements">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#requirements">#</doc-anchor-trigger>
+        <span>Requirements</span>
+    </h4>
+</doc-anchor-target>
+<ul>
+<li>nodejs</li>
+<li>git</li>
+</ul>
+<doc-anchor-target id="installation-1">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#installation-1">#</doc-anchor-trigger>
+        <span>Installation</span>
+    </h4>
+</doc-anchor-target>
+<ul>
+<li>Download <code v-pre>nodejs</code> via your package manager of choice.</li>
+</ul>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">sudo pacman -S nodejs               # Arch Linux
+sudo apt install nodejs             # Debian/Ubuntu
+doas apk add nodejs-current         # Alpine Linux
+sudo dnf install nodejs:19/common   # Fedora/RHEL
+sudo emerge nodejs                  # Gentoo
+brew install node                   # MacOS
+sudo xbps-install -Sy nodejs        # Void Linux</code></pre>
+</doc-codeblock></div>
+<ul>
+<li>Clone the repo</li>
+</ul>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">git clone https://github.com/TavernAI/TavernAI &amp;&amp; cd TavernAI</code></pre>
+</doc-codeblock></div>
+<ul>
+<li>Run TavernAI</li>
+</ul>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">npm i &amp;&amp; node server.js</code></pre>
+</doc-codeblock></div>
+<ul>
+<li>Connect your KoboldAI instance (works both locally and with Colab)</li>
+</ul>
+<p><img src="../../static/tavern-local1.png" alt="" /><img src="../../static/tavern-local2.png" alt="" /></p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-300" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>The API URL</h5>
+<p>If you&#x27;re running KoboldAI locally, all you need to paste in there is <code v-pre>http://localhost:5000/api</code>. If you&#x27;re using Google Colab, copy your remote URL instead. If it ends with a # or new_ui, remove them and replace them with /api. If they don&#x27;t, simply adding /api will suffice.</p>
+        </div>
+    </div>
+</div>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-green-500"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-green-500" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M21 9.09c-.55 0-1 .45-1 1v.92c0 4.96-4.04 8.99-9 8.99-4.97 0-9-4.04-9-9s4.04-9 9-9c1.27 0 2.5.26 3.66.78.51.22 1.1 0 1.32-.51.23-.5 0-1.1-.51-1.32C14.06.32 12.56 0 11.01 0H11C4.94 0 0 4.93 0 10.99 0 17.06 4.93 22 10.99 22H11c6.06 0 11-4.93 11-10.99v-.92c0-.56-.45-1-1-1z"></path>
+                    <path d="M8.71 9.31a.996.996 0 10-1.41 1.41l3 3c.19.19.44.29.71.29.27 0 .52-.11.71-.29l10-10.01a.996.996 0 10-1.41-1.41L11 11.6 8.71 9.31z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>You&#x27;re done!</h5>
+<p>You can now start using TavernAI! TavernAI uses Character Cards, which are images (PNG and WEBP) that can be imported to Tavern as Characters. Tavern 1.3 by default has a list of community-added Characters in the home page (provided you have an internet connection). You can also find new characters in the unofficial <a href="https://discord.com/invite/pygmalionai">Discord server</a>.</p>
+        </div>
+    </div>
+</div>
 
                                 
                                 <!-- Required only on API pages -->
