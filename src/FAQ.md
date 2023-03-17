@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 1000
 icon: question
 title: FAQ
 ---
