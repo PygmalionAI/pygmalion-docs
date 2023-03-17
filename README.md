@@ -2,11 +2,11 @@
 
 Running the docs on your PC locally:
 
-##### Requirements:
+#### Requirements:
 - `git`
 - `nodejs`
 
-## Install the requirements (Windows):
+##### Install the requirements (Windows):
 - Open PowerShell (Win10) or Terminal (Win11)
 - `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser`
 - `irm get.scoop.sh | iex`
@@ -14,10 +14,10 @@ Running the docs on your PC locally:
 - `scoop bucket add extras`
 - `scoop install nodejs`
 
-## Install the requirements (Linux)
+##### Install the requirements (Linux)
 - All package managers have both `git` and `nodejs`.
 
-##### Installation 
+#### Installation 
 
 - Clone the repo:
 ```bash
