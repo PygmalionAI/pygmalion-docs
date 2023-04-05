@@ -4,7 +4,7 @@ icon: ":desktop_computer:"
 title: TextGen WebUI
 ---
 
-Oobabooga's Text Generation WebUI is a gradio frontend for running Large Language Models. 
+Oobabooga's Text Generation WebUI is a gradio frontend for running large language models. 
 
 Unlike KoboldAI, it can be used as a standalone front-end - more importantly, you cannot connect Oobabooga's Text Generation WebUI to Tavern. 
 
@@ -68,7 +68,7 @@ If you are, replace the third command with this:
 python server.py --cai-chat --auto-devices --no-stream
 ```
 !!!info 
-By default, oobabooga's TextGen will load the first model (in alphabetical order) placed in your models folder. You can specify which model to load with the `--model` argument, followed by your model name *as it's named in the `models` folder*. Here's an example of how you'd run pygmalion-6b:
+By default, oobabooga's TextGen will load the first model (in alphabetical order) placed in your models folder. You can specify which model to load with the `--model` argument, followed by your model name *as it's named in the `models` folder*. Here's an example of how you'd run Pygmalion-6b:
 
 `python server.py --model PygmalionAI/pygmalion-6b --cai-chat --auto-devices --no-stream`
 

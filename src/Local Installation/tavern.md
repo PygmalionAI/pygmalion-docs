@@ -27,7 +27,7 @@ You'll need a program such as [7zip](https://www.7-zip.org/download.html){target
 
 ### Linux/MacOS Installation
 
-If you're on Linux, an automatic installer script is available in the main Tavern repo now. It's still recommended to use your package manager, as the script might mess up if your environment is very custom-made (or you're using NixOS). If you already have nodejs installed, or would like to use the script, please skip the `nodejs` installation section.
+If you're on Linux, an automatic installer script is now available in the main Tavern repo. It's still recommended to use your package manager, as the script might mess up if your environment is very custom-made (or if you're using NixOS). If you already have nodejs installed, or would like to use the script, please skip the `nodejs` installation section.
 
 #### Requirements
 - nodejs
@@ -65,4 +65,4 @@ If you're running KoboldAI locally, all you need to paste in there is `http://lo
 !!!
 
 !!!success You're done!
-You can now start using TavernAI! TavernAI uses Character Cards, which are images (PNG and WEBP) that can be imported to Tavern as Characters. Tavern 1.3 by default has a list of community-added Characters in the home page (provided you have an internet connection). You can also find new characters in the unofficial [Discord server](https://discord.com/invite/pygmalionai).
+You can now start using TavernAI! TavernAI uses character cards, which are images (PNG and WEBP) that can be imported to Tavern as Characters. Tavern 1.3 by default has a list of community-added Characters in the home page (provided you have an internet connection). You can also find new characters in the unofficial [Discord server](https://discord.com/invite/pygmalionai).

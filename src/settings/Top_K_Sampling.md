@@ -4,7 +4,7 @@ icon: dot
 title: Top K Sampling
 order: 1000000000000000
 ---
-When using "top k", you select the top k most likely words to come next based on their probability of occurring, where k is a fixed number that you specify.
+When using "top k", you select the top $k$ most likely words to come next based on their probability of occurring, where $k$ is a fixed number that you specify.
 
 For example, if you set `Top_K` to 5, the language model will only consider the five most likely words to come next, rather than all the words in its vocabulary.
 
@@ -21,6 +21,6 @@ Here's how it works: first, the model uses `Top_p` to select the most likely wor
 
  Then, it applies a `Top_K` cutoff to this set of words, selecting only the top k most likely words from the `Top_P` selection.
 
-By using both techniques together, you can generate text that is both diverse and controlled. The `Top_P` selection ensures that the language model has the freedom to choose from a range of plausible words, while the `Top_k` cutoff limits the number of choices to a manageable set of highly likely words.
+By using both techniques together, you can generate text that is both diverse and controlled. The `Top_P` selection ensures that the language model has the freedom to choose from a range of plausible words, while the `Top_K` cutoff limits the number of choices to a manageable set of highly likely words.
 
 The specific values of `Top_P` and `Top_K` can be adjusted to achieve different levels of diversity and control in the generated text. For example, a higher `Top_P` value will allow for more diverse choices, while a lower `Top_K` value will provide more control over the output. It's important to experiment with different settings to find the right balance for your specific use case.

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.732327381429">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.734044355773">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -28,11 +28,11 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/icons/pyggy.svg" rel="icon" />
-    <link href="../../resources/css/retype.css?v=2.4.0.732327381429" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.734044355773" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.732327381429" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.734044355773" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.732327381429" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.734044355773" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -224,7 +224,7 @@
     <div class="p-6">
         <div class="text-xs font-semibold text-blue-500 uppercase dark:text-blue-400">Settings</div>
         <div class="mt-2 text-lg font-semibold leading-snug text-gray-900 dark:text-white md:text-xl">Temperature</div>
-        <div class="line-clamp-3"><p class="hidden mt-2 md:block"><code v-pre>Temperature</code> determines the randomness of sampling. Higher value can increase creativity, but make the output less meaninglful.</p></div>
+        <div class="line-clamp-3"><p class="hidden mt-2 md:block"><code v-pre>Temperature</code> determines the randomness of sampling. A higher value can increase creativity, but can make the output less meaningful and coherent.</p></div>
     </div>
 </a>
 <a class="no-link mb-6 overflow-hidden border border-gray-200 rounded-lg md:flex dark:border-dark-700 hover:border-gray-400 dark:hover:border-dark-450" href="../../settings/top_p_sampling/">
@@ -238,7 +238,7 @@
     <div class="p-6">
         <div class="text-xs font-semibold text-blue-500 uppercase dark:text-blue-400">Settings</div>
         <div class="mt-2 text-lg font-semibold leading-snug text-gray-900 dark:text-white md:text-xl">Top K Sampling</div>
-        <div class="line-clamp-3"><p class="hidden mt-2 md:block">When using "top k", you select the top k most likely words to come next based on their probability of occurring, where k is a fixed number that you...</p></div>
+        <div class="line-clamp-3"><p class="hidden mt-2 md:block">When using "top k", you select the top k most likely words to come next based on their probability of occurring, where </p></div>
     </div>
 </a>
 <a class="no-link mb-6 overflow-hidden border border-gray-200 rounded-lg md:flex dark:border-dark-700 hover:border-gray-400 dark:hover:border-dark-450" href="../../settings/tail_free_sampling/">
@@ -259,7 +259,7 @@
     <div class="p-6">
         <div class="text-xs font-semibold text-blue-500 uppercase dark:text-blue-400">Settings</div>
         <div class="mt-2 text-lg font-semibold leading-snug text-gray-900 dark:text-white md:text-xl">Top A Sampling</div>
-        <div class="line-clamp-3"><p class="hidden mt-2 md:block"><code v-pre>Top A Sampling</code> is a way to pick the next word in a sentence, based on how important it is in the context.</p></div>
+        <div class="line-clamp-3"><p class="hidden mt-2 md:block"><code v-pre>Top A Sampling</code> is a way to pick the next word in a sentence based on how important it is in the context.</p></div>
     </div>
 </a>
 <a class="no-link mb-6 overflow-hidden border border-gray-200 rounded-lg md:flex dark:border-dark-700 hover:border-gray-400 dark:hover:border-dark-450" href="../../settings/repetition_penality/">
@@ -273,7 +273,7 @@
     <div class="p-6">
         <div class="text-xs font-semibold text-blue-500 uppercase dark:text-blue-400">Settings</div>
         <div class="mt-2 text-lg font-semibold leading-snug text-gray-900 dark:text-white md:text-xl">Alt Rep Pen</div>
-        <div class="line-clamp-3"><p class="hidden mt-2 md:block"><code v-pre>Alt Rep Pen</code> applies Repetition Penalty as a Logarithmic modifier rather than a linear modifier.</p></div>
+        <div class="line-clamp-3"><p class="hidden mt-2 md:block"><code v-pre>Alt Rep Pen</code> applies Repetition Penalty as a logarithmic modifier rather than a linear modifier.</p></div>
     </div>
 </a>
 <a class="no-link mb-6 overflow-hidden border border-gray-200 rounded-lg md:flex dark:border-dark-700 hover:border-gray-400 dark:hover:border-dark-450" href="../../settings/context_tokens/">
@@ -287,7 +287,7 @@
     <div class="p-6">
         <div class="text-xs font-semibold text-blue-500 uppercase dark:text-blue-400">Settings</div>
         <div class="mt-2 text-lg font-semibold leading-snug text-gray-900 dark:text-white md:text-xl">Gens Per Action</div>
-        <div class="line-clamp-3"><p class="hidden mt-2 md:block">The number of output the model will generate at once. Use this setting if your responses are too short; it will make the bot generate twice in order.</p></div>
+        <div class="line-clamp-3"><p class="hidden mt-2 md:block">The number of outputs the model will generate at once. Use this setting if your responses are too short; it will make the bot generate twice in order.</p></div>
     </div>
 </a>
 <a class="no-link mb-6 overflow-hidden border border-gray-200 rounded-lg md:flex dark:border-dark-700 hover:border-gray-400 dark:hover:border-dark-450" href="../../settings/wi_depth/">
@@ -308,7 +308,7 @@
     <div class="p-6">
         <div class="text-xs font-semibold text-blue-500 uppercase dark:text-blue-400">Settings</div>
         <div class="mt-2 text-lg font-semibold leading-snug text-gray-900 dark:text-white md:text-xl">Chat Mode</div>
-        <div class="line-clamp-3"><p class="hidden mt-2 md:block">This mode optimizes KoboldAI for Chatting/use chat bot model.</p></div>
+        <div class="line-clamp-3"><p class="hidden mt-2 md:block">This mode optimizes KoboldAI for chatting/using conversational models.</p></div>
     </div>
 </a>
 <a class="no-link mb-6 overflow-hidden border border-gray-200 rounded-lg md:flex dark:border-dark-700 hover:border-gray-400 dark:hover:border-dark-450" href="../../settings/adventure_mode/">
@@ -322,7 +322,7 @@
     <div class="p-6">
         <div class="text-xs font-semibold text-blue-500 uppercase dark:text-blue-400">Settings</div>
         <div class="mt-2 text-lg font-semibold leading-snug text-gray-900 dark:text-white md:text-xl">Dynamic WI Scan</div>
-        <div class="line-clamp-3"><p class="hidden mt-2 md:block">Scans the AI's output for World Info keys as it is generating the ouput.</p></div>
+        <div class="line-clamp-3"><p class="hidden mt-2 md:block">Scans the AI's output for World Info keys as it is generating the output.</p></div>
     </div>
 </a>
 <a class="no-link mb-6 overflow-hidden border border-gray-200 rounded-lg md:flex dark:border-dark-700 hover:border-gray-400 dark:hover:border-dark-450" href="../../settings/token_probabilities/">

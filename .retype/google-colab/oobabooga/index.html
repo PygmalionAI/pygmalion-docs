@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.732327381429">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.734044355773">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -31,11 +31,11 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/icons/pyggy.svg" rel="icon" />
-    <link href="../../resources/css/retype.css?v=2.4.0.732327381429" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.734044355773" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.732327381429" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.734044355773" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.732327381429" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.734044355773" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -286,7 +286,7 @@
 <li><code v-pre>model</code>: Use this option to select which version of the Pygmalion model you want - <code v-pre>original</code> is the first version of the model, <code v-pre>main</code> is the current stable release (v3), <code v-pre>dev</code> is the latest beta release.</li>
 <li><code v-pre>text_streaming</code>: The generated text by the bot is displayed in real-time instead of waiting for the whole message to finish generating before showing it to you.</li>
 <li><code v-pre>cai_chat</code>: Will mimic the appearance of <a href="https://beta.character.ai">Character.AI</a>&#x27;s user interface.</li>
-<li><code v-pre>load_in_8bit</code>: Pygmalion 6B&#x27;s weights are stored in Floating Point 16 bits, this will load them in Integer 8 bits instead - which cuts down on the computation power required. Use this so you can increase context size to the maximum.</li>
+<li><code v-pre>load_in_8bit</code>: Pygmalion 6B&#x27;s weights are normally stored in 16-bit floating point precision. However, this option will load them in 8-bit integer precision instead, cutting down on the computational power required to run the model. Use this so you can increase context size to the maximum.</li>
 <li><code v-pre>activate_silero_text_to_speech</code>: Use this option if you want TTS for your bots.</li>
 <li><code v-pre>activate_sending_pictures</code>: Allows you to send pictures to your bots.</li>
 <li><code v-pre>activate_character_bias</code>: Lets you add a snippet of text that&#x27;ll be put before every reply your bot generates - but keeps it hidden from you. In simple terms, if you add <code v-pre>*yells*</code> in the character bias section, your character will yell every line.</li>

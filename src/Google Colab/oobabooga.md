@@ -27,7 +27,7 @@ You might be warned that the notebook is not authored by Google - you can ignore
 - `model`: Use this option to select which version of the Pygmalion model you want - `original` is the first version of the model, `main` is the current stable release (v3), `dev` is the latest beta release.
 - `text_streaming`: The generated text by the bot is displayed in real-time instead of waiting for the whole message to finish generating before showing it to you. 
 - `cai_chat`: Will mimic the appearance of [Character.AI](https://beta.character.ai)'s user interface.
-- `load_in_8bit`: Pygmalion 6B's weights are stored in Floating Point 16 bits, this will load them in Integer 8 bits instead - which cuts down on the computation power required. Use this so you can increase context size to the maximum.
+- `load_in_8bit`: Pygmalion 6B's weights are normally stored in 16-bit floating point precision. However, this option will load them in 8-bit integer precision instead, cutting down on the computational power required to run the model. Use this so you can increase context size to the maximum.
 - `activate_silero_text_to_speech`: Use this option if you want TTS for your bots.
 - `activate_sending_pictures`: Allows you to send pictures to your bots.
 - `activate_character_bias`: Lets you add a snippet of text that'll be put before every reply your bot generates - but keeps it hidden from you. In simple terms, if you add `*yells*` in the character bias section, your character will yell every line.
