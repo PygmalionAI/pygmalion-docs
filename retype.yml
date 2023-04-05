@@ -2,12 +2,12 @@ input: ./src
 output: .retype
 url: http://localhost:5005
 branding:
-  logo: /static/icons/pyg-logo.svg
-  logoDark: /static/icons/pyg-logo.svg
+  logo: /static/icons/Pygmalion_Fixed.svg
+  logoDark: /static/icons/Pygmalion_Fixed.svg
   title: PygmalionAI
   label: Docs
 
-favicon: /static/icons/pyggy.svg
+favicon: /static/icons/Pygmalion_Logo.svg
 
 poweredByRetype: true
 
