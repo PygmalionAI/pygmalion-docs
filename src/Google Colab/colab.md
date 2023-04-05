@@ -16,7 +16,7 @@ Google has generously offered free GPUs for in their [Colaboratory](https://cola
 ### Notebooks
 
 === oobabooga (TextGen)
-:desktop_computer:/:iphone: [Click here.](http://127.0.0.1:5005/google-colab/oobabooga) 
+:desktop_computer:/:iphone: [Click here.](https://alpindale.github.io/pygmalion-docs/google-colab/oobabooga) 
 
 ===
 
