@@ -7,6 +7,7 @@ icon: book
 
 !!!danger Google has banned all PygmalionAI notebooks
 Any notebook with the keyword `PygmalionAI` has a chance of banning your *Colab* account, so as of now, only Oobabooga' official notebook is functioning. And as such, I have removed the pages for other notebooks here. There are several unofficial ones that seem to work, however.
+!!!
 
 
 Running Pygmalion - or any Large Language Model - requires a significant amount of VRAM. The current absolute minimum requirement is 10GB for a comfortable experience. Anything lower, and you would either be unable to use the model, or generations will be too slow to be enjoyable. 
