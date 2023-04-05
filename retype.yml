@@ -44,4 +44,4 @@ server:
 
 integrations:
   crisp:
-  id: 387ba2b4-1f5e-4710-89eb-a5e044c6af98
+    id: 387ba2b4-1f5e-4710-89eb-a5e044c6af98
