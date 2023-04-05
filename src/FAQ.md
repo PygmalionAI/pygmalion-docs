@@ -64,9 +64,9 @@ Even if people tend to use it that way, softprompt are not made to add context, 
 It's up to you, every UI tend to add the same features as the other and try to be compatible with character from other UI as well.
 If you want to focus on Story Generation, we recommend using KoboldAI. For chat purposes, TavernAI has the best user interface, followed by Oobabooga. There are other TavernAI alternatives (e.g. miku.gg), but it's up to you in the end. Please refer to their Colab Pages for a preview of the UI.
 
-[!button text="KoboldAI"](http://127.0.0.1:5005/google-colab/kobold) - 
-[!button text="Text-Gen-WebUI"](http://127.0.0.1:5005//google-colab/oobabooga) - 
-[!button text="TavernAI"](http://127.0.0.1:5005//google-colab/tavern)
+[!button text="KoboldAI"](https://alpindale.github.io/pygmalion-docs/google-colab/kobold) - 
+[!button text="Text-Gen-WebUI"](https://alpindale.github.io/pygmalion-docs//google-colab/oobabooga) - 
+[!button text="TavernAI"](https://alpindale.github.io/pygmalion-docs//google-colab/tavern)
 
 ### I'm using Google Colab, how much quota do I have?
 The amount of time you can use when using the free plan for Google Colab highly depends on the traffic and your usage patterns.
