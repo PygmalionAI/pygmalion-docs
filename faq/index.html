@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.734045250062">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.734045291159">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -33,11 +33,11 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../static/icons/pyggy.svg" rel="icon" />
-    <link href="../resources/css/retype.css?v=2.4.0.734045250062" rel="stylesheet" />
+    <link href="../resources/css/retype.css?v=2.4.0.734045291159" rel="stylesheet" />
 
-    <script type="text/javascript" src="../resources/js/config.js?v=2.4.0.734045250062" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../resources/js/config.js?v=2.4.0.734045291159" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../resources/js/lunr.js?v=2.4.0.734045250062" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../resources/js/lunr.js?v=2.4.0.734045291159" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -235,7 +235,7 @@
         <span>My character has terrible memory!</span>
     </h3>
 </doc-anchor-target>
-<p>This could be due to the limited context size. Pygmalion 6B has a maximum context size of 2048 <a href="https://en.wikipedia.org/wiki/Lexical_analysis#Tokenization" target="_blank">tokens</a>. This includes your character description, example messages, and all your chatlogs. The description and examples are placed at the top of the context memory - all your subsequent chat logs are placed beneath them. This means that if your character description + examples chats are 400 tokens, you&#x27;ll only have 1648 tokens left for your messages. The bot will forgot everything past those 1648 tokens.</p>
+<p>This could be due to the limited context size. Pygmalion 6B has a maximum context size of 2048 <a href="https://en.wikipedia.org/wiki/Lexical_analysis#Tokenization" target="_blank">tokens</a>. This includes your character description, example messages, and all your chatlogs. The description and examples are placed at the top of the context memory - all your subsequent chat logs are placed beneath them. This means that if your character description + examples chats are 400 tokens, you&#x27;ll only have 1648 tokens left for your messages. The bot will forget everything past those 1648 tokens.</p>
 <p>Character editors/creators such as TavernAI&#x27;s will give you a token count for your character, but you can also use OpenAI&#x27;s tokenizer service.</p>
 <p>
 <div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
@@ -259,8 +259,8 @@
 </doc-anchor-target>
 <p>The character will mimic the example chats and greeting message&#x27;s style. Keep these in mind if you want to create a verbose character:</p>
 <ul>
-<li>Descriptive and verbose greeting message and example chats.</li>
-<li>Descriptive and verbose responses by the user (you!).</li>
+<li>Be descriptive and verbose in your greeting message and example chats.</li>
+<li>Be descriptive and verbose in responses by the user (you!).</li>
 <li>Re-generate the response until you see a satisfactory one.</li>
 <li>Manually edit the character&#x27;s response to make it more verbose.</li>
 </ul>
@@ -270,14 +270,14 @@
         <span>My character is generating nonsense!</span>
     </h3>
 </doc-anchor-target>
-<p>Your Temperature or Repetition Penalty settings are likely too high. The recommended range for Temperature (for chatbots) is between <code v-pre>0.5</code> to <code v-pre>0.9</code>. The range for Repetition Penalty is between <code v-pre>1.1</code> to <code v-pre>1.2</code>.</p>
+<p>Your temperature or repetition penalty settings are likely too high. The recommended range for temperature (for chatbots) is between <code v-pre>0.5</code> to <code v-pre>0.9</code> and the ideal range for repetition penalty is between <code v-pre>1.1</code> to <code v-pre>1.2</code>.</p>
 <doc-anchor-target id="my-character-is-not-responding-anymore">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#my-character-is-not-responding-anymore">#</doc-anchor-trigger>
         <span>My character is not responding anymore!</span>
     </h3>
 </doc-anchor-target>
-<p>You have probably run out of memory (VRAM).
+<p>You have probably run out of GPU memory (also known as VRAM).
 If you are using the free Google Colab plan, the GPU provided by Google can&#x27;t handle the maximum context size (2048 tokens). If you have 16GB of VRAM, please tweak the context size to 1400-1600 (proportionally lower according to your VRAM size).</p>
 <doc-anchor-target id="for-text-gen-oobabooga-you-need-to-check-the-load_in_8bit-option-under-the-3rd-cell-before-running-it">
     <h5>
@@ -316,7 +316,7 @@ This project is done out of passion, and no one has any intention of collecting,
     </h3>
 </doc-anchor-target>
 <p>A soft prompt is a way to modify the style and behavior of your AI.</p>
-<p>They&#x27;re made by taking a (possibly) huge amount of information, and compressing them into a small number of tokens.
+<p>They&#x27;re made by taking a (possibly) huge amount of information and compressing them into a small number of tokens, then feeding it into the embedding layer of the model.
 Even if people tend to use it that way, softprompt are not made to add context, lore, etc to the story. But yes, it might work for that if the dataset use to make the softprompt was big enough and made use of good quality data.</p>
 <doc-anchor-target id="how-do-i-use-softprompts">
     <h3>
@@ -336,8 +336,8 @@ Even if people tend to use it that way, softprompt are not made to add context, 
         <span>Which UI should I use? There&#x27;s so many of them.</span>
     </h3>
 </doc-anchor-target>
-<p>It&#x27;s up to you, every UI tend to add the same features as the other and try to be compatible with character from other UI as well.
-If you want to focus on Story Generation, we recommend using KoboldAI. For chat purposes, TavernAI has the best user interface, followed by Oobabooga. There are other TavernAI alternatives (e.g. miku.gg), but it&#x27;s up to you in the end. Please refer to their Colab Pages for a preview of the UI.</p>
+<p>It&#x27;s up to you, every UI tends to add the same features others as well as try to be compatible with characters from other UIs as well.
+If you want to focus on story generation, we recommend using KoboldAI. For chat purposes, TavernAI has the best user interface, followed by Oobabooga. There are other TavernAI alternatives (e.g. miku.gg), but it&#x27;s up to you in the end. Please refer to their Colab Pages for a preview of the UI.</p>
 <p><a href="http://127.0.0.1:5005/google-colab/kobold" class="no-link inline-flex items-center font-medium cursor-pointer transition-colors duration-200 ease-out focus:outline-none bg-blue-500 hover:bg-blue-700 text-white px-4 h-10 text-sm rounded-md">
     <span>KoboldAI</span>
 </a> -
@@ -347,18 +347,18 @@ If you want to focus on Story Generation, we recommend using KoboldAI. For chat 
 <a href="http://127.0.0.1:5005//google-colab/tavern" class="no-link inline-flex items-center font-medium cursor-pointer transition-colors duration-200 ease-out focus:outline-none bg-blue-500 hover:bg-blue-700 text-white px-4 h-10 text-sm rounded-md">
     <span>TavernAI</span>
 </a></p>
-<doc-anchor-target id="im-using-google-colab-how-much-quota-do-i-have">
+<doc-anchor-target id="im-using-google-colab-how-much-time-do-i-have-to-use-their-gpus">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#im-using-google-colab-how-much-quota-do-i-have">#</doc-anchor-trigger>
-        <span>I&#x27;m using Google Colab, how much quota do I have?</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#im-using-google-colab-how-much-time-do-i-have-to-use-their-gpus">#</doc-anchor-trigger>
+        <span>I&#x27;m using Google Colab, how much time do I have to use their GPUs?</span>
     </h3>
 </doc-anchor-target>
-<p>The amount of time you can use when using the free plan for Google Colab highly depends on the traffic and your usage patterns.
-Google says that you can use a Colab Notebook for at most 12 hours if you don&#x27;t have Compute Unit. Pygmalion users tend to say it&#x27;s less.</p>
-<doc-anchor-target id="how-to-avoid-running-out-of-quota">
+<p>The amount of time you can use when using the free plan for Google Colab highly depends on the traffic Colab recieves and your usage patterns.
+Google says that you can use a Colab Notebook for at most 12 hours if you don&#x27;t have Compute Units. Pygmalion users tend to say it&#x27;s less - usually anywhere from two to six hours.</p>
+<doc-anchor-target id="how-to-avoid-reaching-the-gpu-quota">
     <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-avoid-running-out-of-quota">#</doc-anchor-trigger>
-        <span>How to avoid running out of quota?</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-avoid-reaching-the-gpu-quota">#</doc-anchor-trigger>
+        <span>How to avoid reaching the GPU quota?</span>
     </h4>
 </doc-anchor-target>
 <p>When you&#x27;re done using Pygmalion, please terminate your Colab session! You&#x27;ll waste your quota otherwise, and might find yourself unable to connect to a GPU backend the next time you login.
@@ -371,13 +371,13 @@ Google says that you can use a Colab Notebook for at most 12 hours if you don&#x
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<doc-anchor-target id="ive-out-of-quota-what-do-i-do-now">
+<doc-anchor-target id="ive-out-of-gpu-time-what-do-i-do-now">
     <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#ive-out-of-quota-what-do-i-do-now">#</doc-anchor-trigger>
-        <span>I&#x27;ve out of Quota, what do I do now?</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#ive-out-of-gpu-time-what-do-i-do-now">#</doc-anchor-trigger>
+        <span>I&#x27;ve out of GPU time, what do I do now?</span>
     </h4>
 </doc-anchor-target>
-<p>If you&#x27;ve run out of quota, you can do nothing but wait for your quota to reset. Alternatively, you can purchase Colab Pro to increase your daily/weekly quota.</p>
+<p>If you&#x27;ve run out of GPU time, you can do nothing but wait for your quota to reset. Alternatively, you can purchase Colab Pro to increase your daily/weekly quota.</p>
 <doc-anchor-target id="whats-a-compute-unit-cu-should-i-buy-one">
     <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#whats-a-compute-unit-cu-should-i-buy-one">#</doc-anchor-trigger>
@@ -393,7 +393,7 @@ So it&#x27;s up to you.</p>
         <span>I&#x27;ve run out of quota, but I can&#x27;t buy a Compute Unit! What do I do?</span>
     </h4>
 </doc-anchor-target>
-<p>In that case, you can use <a href="https://lite.koboldai.net" target="_blank">Kobold Horde</a>. Generous users are donating their GPU power to the Horde, so that people can use them to run Language Models. Pygmalion is a popular model, so you&#x27;ll always find people hosting it. Keep in mind that there are more Horde users than Workers, so you might have to wait a bit longer for responses.</p>
+<p>In that case, you can use <a href="https://lite.koboldai.net" target="_blank">Kobold Horde</a>. Generous users are donating their GPU power to the Horde so that people can use them to run language models. Pygmalion is a popular model, so you&#x27;ll always find people hosting it. Keep in mind that there are more Horde users than workers, so you might have to wait a bit longer for responses.</p>
 
                                 
                                 <!-- Required only on API pages -->
