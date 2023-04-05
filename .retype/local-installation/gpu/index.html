@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.732327381429">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.734044355773">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -11,7 +11,7 @@
     <!-- Primary Meta Tags -->
     <title>Setting up your GPU - Pygmalion AI</title>
     <meta name="title" content="Setting up your GPU - Pygmalion AI">
-    <meta name="description" content="Consumer-grade GPUs are designed for Video Processing and 3D rendering - they're not specifically made for Language Processing models." />
+    <meta name="description" content="Consumer-grade GPUs are designed for graphics processing and 3D rendering - they're not specifically made for language processing models." />
 
     <!-- Canonical -->
     <link rel="canonical" href="http://localhost:5005/local-installation/gpu/" />
@@ -20,22 +20,22 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://localhost:5005/local-installation/gpu/">
     <meta property="og:title" content="Setting up your GPU - Pygmalion AI">
-    <meta property="og:description" content="Consumer-grade GPUs are designed for Video Processing and 3D rendering - they're not specifically made for Language Processing models.">
+    <meta property="og:description" content="Consumer-grade GPUs are designed for graphics processing and 3D rendering - they're not specifically made for language processing models.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="http://localhost:5005/local-installation/gpu/">
     <meta property="twitter:title" content="Setting up your GPU - Pygmalion AI">
-    <meta property="twitter:description" content="Consumer-grade GPUs are designed for Video Processing and 3D rendering - they're not specifically made for Language Processing models.">
+    <meta property="twitter:description" content="Consumer-grade GPUs are designed for graphics processing and 3D rendering - they're not specifically made for language processing models.">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/icons/pyggy.svg" rel="icon" />
-    <link href="../../resources/css/retype.css?v=2.4.0.732327381429" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.734044355773" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.732327381429" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.734044355773" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.732327381429" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.734044355773" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -215,7 +215,7 @@
         <span>Setting up your GPU</span>
     </h1>
 </doc-anchor-target>
-<p>Consumer-grade GPUs are designed for Video Processing and 3D rendering - they&#x27;re not <em>specifically</em> made for Language Processing models. However, GPU vendors such as NVIDIA and AMD have released toolkits for enabling computation for their GPUs. Only a handful of AMD GPUs are supposed, but the majority of NVIDIA cards can be setup easily.</p>
+<p>Consumer-grade GPUs are designed for graphics processing and 3D rendering - they&#x27;re not <em>specifically</em> made for language processing models. However, GPU vendors such as NVIDIA and AMD have released toolkits for enabling deep learning computation for their GPUs. Only a handful of AMD GPUs are supported, but the majority of NVIDIA cards can be set up easily.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -229,7 +229,7 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>Keep in mind that the most important factor for AI is VRAM (Video Memory), not the processing power. e.g. an RTX 2070 (8GB) is better than an RTX 4050 (6GB) when it comes to AI inference.</p>
+<p>Keep in mind that the most important factor for AI is VRAM (video memory), not the processing power. e.g. an RTX 2070 (8GB) is better than an RTX 4050 (6GB) when it comes to AI inference.</p>
         </div>
     </div>
 </div>
@@ -249,7 +249,7 @@
         <span>NVIDIA</span>
     </h2>
 </doc-anchor-target>
-<p>NVIDIA Cards are mostly supported - though it&#x27;s not recommended to use GPUs with less than 8GB of VRAM.</p>
+<p>NVIDIA cards are mostly supported, though it&#x27;s not recommended to use GPUs with less than 8GB of VRAM.</p>
 <p>The setup process will be different for both Windows and Linux (MacOS currently not supported).</p>
 <doc-anchor-target id="windows">
     <h3>
@@ -257,14 +257,14 @@
         <span>Windows</span>
     </h3>
 </doc-anchor-target>
-<p>The official <a href="https://www.nvidia.com/en-us/geforce/drivers/">Game-Ready Drivers</a> provided by NVIDIA will setup CUDA for you, and that&#x27;s all you need to do!</p>
+<p>The official <a href="https://www.nvidia.com/en-us/geforce/drivers/">Game-Ready Drivers</a> provided by NVIDIA will set up CUDA for you, and that&#x27;s all you need to do!</p>
 <doc-anchor-target id="linux">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#linux">#</doc-anchor-trigger>
         <span>Linux</span>
     </h3>
 </doc-anchor-target>
-<p>CUDA installation is relatively easy for Linux (unless you&#x27;re on Fedora). For this particular guide, we&#x27;ll be covering three base distros - <a href="https://www.archlinux.org">Arch Linux</a> and <a href="https://www.debian.org/">Debian</a>. More will be added later.</p>
+<p>CUDA installation is relatively easy for Linux (unless you&#x27;re on Fedora). For this particular guide, we&#x27;ll be covering two base distros - <a href="https://www.archlinux.org">Arch Linux</a> and <a href="https://www.debian.org/">Debian</a>. More will be added later.</p>
 <doc-anchor-target id="arch-linux">
     <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#arch-linux">#</doc-anchor-trigger>
@@ -337,7 +337,7 @@
         <span>Linux</span>
     </h3>
 </doc-anchor-target>
-<p>The ROCm installation is only (relatively) easy on Arch Linux. For other distros, you need to manually install the binaries by building ROCm from source (not recommended for beginners).</p>
+<p>The ROCm installation is only (relatively) easy on Arch Linux. For other distros, you will need to manually install the binaries by building ROCm from source (not recommended for beginners).</p>
 <p>Installing Arch Linux is not easy for a beginner, therefore look into <a href="https://manjaro.org">Manjaro</a> or <a href="https://endeavouros.com">EndeavourOS</a> - they both use an Arch Linux base.</p>
 <doc-anchor-target id="arch-linux-1">
     <h4>
@@ -366,7 +366,7 @@ makepkg -si</code></pre>
         <span>Not using Arch Linux?</span>
     </h4>
 </doc-anchor-target>
-<p>AMD has a comprehensive guide for installing ROCm. Please refere to their guide on the installation.</p>
+<p>AMD has a comprehensive guide for installing ROCm. Please refer to their installation guide.</p>
 <p><a href="https://docs.amd.com/bundle/ROCm-Getting-Started-Guide-v5.3/page/How_to_Install_ROCm.html" target="_blank" class="no-link inline-flex items-center font-medium cursor-pointer transition-colors duration-200 ease-out focus:outline-none bg-blue-500 hover:bg-blue-700 text-white px-4 h-10 text-sm rounded-md">
     <span><img class="mb-px inline-flex mr-2" width="18" src="../../static/icons/amd.svg" /></span>
     <span>ROCm Install Guide</span>

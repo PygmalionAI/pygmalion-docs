@@ -26,11 +26,11 @@ World Info is where you can flesh out the details of your wider world. The engin
 
 World Info entries are like an encyclopedia entry, providing a succinct overview of the most relevant information about whatever topic - characters, species, places, items, etc...
 
-The AI doesn't see key word or title of the World Info entry "behind the scenes", so the actual text should be an entirely self-contained description. For example, if you have a World Info entry titled "Director Abrams", the entry should say "Director Abrams is the executive and governor of the colony" rather than just "The executive and governor of the colony", because the AI will only see the entry.
+The AI doesn't see the key word or title of the World Info entry "behind the scenes", so the actual text should be an entirely self-contained description. For example, if you have a World Info entry titled "Director Abrams", the entry should say "Director Abrams is the executive and governor of the colony" rather than just "the executive and governor of the colony", because the AI will only see the entry.
 
 Use World Info entries that cross reference each other appropriately to create a more dynamic and interactive world. If your "combat android" World Info entry mentions that they carry plasma rifles, then create a short "plasma rifle" entry separately. If you create a "Admin Tower" entry that mentions containing a command center, computer core, and offices, create distinct "command center", "computer core", and "offices" entries that mention being located in the Admin Tower.
 
-It helps to use many key words that might pull in a World Info entry whenever it might be appropriate, rather than just it's proper name(s).
+It helps to use many key words that might pull in a World Info entry whenever it might be appropriate, rather than just its proper name(s).
 
 If you have a rich tapestry of interconnected World Info entries with many relevant keywords, you may find that multiple World Info entries are getting pulled into the context at any given time. So it's good to keep them fairly short (50 tokens for minor stuff, 100 tokens for significant characters, no more than 150 for major keystones of the setting).
 :::

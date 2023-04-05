@@ -4,7 +4,7 @@ icon: telescope
 title: Overview
 ---
 
-PygmalionAI is a Large Language Model, and as the name might imply, it needs a lot of computation power to run it. You need a minimum of 16GB VRAM to run the model -- without any optimizations, that is. Here's a list of all the GPUs that would work without any tweaks and out-of-the-box:
+PygmalionAI is a large language model, and as the name might imply, it needs a lot of computation power to run it. You will need a minimum of 16GB VRAM to run the model - without any optimizations, that is. Here's a list of all the GPUs that would work without any tweaks, out-of-the-box:
 
 **Consumer-grade (Gaming) GPUs:**
 
@@ -23,7 +23,7 @@ Radeon RX 6800 XT   | AMD               | 16GB
 Radeon RX 6800      | AMD               | 16GB
 
 
-!!!warning You card isn't listed here?
+!!!warning Your card isn't listed here?
 If you don't have any of these cards, but still have over 8GB of VRAM, chances are you can run the model just fine. You just have to make sure your card supports CUDA (NVIDIA) or ROCm (AMD). We'll get to that later.
 !!!
 
