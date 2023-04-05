@@ -7,7 +7,7 @@ branding:
   title: PygmalionAI
   label: Docs
 
-favicon: /static/icons/Pygmalion_Logo.svg
+favicon: /static/icons/Pygmalion_Fixed.svg
 
 poweredByRetype: true
 
