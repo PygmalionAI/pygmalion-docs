@@ -2,8 +2,8 @@ input: ./src
 output: .retype
 url: http://localhost:5005
 branding:
-  logo: /static/icons/Pygmalion_Fixed.svg
-  logoDark: /static/icons/Pygmalion_Fixed.svg
+  logo: /static/icons/pyg-logo.svg
+  logoDark: /static/icons/pyg-logo.svg
   title: PygmalionAI
   label: Docs
 
@@ -41,7 +41,3 @@ server:
     mode: disk
     polling: true
     validation: fast
-
-integrations:
-  crisp:
-    id: 387ba2b4-1f5e-4710-89eb-a5e044c6af98
