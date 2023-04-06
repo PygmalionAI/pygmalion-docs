@@ -2,6 +2,7 @@
 order: 100000
 icon: home
 ---
+![](static/1500x500.jpeg)
 # What is PygmalionAI?
 
 PygmalionAI is an open-source large language model (**LLM**) based on EleutherAI's [GPT-J 6B](https://huggingface.co/EleutherAI/gpt-j-6b){ target="_blank" }. 
