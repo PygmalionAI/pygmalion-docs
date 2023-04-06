@@ -1,6 +1,6 @@
 ---
 order: 10
-icon: ":desktop_computer:"
+icon: note
 title: TavernAI
 ---
 

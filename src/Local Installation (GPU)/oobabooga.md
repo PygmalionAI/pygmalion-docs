@@ -1,6 +1,6 @@
 ---
 order: 100
-icon: ":desktop_computer:"
+icon: note
 title: TextGen WebUI
 ---
 
