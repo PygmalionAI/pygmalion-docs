@@ -12,7 +12,7 @@ Unlike KoboldAI, it can be used as a standalone front-end - more importantly, yo
 
 
 ## Automatic Installation
-Please make sure you've read the [Overview](https://alpindale.github.io/pygmalion-docs/local-installation-overview) and [Setting up your GPU](https://alpindale.github.io/pygmalion-docs/local-installation/gpu) pages first. 
+Please make sure you've read the [Overview](https://alpindale.github.io/pygmalion-docs/local-installation-(gpu)/overview/) and [Setting up your GPU](https://alpindale.github.io/pygmalion-docs/local-installation-(gpu)/gpu/) pages first. 
 
 ### Windows
 

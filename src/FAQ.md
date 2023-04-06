@@ -62,11 +62,11 @@ Even if people tend to use it that way, softprompt are not made to add context, 
 
 ### Which UI should I use? There's so many of them.
 It's up to you, every UI tends to add the same features others as well as try to be compatible with characters from other UIs as well.
-If you want to focus on story generation, we recommend using KoboldAI. For chat purposes, TavernAI has the best user interface, followed by Oobabooga. There are other TavernAI alternatives (e.g. miku.gg), but it's up to you in the end. Please refer to their Colab Pages for a preview of the UI.
+If you want to focus on story generation, we recommend using KoboldAI. For chat purposes, TavernAI has the best user interface, followed by Oobabooga. There are other TavernAI alternatives (e.g. miku.gg), but it's up to you in the end. Please refer to their respective pages for a preview of the UI.
 
-[!button text="KoboldAI"](https://alpindale.github.io/pygmalion-docs/google-colab/kobold) - 
-[!button text="Text-Gen-WebUI"](https://alpindale.github.io/pygmalion-docs/google-colab/oobabooga) - 
-[!button text="TavernAI"](https://alpindale.github.io/pygmalion-docs/google-colab/tavern)
+[!button text="KoboldAI"](https://alpindale.github.io/local-installation-(gpu)/kobold) - 
+[!button text="Text-Gen-WebUI"](https://alpindale.github.io/local-installation-(gpu)/oobabooga/) - 
+[!button text="TavernAI"](https://alpindale.github.io/local-installation-(gpu)/tavern/)
 
 ### I'm using Google Colab, how much time do I have to use their GPUs?
 The amount of time you can use when using the free plan for Google Colab highly depends on the traffic Colab recieves and your usage patterns.
