@@ -11,7 +11,7 @@ Initially, the only way to run Pygmalion C++ was through this repo: [AlpinDale/p
 
 Running on Windows is exceedingly simple. You can download the `.exe` file from [here](https://github.com/LostRuins/koboldcpp/releases/latest), and the converted 4-bit quantized Pygmalion 6B model from [here](https://huggingface.co/alpindale/pygmalion-6b-ggml/resolve/main/pygmalion-6b-v3-q4_0.bin).
 
-Once you have both files downloaded, all you need to do is drag the `pygmalion-6b-v3-q4_0.bin` file and drop it into `koboldcpp.exe` file. This will load the model and start a Kobold instance in [localhost:8000](http://127.0.0.1:8000) on your browser.
+Once you have both files downloaded, all you need to do is drag the `pygmalion-6b-v3-q4_0.bin` file and drop it into `koboldcpp.exe` file. This will load the model and start a Kobold instance in [localhost:5001](http://127.0.0.1:5001) on your browser.
 
 ***
 ## MacOS Guide
@@ -28,15 +28,12 @@ The [ggml](https://github.com/ggerganov/ggml) library is primarily designed for 
 2. Extract it anywhere you want. 
 3. Open a Terminal inside the extracted folder.
 4. Type in `make` and let it compile the program.
-5. Once it's finished, download the model by running this inside the terminal:
-```bash
-curl -o pygmalion-6b-v3-q4_0.bin https://huggingface.co/alpindale/pygmalion-6b-ggml/resolve/main/pygmalion-6b-v3-q4_0.bin
-```
+5. Once it's finished, download the model [here](https://huggingface.co/alpindale/pygmalion-6b-ggml/resolve/main/pygmalion-6b-v3-q4_0.bin) and place it inside the `koboldcpp` folder.
 6. Run the model with:
 ```bash
 python koboldcpp.py pygmalion-6b-v3-q4_0.bin
 ```
-7. Open your browser and navigate to [http://127.0.0.1:8000](http://127.0.0.1:8000).
+7. Open your browser and navigate to [http://127.0.0.1:5001](http://127.0.0.1:5001).
 8. You're done!
 
 !!!info No module named 'psutil'?
@@ -64,7 +61,7 @@ wget https://huggingface.co/alpindale/pygmalion-6b-ggml/resolve/main/pygmalion-6
 python koboldcpp.py pygmalion-6b-v3-q4_0.bin            # Load the model
 ```
 
-Open your browser and navigate to [localhost:8000](http:127.0.0.1:8000). You're all set.
+Open your browser and navigate to [localhost:5001](http:127.0.0.1:5001). You're all set.
 
 !!!info No module named 'psutil'?
 If you receive such an error doing step 6, run `pip install psutil` and then try again.
@@ -86,13 +83,13 @@ Install Termux from F-Droid.
 
 1. Open Termux.
 2. Type in the following commands one by one and press enter to run them:
-3. `pkg install python clang python-pip git`
+3. `pkg update && pkg install python clang python-pip git openssl`
 4. `pip install psutil`
 5. `git clone https://github.com/LostRuins/koboldcpp && cd koboldcpp`
 6. `make`
 7. `wget https://huggingface.co/alpindale/pygmalion-6b-ggml/resolve/main/pygmalion-6b-v3-q4_0.bin`
 8. `python koboldcpp.py pygmalion-6b-v3-q4_0.bin`
-9. Switch to your browser (don't close Termux) and go to [localhost:8000](http://127.0.0.1:8000).
+9. Switch to your browser (don't close Termux) and go to [localhost:5001](http://127.0.0.1:5001).
 10. You're done!
 
 
