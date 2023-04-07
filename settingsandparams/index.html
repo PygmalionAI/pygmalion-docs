@@ -6,39 +6,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/pygmalion-docs">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.734149563814">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.734150737543">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
 
     <!-- Primary Meta Tags -->
-    <title>Tail Free Sampling - Pygmalion AI</title>
-    <meta name="title" content="Tail Free Sampling - Pygmalion AI">
-    <meta name="description" content="Tail Free Sampling is a setting used to improve the consistency of the generated output." />
+    <title>Settings and Parameters - Pygmalion AI</title>
+    <meta name="title" content="Settings and Parameters - Pygmalion AI">
+    <meta name="description" content="You'll find a list of all settings in KoboldAI, Oobabooga's Text Generation WebUI, and TavernAI." />
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://alpindale.github.io/pygmalion-docs/settings/tail_free_sampling/" />
+    <link rel="canonical" href="https://alpindale.github.io/pygmalion-docs/settingsandparams/" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://alpindale.github.io/pygmalion-docs/settings/tail_free_sampling/">
-    <meta property="og:title" content="Tail Free Sampling - Pygmalion AI">
-    <meta property="og:description" content="Tail Free Sampling is a setting used to improve the consistency of the generated output.">
+    <meta property="og:url" content="https://alpindale.github.io/pygmalion-docs/settingsandparams/">
+    <meta property="og:title" content="Settings and Parameters - Pygmalion AI">
+    <meta property="og:description" content="You'll find a list of all settings in KoboldAI, Oobabooga's Text Generation WebUI, and TavernAI.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://alpindale.github.io/pygmalion-docs/settings/tail_free_sampling/">
-    <meta property="twitter:title" content="Tail Free Sampling - Pygmalion AI">
-    <meta property="twitter:description" content="Tail Free Sampling is a setting used to improve the consistency of the generated output.">
+    <meta property="twitter:url" content="https://alpindale.github.io/pygmalion-docs/settingsandparams/">
+    <meta property="twitter:title" content="Settings and Parameters - Pygmalion AI">
+    <meta property="twitter:description" content="You'll find a list of all settings in KoboldAI, Oobabooga's Text Generation WebUI, and TavernAI.">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("/pygmalion-docs/doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../static/icons/pyggy.svg" rel="icon" />
-    <link href="../../resources/css/retype.css?v=2.4.0.734149563814" rel="stylesheet" />
+    <link href="../static/icons/pyggy.svg" rel="icon" />
+    <link href="../resources/css/retype.css?v=2.4.0.734150737543" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.734149563814" data-turbo-eval="false" defer></script>
-    <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.734149563814" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../resources/js/config.js?v=2.4.0.734150737543" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../resources/js/lunr.js?v=2.4.0.734150737543" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -53,10 +53,10 @@
                 <!-- Logo -->
                 <div class="flex items-center justify-between h-full py-2 md:w-75">
                     <div class="flex items-center px-2 md:px-6">
-                        <a id="docs-site-logo" href="../../" class="flex items-center leading-snug text-2xl">
+                        <a id="docs-site-logo" href="../" class="flex items-center leading-snug text-2xl">
                             <span class="w-10 mr-2 grow-0 shrink-0 overflow-hidden">
-                                <img class="max-h-10 dark:hidden md:inline-block" src="../../static/icons/pygmalion_fixed.svg">
-                                <img class="max-h-10 hidden dark:inline-block" src="../../static/icons/pygmalion_fixed.svg">
+                                <img class="max-h-10 dark:hidden md:inline-block" src="../static/icons/pygmalion_fixed.svg">
+                                <img class="max-h-10 hidden dark:inline-block" src="../static/icons/pygmalion_fixed.svg">
                             </span>
                             <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">PygmalionAI</span>
                         </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Docs</span>
@@ -71,13 +71,13 @@
                         <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
                             <li class="mr-6">
                                 <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://discord.gg/invite/pygmalionai">
-                                    <img class="mb-px mr-1" width="18" src="../../static/icons/discord-logo.svg" />
+                                    <img class="mb-px mr-1" width="18" src="../static/icons/discord-logo.svg" />
                                     <span>Discord</span>
                                 </a>
                             </li>
                             <li class="mr-6">
                                 <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://huggingface.co/PygmalionAI">
-                                    <img class="mb-px mr-1" width="18" src="../../static/icons/hf-logo.svg" />
+                                    <img class="mb-px mr-1" width="18" src="../static/icons/hf-logo.svg" />
                                     <span>HuggingFace</span>
                                 </a>
                             </li>
@@ -169,13 +169,13 @@
                                 <ul class="flex flex-wrap justify-center items-center">
                                     <li class="mr-6">
                                         <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://discord.gg/invite/pygmalionai">
-                                            <img class="mb-px mr-1" width="18" src="../../static/icons/discord-logo.svg" />
+                                            <img class="mb-px mr-1" width="18" src="../static/icons/discord-logo.svg" />
                                             <span>Discord</span>
                                         </a>
                                     </li>
                                     <li class="mr-6">
                                         <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://huggingface.co/PygmalionAI">
-                                            <img class="mb-px mr-1" width="18" src="../../static/icons/hf-logo.svg" />
+                                            <img class="mb-px mr-1" width="18" src="../static/icons/hf-logo.svg" />
                                             <span>HuggingFace</span>
                                         </a>
                                     </li>
@@ -212,32 +212,231 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="tail-free-sampling" class="break-words">
+<doc-anchor-target id="settings-and-parameters" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#tail-free-sampling">#</doc-anchor-trigger>
-        <span>Tail Free Sampling</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#settings-and-parameters">#</doc-anchor-trigger>
+        <span>Settings and Parameters</span>
     </h1>
 </doc-anchor-target>
-<p><code v-pre>Tail Free Sampling</code> is a setting used to improve the consistency of the generated output. When generating new text, the model can use Tail Free Sampling to select the next word, but with less emphasis on the rare or extreme values.</p>
+<p>You&#x27;ll find a list of all settings in <a href="https://alpindale.github.io/pygmalion-docs/local-installation-(gpu)/kobold/">KoboldAI</a>, Oobabooga&#x27;s <a href="https://alpindale.github.io/pygmalion-docs/local-installation-(gpu)/oobabooga/">Text Generation WebUI</a>, and <a href="https://alpindale.github.io/pygmalion-docs/local-installation-(gpu)/tavern/">TavernAI</a>. Please use the Table of Contents to navigate through this page.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-300" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Work in Progress</h5>
+<p>Currently you&#x27;ll only find a list of settings in KoboldAI. The other UIs will be added soon but they&#x27;re more or less the same.</p>
+        </div>
+    </div>
+</div>
+<doc-anchor-target id="koboldai">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#koboldai">#</doc-anchor-trigger>
+        <span>KoboldAI</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="output-length">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#output-length">#</doc-anchor-trigger>
+        <span>Output Length</span>
+    </h3>
+</doc-anchor-target>
+<p>Output Length is a setting used to control the length of the output generated by the model. The output length setting will determine how long the model&#x27;s reply will be based on the value you set.</p>
+<p>For example, if you set the output length to 200, the model will generate a piece of text that is approximately 100 tokens long, depending on the specifics of the model and the input data.</p>
+<p>The Output Length setting can be useful for controlling the amount of output generated by the model and for ensuring that the generated text is of a consistent length. A higher value will take longer to generate.</p>
+<hr />
+<doc-anchor-target id="temperature">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#temperature">#</doc-anchor-trigger>
+        <span>Temperature</span>
+    </h3>
+</doc-anchor-target>
+<p>Temperature determines the randomness of sampling. A higher value can increase creativity, but can make the output less meaningful and coherent. Lower values will make the output more predictable, but it may become more repetitive.</p>
+<hr />
+<doc-anchor-target id="top-p-sampling">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#top-p-sampling">#</doc-anchor-trigger>
+        <span>Top P Sampling</span>
+    </h3>
+</doc-anchor-target>
+<p>Top_P is a way of generating text with an AI model that helps to make the output more diverse and interesting. When using Top_P, you select the most likely words to come next based on their probability of occurring, but only up to a certain cumulative probability threshold. This means that instead of always selecting the most likely word, the language model can choose from a wider range of words that are still reasonably likely to occur.</p>
+<p>For example, if you set Top_P to 0.5, the language model will only consider words that make up the top 50% of the probability distribution for the next word, rather than just the most likely word.</p>
+<p>You can can use Top_P to make the model output more varied and creative. By not always selecting the most likely word, the language model can surprise you with unexpected but still plausible words, creating more interesting and engaging text.</p>
+<hr />
+<doc-anchor-target id="top-k-sampling">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#top-k-sampling">#</doc-anchor-trigger>
+        <span>Top K Sampling</span>
+    </h3>
+</doc-anchor-target>
+<p>When using &quot;top k&quot;, you select the top k most likely words to come next based on their probability of occurring, where k is a fixed number that you specify.</p>
+<p>For example, if you set Top_K to 5, the language model will only consider the five most likely words to come next, rather than all the words in its vocabulary.</p>
+<p>You can use Top_K to control the amount of diversity in the model output. By limiting the selection to a small number of the most likely words, the language model can produce more predictable and conservative text. However, by increasing k, you can allow for more unexpected and creative choices in the generated text.</p>
+<p>Overall, Top_K can be useful for balancing the tradeoff between predictability and creativity in language model output.</p>
+<doc-anchor-target id="combining-top-k-with-top-p">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#combining-top-k-with-top-p">#</doc-anchor-trigger>
+        <span>Combining Top K with Top P</span>
+    </h4>
+</doc-anchor-target>
+<p>Combining Top_K and Top_P is a technique called nucleus sampling or Top_P sampling with Top_K cutoff. This technique allows you to use both methods together to generate even more diverse and interesting text.</p>
+<p>Here&#x27;s how it works: first, the model uses Top_p to select the most likely words up to a certain cumulative probability threshold, as explained in the Top_P page</p>
+<p>Then, it applies a Top_K cutoff to this set of words, selecting only the top k most likely words from the Top_P selection.</p>
+<p>By using both techniques together, you can generate text that is both diverse and controlled. The Top_P selection ensures that the language model has the freedom to choose from a range of plausible words, while the Top_K cutoff limits the number of choices to a manageable set of highly likely words.</p>
+<p>The specific values of Top_P and Top_K can be adjusted to achieve different levels of diversity and control in the generated text. For example, a higher Top_P value will allow for more diverse choices, while a lower Top_K value will provide more control over the output. It&#x27;s important to experiment with different settings to find the right balance for your specific use case.</p>
+<hr />
+<doc-anchor-target id="tail-free-sampling">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#tail-free-sampling">#</doc-anchor-trigger>
+        <span>Tail Free Sampling</span>
+    </h3>
+</doc-anchor-target>
+<p>Tail Free Sampling is a setting used to improve the consistency of the generated output. When generating new text, the model can use Tail Free Sampling to select the next word, but with less emphasis on the rare or extreme values.</p>
 <p>The slider is a tool that allows you to adjust the amount of Tail Free Sampling used by the model. When you pick a higher value, the model will be more likely to avoid selecting the rare or extreme values, which can help to increase the consistency of the generated output. This is because the model will be working from the bottom of the probability distribution, selecting more common and likely values and trimming the lowest probability tokens.</p>
+<hr />
+<doc-anchor-target id="typical-sampling">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#typical-sampling">#</doc-anchor-trigger>
+        <span>Typical Sampling</span>
+    </h3>
+</doc-anchor-target>
+<p>Typical Sampling is a setting used to control how the model selects the next token or word in the generated output. With typical sampling, the model selects the next token based on its probability distribution, meaning that more probable tokens are more likely to be selected.</p>
+<p>For example, if the model is generating a sentence and the next probable word is &quot;the&quot;, the model is more likely to select &quot;the&quot; as the next word with typical sampling. This can help to ensure that the generated output is fluent and coherent, as the model is more likely to select words that make sense in the given context.</p>
+<hr />
+<doc-anchor-target id="top-a-sampling">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#top-a-sampling">#</doc-anchor-trigger>
+        <span>Top A Sampling</span>
+    </h3>
+</doc-anchor-target>
+<p>Top A Sampling is a way to pick the next word in a sentence based on how important it is in the context. We use a &quot;leader&quot; number between 0 and 1 to help us decide which words are most important. Top-A considers the probability of the most likely token, and sets a limit based on its percentage. After this, remaining tokens are compared to this limit. If their probability is too low, they are removed from the pool. Increasing A results in a stricter limit. Lowering A results in a looser limit.</p>
+<p>This means that if the top token has a moderate likelihood of appearing, the pool of possibilities will be large. On the other hand, if the top token has a very high likelihood of appearing, then the pool will be 1-3 tokens at most. This ensures that structure remains solid, and focuses creative output in areas where it is actually wanted.</p>
+<hr />
+<doc-anchor-target id="repetition-penalty">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#repetition-penalty">#</doc-anchor-trigger>
+        <span>Repetition Penalty</span>
+    </h3>
+</doc-anchor-target>
+<p>Repetition Penalty is a setting used to control how often the model repeats certain words or phrases in the generated output. When the repetition penalty is set to a higher value, the model is less likely to repeat the same word or phrase multiple times in the output.</p>
+<doc-anchor-target id="repetition-penalty-range">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#repetition-penalty-range">#</doc-anchor-trigger>
+        <span>Repetition Penalty Range</span>
+    </h4>
+</doc-anchor-target>
+<p>If set higher than 0, repetition penality only applies to the last few tokens of the story rather than to the entire story. The slider controls the amount of tokens at the end of your story to apply it to.</p>
+<doc-anchor-target id="repetition-penalty-slope">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#repetition-penalty-slope">#</doc-anchor-trigger>
+        <span>Repetition Penalty Slope</span>
+    </h4>
+</doc-anchor-target>
+<p>If both this setting and Repetition Penality Range are set higher than 0, the repetition penality will be apply more strongly on tokens that are close to the end of the story. High values will result in the repetition penalty difference between the start and the end of your story being more apparent.</p>
+<hr />
+<doc-anchor-target id="alt-rep-pen">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#alt-rep-pen">#</doc-anchor-trigger>
+        <span>Alt Rep Pen</span>
+    </h3>
+</doc-anchor-target>
+<p>Alt Rep Pen applies Repetition Penalty as a logarithmic modifier rather than a linear modifier. This means that the penalty will be smaller for the first few repetitions and will increase more slowly as the number of repetitions increases.</p>
+<p>In simpler terms, the more your model repeats a token, the more severe the penalty becomes.</p>
+<hr />
+<doc-anchor-target id="context-tokens">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#context-tokens">#</doc-anchor-trigger>
+        <span>Context Tokens</span>
+    </h3>
+</doc-anchor-target>
+<p>Number of tokens to submit to the model for sampling/that are used to generate the output. Make sure this is higher than &quot;Output Length&quot;. Higher values increase the memory but it also increases the usage of VRAM/RAM.</p>
+<hr />
+<doc-anchor-target id="gens-per-action">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#gens-per-action">#</doc-anchor-trigger>
+        <span>Gens Per Action</span>
+    </h3>
+</doc-anchor-target>
+<p>The number of outputs the model will generate at once. Use this setting if your responses are too short; it will make the bot generate twice in order. Increases VRAM/RAM usage.</p>
+<hr />
+<doc-anchor-target id="wi-depth-world-info">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#wi-depth-world-info">#</doc-anchor-trigger>
+        <span>WI Depth (World Info)</span>
+    </h3>
+</doc-anchor-target>
+<p>Number of actions (Input/Output) from the end of the story to scan for World Info keys.</p>
+<p>Excerpt from the <a href="https://github.com/KoboldAI/KoboldAI-Client/wiki/Memory,-Author%27s-Note-and-World-Info#world-info">KoboldAI wiki</a>:</p>
+<p>World Info is where you can flesh out the details of your wider world. The engine will help conserve tokens in your context by only inserting World Info entries when their keywords are mentioned in the actual story text. However, they are inserted toward the top, after the Memory but before the actual story text, so they have a moderate effect on what the AI generates.</p>
+<p>World Info entries are like an encyclopedia entry, providing a succinct overview of the most relevant information about whatever topic - characters, species, places, items, etc...</p>
+<p>The AI doesn&#x27;t see the key word or title of the World Info entry &quot;behind the scenes&quot;, so the actual text should be an entirely self-contained description. For example, if you have a World Info entry titled &quot;Director Abrams&quot;, the entry should say &quot;Director Abrams is the executive and governor of the colony&quot; rather than just &quot;the executive and governor of the colony&quot;, because the AI will only see the entry.</p>
+<p>Use World Info entries that cross reference each other appropriately to create a more dynamic and interactive world. If your &quot;combat android&quot; World Info entry mentions that they carry plasma rifles, then create a short &quot;plasma rifle&quot; entry separately. If you create a &quot;Admin Tower&quot; entry that mentions containing a command center, computer core, and offices, create distinct &quot;command center&quot;, &quot;computer core&quot;, and &quot;offices&quot; entries that mention being located in the Admin Tower.</p>
+<p>It helps to use many key words that might pull in a World Info entry whenever it might be appropriate, rather than just its proper name(s).</p>
+<p>If you have a rich tapestry of interconnected World Info entries with many relevant keywords, you may find that multiple World Info entries are getting pulled into the context at any given time. So it&#x27;s good to keep them fairly short (50 tokens for minor stuff, 100 tokens for significant characters, no more than 150 for major keystones of the setting).</p>
+<hr />
+<doc-anchor-target id="prefilled-memory">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#prefilled-memory">#</doc-anchor-trigger>
+        <span>Prefilled Memory</span>
+    </h3>
+</doc-anchor-target>
+<p>If you create a &quot;Random Story&quot; by clicking on the &quot;New Game&quot; button with this setting enabled, the memory of the current story will be loaded into the memory of the new Random Story.</p>
+<hr />
+<doc-anchor-target id="chat-mode">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#chat-mode">#</doc-anchor-trigger>
+        <span>Chat Mode</span>
+    </h3>
+</doc-anchor-target>
+<p>This mode optimizes KoboldAI for chatting/using conversational models. Use this mode for Pygmalion or other chatbot models.</p>
+<hr />
+<doc-anchor-target id="adventure-mode">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#adventure-mode">#</doc-anchor-trigger>
+        <span>Adventure Mode</span>
+    </h3>
+</doc-anchor-target>
+<p>Turn this on if you are playing a &quot;Choose Your Adventure&quot; model. Does not apply to Pygmalion.</p>
+<hr />
+<doc-anchor-target id="dynamic-wi-scan-world-info">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#dynamic-wi-scan-world-info">#</doc-anchor-trigger>
+        <span>Dynamic WI Scan (World Info)</span>
+    </h3>
+</doc-anchor-target>
+<p>Scans the AI&#x27;s output for World Info keys as it is generating the output. If you disable this, KoboldAI will only scan the output after the bot has finished generating the text.</p>
+<hr />
+<doc-anchor-target id="token-probabilities">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#token-probabilities">#</doc-anchor-trigger>
+        <span>Token Probabilities</span>
+    </h3>
+</doc-anchor-target>
+<p>Add a context menu beside the output showing what other words were considered as it was generated.</p>
+<hr />
+<doc-anchor-target id="token-streaming">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#token-streaming">#</doc-anchor-trigger>
+        <span>Token Streaming</span>
+    </h3>
+</doc-anchor-target>
+<p>Shows tokens as they are generated. Creates a similar effect to when other models like ChatGPT or Character.AI display their output in real-time.</p>
 
-                                <div class="flex items-center mt-6 mb-6 clear-both">
-                                    <span>
-                                        <a href="../../tags/">
-                                            <svg class="inline-block -mb-px mr-1.5 text-blue-500 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" overflow="visible" fill="currentColor"><g><path d="M21.3 9.88l-8.59-8.59C12.52 1.11 12.27 1 12 1H2c-.55 0-1 .45-1 1v10c0 .27.11.52.29.71l8.59 8.58c.57.57 1.32.88 2.12.88s1.55-.31 2.12-.88l7.17-7.17a3.009 3.009 0 00.01-4.24zm-1.42 2.82l-7.17 7.17c-.39.39-1.02.39-1.42 0L3 11.59V3h8.59l8.29 8.29c.39.39.39 1.03 0 1.41z" /><path d="M7.01 6C6.45 6 6 6.45 6 7s.45 1 1 1 1-.45 1-1-.44-1-.99-1z" /></g></svg>
-                                        </a>
-                                        <span class="mr-2"><a href="../../tags/settings/" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
-                                    <span>settings</span>
-                                </a></span>
-                                    </span>
-                                </div>
-                
+                                
                                 <!-- Required only on API pages -->
                                 <doc-toolbar-member-filter-no-results />
                             </div>
                             <footer class="clear-both">
                                 <div class="flex flex-wrap items-center justify-between mt-14">
-                                    <a class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-blue-500 dark:text-blue-400 hover:text-blue-700 hover:underline" href="https://github.com/AlpinDale/pygmalion-docs/blob/main/src/settings/Tail_Free_Sampling.md" target="_blank" rel="noopener">
+                                    <a class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-blue-500 dark:text-blue-400 hover:text-blue-700 hover:underline" href="https://github.com/AlpinDale/pygmalion-docs/blob/main/src/settingsandparams.md" target="_blank" rel="noopener">
                                         <svg class="mr-1.5" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M20 12c-.55 0-1 .45-1 1v7c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h7c.55 0 1-.45 1-1s-.45-1-1-1H4C2.35 3 1 4.35 1 6v14c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-7c0-.55-.45-1-1-1z" /><path d="M22.21 1.79c-1.18-1.18-3.24-1.18-4.41 0l-9.5 9.5c-.13.13-.22.29-.26.46l-1 4c-.08.34.01.7.26.95.18.2.44.3.7.3.08 0 .16-.01.24-.03l4-1c.18-.04.34-.13.46-.26l9.5-9.5c1.22-1.22 1.22-3.2.01-4.42zm-1.42 3l-9.3 9.3-2.11.53.53-2.11 9.3-9.3c.42-.42 1.16-.42 1.59 0 .43.43.43 1.15-.01 1.58z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         <span>Edit this page</span>
                                     </a>
@@ -245,23 +444,16 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../settings/top_k_sampling/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../local-installation-(cpu)/pygcpp/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Top K Sampling</span>
+                                                <span class="block mt-1">Pygmalion C++</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../settings/typical_sampling/">
-                                            <span>
-                                                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Typical Sampling</span>
-                                            </span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
-                                        </a>
                                     </div>
                                 </nav>
                             </footer>
@@ -302,7 +494,7 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Tail Free Sampling", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "Settings and Parameters", level: 1, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
     <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="387ba2b4-1f5e-4710-89eb-a5e044c6af98";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 </body>
 </html>
