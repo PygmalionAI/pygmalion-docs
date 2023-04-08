@@ -1,6 +1,6 @@
 input: ./src
 output: .retype
-url: https://docs.alpindale.dev/pygmalion-docs
+url: https://docs.alpindale.dev
 branding:
   logo: /static/icons/Pygmalion_Fixed.svg
   logoDark: /static/icons/Pygmalion_Fixed.svg
