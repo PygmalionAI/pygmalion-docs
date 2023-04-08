@@ -23,7 +23,7 @@ NVIDIA cards are mostly supported, though it's not recommended to use GPUs with 
 The setup process will be different for both Windows and Linux (MacOS currently not supported). 
 
 ### Windows
-The official [Game-Ready Drivers](https://www.nvidia.com/en-us/geforce/drivers/) provided by NVIDIA will set up CUDA for you, and that's all you need to do!
+You'll need to install the CUDA Toolkit to enable compute on your NVIDIA GPU. You can download them [here](https://developer.nvidia.com/cuda-11-7-0-download-archive). Note that you should install version 11.7 CUDA, as the newer or older versions have been found to not work with KoboldAI.
 
 ### Linux
 CUDA installation is relatively easy for Linux (unless you're on Fedora). For this particular guide, we'll be covering two base distros - [Arch Linux](https://www.archlinux.org) and [Debian](https://www.debian.org/). More will be added later.
