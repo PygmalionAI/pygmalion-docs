@@ -95,4 +95,4 @@ Install Termux from F-Droid.
 
 ## Connecting to Tavern
 
-You can connect Pygmalion C++ to Tavern the same way you would the regular KoboldAI. There's a guide included [here](https://alpindale.github.io/pygmalion-docs/local-installation-(gpu)/tavern/). Note that this won't work for Android, as TavernAI is currently not available for Android locally.
+You can connect Pygmalion C++ to Tavern the same way you would the regular KoboldAI. There's a guide included [here](https://docs.alpindale.dev/pygmalion-docs/local-installation-(gpu)/tavern/). Note that this won't work for Android, as TavernAI is currently not available for Android locally.

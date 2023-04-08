@@ -17,7 +17,7 @@ Overall, `Top_K` can be useful for balancing the tradeoff between predictability
 
 Combining `Top_K` and `Top_P` is a technique called nucleus sampling or Top_P sampling with Top_K cutoff. This technique allows you to use both methods together to generate even more diverse and interesting text.
 
-Here's how it works: first, the model uses `Top_p` to select the most likely words up to a certain cumulative probability threshold, as explained in the [`Top_P` page](https://alpindale.github.io/pygmalion-docs/settings/top_p)
+Here's how it works: first, the model uses `Top_p` to select the most likely words up to a certain cumulative probability threshold, as explained in the [`Top_P` page](https://docs.alpindale.dev/pygmalion-docs/settings/top_p)
 
  Then, it applies a `Top_K` cutoff to this set of words, selecting only the top k most likely words from the `Top_P` selection.
 

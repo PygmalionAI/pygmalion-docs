@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://alpindale.github.io/pygmalion-docs/sitemap.xml.gz
+Sitemap: https://docs.alpindale.dev/pygmalion-docs/sitemap.xml.gz
