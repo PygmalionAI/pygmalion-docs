@@ -1,5 +1,7 @@
 ## Pygmalion Docs
 
+**You can find the website at [docs.alpindale.dev](https://docs.alpindale.dev)**
+
 Running the docs on your PC locally:
 
 #### Requirements:
