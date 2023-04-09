@@ -21,7 +21,7 @@ Please make sure you've read the Overview and Setting up your GPU pages first.
 
 [!file KoboldAI](https://koboldai.org/windows)
 - When you reach this part, type `2` and press enter.
-![/static/kobold-local-3.png]
+![](/static/kobold-local-3.png)
 - Search for KoboldAI in the Start Menu and launch it.
 !!!warning
 Don't launch KoboldAI as Administrator!
