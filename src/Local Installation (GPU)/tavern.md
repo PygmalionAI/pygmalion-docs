@@ -56,7 +56,7 @@ git clone https://github.com/TavernAI/TavernAI && cd TavernAI
 npm i && node server.js
 ```
 
-- Connect your KoboldAI instance (works both locally and with Colab)
+### Using TavernAI
 
 ![](/static/tavern-local1.png)![](/static/tavern-local2.png)
 
