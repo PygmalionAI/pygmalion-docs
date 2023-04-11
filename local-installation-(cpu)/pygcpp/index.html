@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.734326460871">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.734507677523">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -33,12 +33,12 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/icons/pyggy.svg" rel="icon" />
-    <link href="../../resources/css/retype.css?v=2.4.0.734326460871" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.734507677523" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.734326460871" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.734507677523" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.734326460871" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.734326460871" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.734507677523" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.734507677523" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -219,6 +219,13 @@
     </h1>
 </doc-anchor-target>
 <p>Initially, the only way to run Pygmalion C++ was through this repo: <a href="https://github.com/AlpinDale/pygmalion.cpp">AlpinDale/pygmalion.cpp</a>. However, thanks to the efforts of concedo from the KoboldAI team, we now have an easy-to-run executable for windows, and a compilable UI for Linux/MacOS/Android users.</p>
+<doc-anchor-target id="the-4-bit-quantized-6b-model">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#the-4-bit-quantized-6b-model">#</doc-anchor-trigger>
+        <span>The 4-bit quantized 6B model</span>
+    </h2>
+</doc-anchor-target>
+<p>You can download the model from <a href="https://huggingface.co/concedo/pygmalion-6bv3-ggml-ggjt/resolve/main/pygmalion-6b-v3-ggml-ggjt-q4_0.bin">here</a>. This should be faster than the previous version quantized by me, but if you run into any issues, you can still download the old version from <a href="https://huggingface.co/alpindale/pygmalion-6b-ggml/resolve/main/pygmalion-6b-v3-q4_0.bin">here</a>.</p>
 <hr />
 <doc-anchor-target id="windows-guide">
     <h2>
@@ -226,7 +233,7 @@
         <span>Windows Guide</span>
     </h2>
 </doc-anchor-target>
-<p>Running on Windows is exceedingly simple. You can download the <code v-pre>.exe</code> file from <a href="https://github.com/LostRuins/koboldcpp/releases/latest">here</a>, and the converted 4-bit quantized Pygmalion 6B model from <a href="https://huggingface.co/alpindale/pygmalion-6b-ggml/resolve/main/pygmalion-6b-v3-q4_0.bin">here</a>.</p>
+<p>Running on Windows is exceedingly simple. You can download the <code v-pre>.exe</code> file from <a href="https://github.com/LostRuins/koboldcpp/releases/latest">here</a>, and the converted 4-bit quantized Pygmalion 6B model linked above.</p>
 <p>Once you have both files downloaded, all you need to do is drag the <code v-pre>pygmalion-6b-v3-q4_0.bin</code> file and drop it into <code v-pre>koboldcpp.exe</code> file. This will load the model and start a Kobold instance in <a href="http://127.0.0.1:5001">localhost:5001</a> on your browser.</p>
 <hr />
 <doc-anchor-target id="macos-guide">
@@ -257,7 +264,7 @@
 <li>Extract it anywhere you want.</li>
 <li>Open a Terminal inside the extracted folder.</li>
 <li>Type in <code v-pre>make</code> and let it compile the program.</li>
-<li>Once it&#x27;s finished, download the model <a href="https://huggingface.co/alpindale/pygmalion-6b-ggml/resolve/main/pygmalion-6b-v3-q4_0.bin">here</a> and place it inside the <code v-pre>koboldcpp</code> folder.</li>
+<li>Once it&#x27;s finished, download the model and place it inside the <code v-pre>koboldcpp</code> folder.</li>
 <li>Run the model with:</li>
 </ol>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -316,7 +323,7 @@
 <pre class="language-bash"><code v-pre class="language-bash">git clone https://github.com/LostRuins/koboldcpp        # Clone the koboldcpp repo
 cd koboldcpp                                            # Change directories to the repo
 make                                                    # Compile binaries
-wget https://huggingface.co/alpindale/pygmalion-6b-ggml/resolve/main/pygmalion-6b-v3-q4_0.bin   # Download the model
+wget https://huggingface.co/concedo/pygmalion-6bv3-ggml-ggjt/resolve/main/pygmalion-6b-v3-ggml-ggjt-q4_0.bin   # Download the model, skip if you've already done this
 python koboldcpp.py pygmalion-6b-v3-q4_0.bin            # Load the model</code></pre>
 </doc-codeblock></div>
 <p>Open your browser and navigate to <a href="http:127.0.0.1:5001">localhost:5001</a>. You&#x27;re all set.</p>
@@ -381,11 +388,12 @@ python koboldcpp.py pygmalion-6b-v3-q4_0.bin            # Load the model</code><
 <ol>
 <li>Open Termux.</li>
 <li>Type in the following commands one by one and press enter to run them:</li>
-<li><code v-pre>pkg update &amp;&amp; pkg install python clang python-pip git openssl</code></li>
+<li><code v-pre>pkg update &amp;&amp; pkg upgrade</code></li>
+<li><code v-pre>pkg install python clang python-pip git openssl</code></li>
 <li><code v-pre>pip install psutil</code></li>
 <li><code v-pre>git clone https://github.com/LostRuins/koboldcpp &amp;&amp; cd koboldcpp</code></li>
 <li><code v-pre>make</code></li>
-<li><code v-pre>wget https://huggingface.co/alpindale/pygmalion-6b-ggml/resolve/main/pygmalion-6b-v3-q4_0.bin</code></li>
+<li><code v-pre>wget https://huggingface.co/concedo/pygmalion-6bv3-ggml-ggjt/resolve/main/pygmalion-6b-v3-ggml-ggjt-q4_0.bin</code></li>
 <li><code v-pre>python koboldcpp.py pygmalion-6b-v3-q4_0.bin</code></li>
 <li>Switch to your browser (don&#x27;t close Termux) and go to <a href="http://127.0.0.1:5001">localhost:5001</a>.</li>
 <li>You&#x27;re done!</li>
