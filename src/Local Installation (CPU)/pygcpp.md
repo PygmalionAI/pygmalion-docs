@@ -4,12 +4,15 @@ icon: code-square
 title: Pygmalion C++
 ---
 
-Initially, the only way to run Pygmalion C++ was through this repo: [AlpinDale/pygmalion.cpp](https://github.com/AlpinDale/pygmalion.cpp). However, thanks to the efforts of concedo from the KoboldAI team, we now have an easy-to-run executable for windows, and a compilable UI for Linux/MacOS/Android users. 
+Initially, the only way to run Pygmalion C++ was through this repo: [AlpinDale/pygmalion.cpp](https://github.com/AlpinDale/pygmalion.cpp). However, thanks to the efforts of concedo from the KoboldAI team, we now have an easy-to-run executable for windows, and a compilable UI for Linux/MacOS/Android users.
+
+## The 4-bit quantized 6B model
+You can download the model from [here](https://huggingface.co/concedo/pygmalion-6bv3-ggml-ggjt/resolve/main/pygmalion-6b-v3-ggml-ggjt-q4_0.bin). This should be faster than the previous version quantized by me, but if you run into any issues, you can still download the old version from [here](https://huggingface.co/alpindale/pygmalion-6b-ggml/resolve/main/pygmalion-6b-v3-q4_0.bin).
 
 ***
 ## Windows Guide
 
-Running on Windows is exceedingly simple. You can download the `.exe` file from [here](https://github.com/LostRuins/koboldcpp/releases/latest), and the converted 4-bit quantized Pygmalion 6B model from [here](https://huggingface.co/alpindale/pygmalion-6b-ggml/resolve/main/pygmalion-6b-v3-q4_0.bin).
+Running on Windows is exceedingly simple. You can download the `.exe` file from [here](https://github.com/LostRuins/koboldcpp/releases/latest), and the converted 4-bit quantized Pygmalion 6B model linked above.
 
 Once you have both files downloaded, all you need to do is drag the `pygmalion-6b-v3-q4_0.bin` file and drop it into `koboldcpp.exe` file. This will load the model and start a Kobold instance in [localhost:5001](http://127.0.0.1:5001) on your browser.
 
@@ -28,7 +31,7 @@ The [ggml](https://github.com/ggerganov/ggml) library is primarily designed for 
 2. Extract it anywhere you want. 
 3. Open a Terminal inside the extracted folder.
 4. Type in `make` and let it compile the program.
-5. Once it's finished, download the model [here](https://huggingface.co/alpindale/pygmalion-6b-ggml/resolve/main/pygmalion-6b-v3-q4_0.bin) and place it inside the `koboldcpp` folder.
+5. Once it's finished, download the model and place it inside the `koboldcpp` folder.
 6. Run the model with:
 ```bash
 python koboldcpp.py pygmalion-6b-v3-q4_0.bin
@@ -57,7 +60,7 @@ Run these commands in order:
 git clone https://github.com/LostRuins/koboldcpp        # Clone the koboldcpp repo
 cd koboldcpp                                            # Change directories to the repo
 make                                                    # Compile binaries
-wget https://huggingface.co/alpindale/pygmalion-6b-ggml/resolve/main/pygmalion-6b-v3-q4_0.bin   # Download the model
+wget https://huggingface.co/concedo/pygmalion-6bv3-ggml-ggjt/resolve/main/pygmalion-6b-v3-ggml-ggjt-q4_0.bin   # Download the model, skip if you've already done this
 python koboldcpp.py pygmalion-6b-v3-q4_0.bin            # Load the model
 ```
 
@@ -83,14 +86,15 @@ Install Termux from F-Droid.
 
 1. Open Termux.
 2. Type in the following commands one by one and press enter to run them:
-3. `pkg update && pkg install python clang python-pip git openssl`
-4. `pip install psutil`
-5. `git clone https://github.com/LostRuins/koboldcpp && cd koboldcpp`
-6. `make`
-7. `wget https://huggingface.co/alpindale/pygmalion-6b-ggml/resolve/main/pygmalion-6b-v3-q4_0.bin`
-8. `python koboldcpp.py pygmalion-6b-v3-q4_0.bin`
-9. Switch to your browser (don't close Termux) and go to [localhost:5001](http://127.0.0.1:5001).
-10. You're done!
+3. `pkg update && pkg upgrade`
+4. `pkg install python clang python-pip git openssl`
+5. `pip install psutil`
+6. `git clone https://github.com/LostRuins/koboldcpp && cd koboldcpp`
+7. `make`
+8. `wget https://huggingface.co/concedo/pygmalion-6bv3-ggml-ggjt/resolve/main/pygmalion-6b-v3-ggml-ggjt-q4_0.bin`
+9. `python koboldcpp.py pygmalion-6b-v3-q4_0.bin`
+10. Switch to your browser (don't close Termux) and go to [localhost:5001](http://127.0.0.1:5001).
+11. You're done!
 
 
 ## Connecting to Tavern
