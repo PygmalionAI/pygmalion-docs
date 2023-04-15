@@ -12,7 +12,7 @@ SillyTavern is just an UI, you need to connect it to a backend ([KoboldAI](https
 ![](/static/SillyTavern.PNG)
 
 ## Installation
-Installing TavernAI is simple. It *officially* supports the following operating systems:
+Installing SillyTavern is simple. It *officially* supports the following operating systems:
 - [Windows x64](https://docs.alpindale.dev/local-installation-(gpu)/sillytavern/#windows-installation)
 - [Linux x64](https://docs.alpindale.dev/local-installation-(gpu)/sillytavern/#linuxmacos-installation)
 - [MacOS (Darwin x64)](https://docs.alpindale.dev/local-installation-(gpu)/sillytavern/#linuxmacos-installation)
