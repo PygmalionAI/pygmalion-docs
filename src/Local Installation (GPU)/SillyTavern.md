@@ -86,7 +86,7 @@ npm i && node server.js
 ![](/static/STconnect.PNG)
 
 !!!info The API URL
-If you're running KoboldAI locally, all you need to paste in there is `http://localhost:5000/api`. If you're using Google Colab, copy your remote URL instead. If it ends with a # or new_ui, remove them and replace them with /api. If they don't, simply adding /api will suffice.
+If you're running KoboldAI locally, all you need to paste in there is `http://localhost:5000/api`. If you're using Google Colab, copy your [remote URL](https://docs.alpindale.dev/cloud-installation/koboldai/#using-the-remote-url-to-connect-sillytavern) instead. If it ends with a # or new_ui, remove them and replace them with /api. If they don't, simply adding /api will suffice.
 !!!
 
 !!!success You're done!
