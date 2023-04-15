@@ -1,6 +1,7 @@
 ---
 order: 10000
 icon: book
+title: TextGen WebUI
 ---
 
 # Colab Notebooks
