@@ -44,8 +44,9 @@ If everything is working, the CMD should look like this and a SillyTavern tab sh
 
 ![](/static/STcmd.PNG)
 
-Now you still have to connect it !
-
+!!!danger
+You still have to [connect](https://docs.alpindale.dev/local-installation-(gpu)/sillytavern/#connect-sillytavern) it !
+!!!
 
 
 ### Linux/MacOS Installation
