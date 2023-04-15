@@ -12,7 +12,7 @@ You can download the model from [here](https://huggingface.co/concedo/pygmalion-
 ***
 ## Windows Guide
 
-Running on Windows is exceedingly simple. You can download the `.exe` file from [here](https://github.com/LostRuins/koboldcpp/releases/latest), and the converted 4-bit quantized Pygmalion 6B model linked above.
+Running on Windows is exceedingly simple. You can download the `.exe` file from [here](https://github.com/LostRuins/koboldcpp/releases/latest), and the Pygmalion 6B model linked above.
 
 Once you have both files downloaded, all you need to do is drag the `pygmalion-6b-v3-q4_0.bin` file and drop it into `koboldcpp.exe` file. This will load the model and start a Kobold instance in [localhost:5001](http://127.0.0.1:5001) on your browser.
 
@@ -25,6 +25,14 @@ The [ggml](https://github.com/ggerganov/ggml) library is primarily designed for 
 - Python
 - C toolchain
 
+##### Install the requirements:
+1. Open a terminal.
+2. Paste this command and press enter to execute it:
+```bash
+xcode-select --install
+```
+3. Install Python from [here](https://www.python.org/ftp/python/3.10.9/python-3.10.9-macos11.pkg).
+
 ##### Installation:
 
 1. Download the latest release file from [here](https://github.com/LostRuins/koboldcpp/releases/latest). You're looking for the `Source code (zip)` file. 
@@ -34,15 +42,18 @@ The [ggml](https://github.com/ggerganov/ggml) library is primarily designed for 
 5. Once it's finished, download the model and place it inside the `koboldcpp` folder.
 6. Run the model with:
 ```bash
-python koboldcpp.py pygmalion-6b-v3-q4_0.bin
+python3 koboldcpp.py pygmalion-6b-v3-ggml-ggjt-q4_0.bin
 ```
 7. Open your browser and navigate to [http://127.0.0.1:5001](http://127.0.0.1:5001).
 8. You're done!
 
-!!!info No module named 'psutil'?
-If you receive such an error doing step 6, run `pip install psutil` and then try again.
-!!!
-***
+###### macOS Quickstart
+If you want to launch it again later, all you need to do is open a terminal inside the `koboldcpp` folder, and running:
+```bash
+python3 koboldcpp.py pygmalion-6b-v3-ggml-ggjt-q4_0.bin
+```
+Make sure you bookmark [http://localhost:5001](http://localhost:5001) so you can easily open the Koboldcpp interface.
+
 ## Linux Guide
 
 ##### Requirements:
@@ -61,14 +72,18 @@ git clone https://github.com/LostRuins/koboldcpp        # Clone the koboldcpp re
 cd koboldcpp                                            # Change directories to the repo
 make                                                    # Compile binaries
 wget https://huggingface.co/concedo/pygmalion-6bv3-ggml-ggjt/resolve/main/pygmalion-6b-v3-ggml-ggjt-q4_0.bin   # Download the model, skip if you've already done this
-python koboldcpp.py pygmalion-6b-v3-q4_0.bin            # Load the model
+python koboldcpp.py pygmalion-6b-v3-ggml-ggjt-q4_0.bin            # Load the model
 ```
 
 Open your browser and navigate to [localhost:5001](http:127.0.0.1:5001). You're all set.
 
-!!!info No module named 'psutil'?
-If you receive such an error doing step 6, run `pip install psutil` and then try again.
-!!!
+###### Linux Quickstart
+If you want to launch it again later, all you need to do is open a terminal inside the `koboldcpp` folder, and running:
+```bash
+python3 koboldcpp.py pygmalion-6b-v3-ggml-ggjt-q4_0.bin
+```
+Make sure you bookmark [http://localhost:5001](http://localhost:5001) so you can easily open the Koboldcpp interface.
+
 
 ***
 ## Android
@@ -92,11 +107,21 @@ Install Termux from F-Droid.
 6. `git clone https://github.com/LostRuins/koboldcpp && cd koboldcpp`
 7. `make`
 8. `wget https://huggingface.co/concedo/pygmalion-6bv3-ggml-ggjt/resolve/main/pygmalion-6b-v3-ggml-ggjt-q4_0.bin`
-9. `python koboldcpp.py pygmalion-6b-v3-q4_0.bin`
+9. `python koboldcpp.py pygmalion-6b-v3-ggml-ggjt-q4_0.bin`
 10. Switch to your browser (don't close Termux) and go to [localhost:5001](http://127.0.0.1:5001).
 11. You're done!
 
+##### Android Quickstart
+If you want to launch it again, open Termux and make sure you're in the koboldcpp folder. You can confirm this by checking whether the bash prompt is `~ $` or `~/koboldcpp $`. If it's the former, run `cd koboldcpp`. If it's the latter, continue.
 
+Type this in to run koboldcpp again:
+```
+python koboldcpp.py pygmalion-6b-v3-ggml-ggjt-q4_0.bin
+```
+
+Now open [http://localhost:5001](http://localhost:5001) on your browser.
+
+***
 ## Connecting to Tavern
 
 You can connect Pygmalion C++ to Tavern the same way you would the regular KoboldAI. There's a guide included [here](https://docs.alpindale.dev/local-installation-(gpu)/tavern/). Note that this won't work for Android, as TavernAI is currently not available for Android locally.
