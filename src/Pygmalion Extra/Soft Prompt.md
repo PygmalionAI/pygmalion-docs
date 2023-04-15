@@ -1,6 +1,6 @@
 ---
 order: 1000
-icon: ":scroll:"
+icon: ":receipt:"
 title: Soft Prompts
 ---
 
