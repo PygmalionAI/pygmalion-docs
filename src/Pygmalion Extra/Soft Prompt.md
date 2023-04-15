@@ -1,6 +1,6 @@
 ---
 order: 1000
-icon: ":desktop_computer:"
+icon: ":scroll:"
 title: Soft Prompts
 ---
 
