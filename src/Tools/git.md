@@ -13,9 +13,9 @@ Git gives you access to useful commands, such as `git clone`. You can use it to 
 Many of our tutorials use Git, so you should consider installing it by following the instructions below.
 !!!
 
-- [Windows x64]()
+- [Windows x64](https://docs.alpindale.dev/tools/git/#windows)
 - [Linux x64]()
-- [MacOS (Darwin x64)]()
+- [MacOS (Darwin x64)](https://docs.alpindale.dev/tools/git/#macos)
 
 
 ## Windows
