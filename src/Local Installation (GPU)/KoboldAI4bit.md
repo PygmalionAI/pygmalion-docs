@@ -100,7 +100,7 @@ In your Kobold folder, naviguate to the `models` folder.
 
 Inside, open a PowerShell in that folder and run the following command :
 
-`git clone https://huggingface.co/mayaeary/pygmalion-6b-4bit-128g`
+`git lfs clone https://huggingface.co/mayaeary/pygmalion-6b-4bit-128g`
 
 The model should be downloaded in your `models` folder.
 
