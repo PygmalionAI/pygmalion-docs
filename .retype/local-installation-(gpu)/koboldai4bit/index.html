@@ -11,26 +11,26 @@
     <meta name="generator" content="Retype 2.4.0">
 
     <!-- Primary Meta Tags -->
-    <title>Vast AI - Pygmalion AI</title>
-    <meta name="title" content="Vast AI - Pygmalion AI">
-    <meta name="description" content="Vast AI is a cloud computing service that provides high-end consumer and datacenter GPUs for very cheap prices." />
+    <title>KoboldAI 4bit - Pygmalion AI</title>
+    <meta name="title" content="KoboldAI 4bit - Pygmalion AI">
+    <meta name="description" content="KoboldAI is a browser-based front-end for AI-assisted writing and chatting with multiple local and remote AI models." />
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://docs.alpindale.dev/cloud-installation/vast/" />
+    <link rel="canonical" href="https://docs.alpindale.dev/local-installation-(gpu)/koboldai4bit/" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.alpindale.dev/cloud-installation/vast/">
-    <meta property="og:title" content="Vast AI - Pygmalion AI">
-    <meta property="og:description" content="Vast AI is a cloud computing service that provides high-end consumer and datacenter GPUs for very cheap prices.">
-    <meta property="og:image" content="https://docs.alpindale.dev/static/vast1.png">
+    <meta property="og:url" content="https://docs.alpindale.dev/local-installation-(gpu)/koboldai4bit/">
+    <meta property="og:title" content="KoboldAI 4bit - Pygmalion AI">
+    <meta property="og:description" content="KoboldAI is a browser-based front-end for AI-assisted writing and chatting with multiple local and remote AI models.">
+    <meta property="og:image" content="https://docs.alpindale.dev/static/openpswindows.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.alpindale.dev/cloud-installation/vast/">
-    <meta property="twitter:title" content="Vast AI - Pygmalion AI">
-    <meta property="twitter:description" content="Vast AI is a cloud computing service that provides high-end consumer and datacenter GPUs for very cheap prices.">
-    <meta property="twitter:image" content="https://docs.alpindale.dev/static/vast1.png">
+    <meta property="twitter:url" content="https://docs.alpindale.dev/local-installation-(gpu)/koboldai4bit/">
+    <meta property="twitter:title" content="KoboldAI 4bit - Pygmalion AI">
+    <meta property="twitter:description" content="KoboldAI is a browser-based front-end for AI-assisted writing and chatting with multiple local and remote AI models.">
+    <meta property="twitter:image" content="https://docs.alpindale.dev/static/openpswindows.png">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -40,6 +40,7 @@
     <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.734996029720" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
     <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.734996029720" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.734996029720" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -213,77 +214,118 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="vast-ai" class="break-words">
+<doc-anchor-target id="koboldai-4bit" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#vast-ai">#</doc-anchor-trigger>
-        <span>Vast AI</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#koboldai-4bit">#</doc-anchor-trigger>
+        <span>KoboldAI 4bit</span>
     </h1>
 </doc-anchor-target>
-<p><a href="https://vast.ai">Vast AI</a> is a cloud computing service that provides high-end consumer and datacenter GPUs for very cheap prices. You can easily rent one of their many GPUs and use them to run Pygmalion AI.</p>
-<doc-anchor-target id="why-vastai">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#why-vastai">#</doc-anchor-trigger>
-        <span>Why Vast.ai?</span>
-    </h2>
-</doc-anchor-target>
-<p>Google Colab offers free GPUs, however, Google is quite restrictive about how the end-user makes use of their notebooks. They have already banned PygmalionAI specifically from their notebooks, so Colab users will be very limited in what they can do. Due to their cheap prices, vast.ai should be quite affordable for the majority of users.</p>
-<doc-anchor-target id="get-started">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#get-started">#</doc-anchor-trigger>
-        <span>Get started</span>
-    </h2>
-</doc-anchor-target>
-<p>Use <a href="https://cloud.vast.ai/?ref_id=59151&amp;template_id=7fa3f8c321d7055490fe5d3bc5834528">this url</a> to set up a PygmalionAI docker template. This will install all the necessary requirements to run PygmalionAI via a docker image.</p>
-<p>After opening the URL, you&#x27;ll be prompted to sign up if it&#x27;s your first time using vast.ai&#x27;s services.</p>
-<p>You&#x27;ll be greeted with the Instances page, where you can select which GPU to use. For PygmalionAI, the cheaptest and best option is an NVIDIA RTX A5000 24GB, which allows for the maximum context size at 2048 tokens.
-<figure class="content-center">
-    <img src="../../static/vast1.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<p>Make sure you set the Disk size to at least 40GB, and the price to the increasing order, as demonstrated in the screenshot above.</p>
-<p>Assuming you&#x27;ve set up a <a href="https://cloud.vast.ai/billing/">billing plan</a>, you should be able to immediately rent your desired machine and get started.</p>
-<p>Click on &quot;Rent&quot; next to your selected GPU to get started.
-<figure class="content-center">
-    <img src="../../static/vast2.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<p>Now, head on over to your <a href="https://cloud.vast.ai/instances/">Instances page</a> and wait for your machine to setup everything for you.</p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-300" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-            <h5>This can take a while!</h5>
-<p>Depending on the download speed of the machine you selected, it could take up to 5 minutes. If it&#x27;s especially slow at 100mbps, it could potentially take 20 minutes. Make sure you select a machine with a fast internet connection.</p>
-        </div>
-    </div>
-</div>
+<p>KoboldAI is a browser-based front-end for AI-assisted writing and chatting with multiple local and remote AI models.</p>
+<p>This guide is for users with less than 10GB of VRAM. Pygmalion 6B with 4bit quantization can run on GPUs with 6GB of VRAM and above.</p>
+<p>Use the Table of Contents to navigate.</p>
 <p><figure class="content-center">
-    <img src="../../static/vast3.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-<figure class="content-center">
-    <img src="../../static/vast4.png" alt="" />
+    <img src="../../static/koboldai-newui.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<p>Once it&#x27;s finished loading, click on the logs button to view your remote url:
-<figure class="content-center">
-    <img src="../../static/vast5.png" alt="" />
+<doc-anchor-target id="requirements">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#requirements">#</doc-anchor-trigger>
+        <span>Requirements</span>
+    </h2>
+</doc-anchor-target>
+<p>Please make sure you :</p>
+<ul>
+<li>Have read the <a href="https://docs.alpindale.dev/local-installation-(gpu)/overview/#overview">Overview</a> and Setting up your GPU pages first.</li>
+<li>Have Git installed, tutorial <a href="https://docs.alpindale.dev/tools/git/#whats-git-and-do-i-need-it">here</a>.</li>
+<li>Don&#x27;t have a <code v-pre>B:</code> Drive (Windows only)</li>
+</ul>
+<doc-anchor-target id="installation">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#installation">#</doc-anchor-trigger>
+        <span>Installation</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="windows">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#windows">#</doc-anchor-trigger>
+        <span>Windows</span>
+    </h3>
+</doc-anchor-target>
+<p>The Windows Guide was written with the help of Peepy (lunarlemon#4643).</p>
+<doc-anchor-target id="installing-0cc4ms-koboldai-fork">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#installing-0cc4ms-koboldai-fork">#</doc-anchor-trigger>
+        <span>Installing 0cc4m&#x27;s KoboldAI fork</span>
+    </h4>
+</doc-anchor-target>
+<p>This fork require a manual installation, you can easily do it by following the instructions below.</p>
+<p>First create a folder where you want it to be.</p>
+<p>Go inside that folder and open a PowerShell by holding down the Shift key while right-clicking. From the context menu, select the option to <code v-pre>Open PowerShell Window here</code>.</p>
+<p><figure class="content-center">
+    <img src="../../static/openpswindows.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
-<figure class="content-center">
-    <img src="../../static/vast6.png" alt="" />
+</p>
+<p>Now that you have opened PowerShell, you need to run a few commands. (Copy paste the command and press enter).</p>
+<p>First you want to clone the Kobold-4bit repository: <code v-pre>git clone https://github.com/0cc4m/KoboldAI -b latestgptq --recurse-submodules</code></p>
+<p>It shouldn&#x27;t take more than a few seconds to clone it.</p>
+<p>Once it&#x27;s done, run : <code v-pre>cd KoboldAI</code>. This will take you to the KoboldAI directory you just downloaded.</p>
+<p>This is how your PowerShell look like so far:</p>
+<p><figure class="content-center">
+    <img src="../../static/koboldai-4bit-1.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>You can now close this PowerShell.</p>
+<p>Go into your KoboldAI folder and search for the <code v-pre>install_requirements.bat</code> file. Make a right click on it and choose <code v-pre>Run as administrator</code>.</p>
+<p>When running the <code v-pre>install_requirements.bat</code> command, it will first ask you which way you want to install it. The choice is up to you but we recommend the <code v-pre>1. Temporary Drive Letter</code> (Press 1 and enter).</p>
+<p><figure class="content-center">
+    <img src="../../static/koboldai-4bit-2.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>After that, The command prompt will take a few minutes to install all the Kobold requirements and create a umamba virtual environment. This environment will keep all the dependencies safely secured in one folder to prevent conflicts with external packages.</p>
+<p>When the end of the prompt look like this, you can press any key to close it.</p>
+<p><figure class="content-center">
+    <img src="../../static/koboldai-4bit-5.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Now, go back into your Kobold folder again, and open the <code v-pre>play.bat</code> file.</p>
+<p><figure class="content-center">
+    <img src="../../static/koboldai-4bit-6.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>It should open a tab on your browser with this url <code v-pre>http://localhost:5000</code></p>
+<p>However, you want to change it to : <code v-pre>http://localhost:5000/new_ui</code></p>
+<p>Once in the new UI, go to the &quot;Interface&quot; tab and turn on <code v-pre>Experimental UI</code> option.</p>
+<p><figure class="content-center">
+    <img src="../../static/koboldai-4bit-7.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>This is what allows for 4bit (or on Linux, also 8bit!)</p>
+<p>After you&#x27;ve done that, congrats! You&#x27;re almost there. You need to download the model now.</p>
+<doc-anchor-target id="downloading-the-model">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#downloading-the-model">#</doc-anchor-trigger>
+        <span>Downloading the model</span>
+    </h4>
+</doc-anchor-target>
+<p>In your Kobold folder, naviguate to the <code v-pre>models</code> folder.</p>
+<p><figure class="content-center">
+    <img src="../../static/koboldai-4bit-8.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Inside, open a PowerShell in that folder and run the following command :</p>
+<p><code v-pre>git clone https://huggingface.co/mayaeary/pygmalion-6b-4bit-128g</code></p>
+<p>The model should be downloaded in your <code v-pre>models</code> folder.</p>
+<p>Go into the freshly downloaded <code v-pre>\KoboldAI\models\pygmalion-6b-4bit-128g</code> folder, and rename the <code v-pre>pygmalion-6b-4bit-128g.safetensors</code> to <code v-pre>4bit-128g.safetensors</code></p>
+<p><figure class="content-center">
+    <img src="../../static/koboldai-4bit-9.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
@@ -300,12 +342,34 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-            <h5>This can also take a while!</h5>
-<p>This process can take up to 3 minutes, so it&#x27;s advised to close and re-open the logs window until the url shows up at the end.</p>
+<p>At that point, all the installation part is done.</p>
         </div>
     </div>
 </div>
-<p>Now, paste the URL in a browser tab and you&#x27;re ready to use Kobold! You can load Pygmalion 6B by clicking on <code v-pre>Models</code> on the top-left corner of the screen, selecting the <code v-pre>Chat models</code> section, selecting Pygmalion 6B, and then clicking on <code v-pre>Load</code>. This will download the model for you. Keep in mind that the download is 16GB, but if you&#x27;ve chosen a machine with a fast download speed, it shouldn&#x27;t take long. The steps should be familiar for users running locally, so you can also refer to the <a href="https://docs.alpindale.dev/local-installation-(gpu)/kobold/">Local installation guide for Kobold</a>.</p>
+<doc-anchor-target id="loading-the-model">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#loading-the-model">#</doc-anchor-trigger>
+        <span>Loading the model</span>
+    </h4>
+</doc-anchor-target>
+<p>On the Kobold URL <code v-pre>http://localhost:5000/new_ui</code>, click on the <code v-pre>home</code> tab, then on <code v-pre>Load Model</code></p>
+<p><figure class="content-center">
+    <img src="../../static/koboldai-4bit-10.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>On the list, pick the <code v-pre>Load a model from it's directory</code> option.</p>
+<p><figure class="content-center">
+    <img src="../../static/koboldai-4bit-11.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Pick the model we just downloaded, <em><strong>MAKE SURE THE 4 BIT MODE IS ON</strong></em>, then click on load !</p>
+<p><figure class="content-center">
+    <img src="../../static/koboldai-4bit-12.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-green-500"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -318,18 +382,119 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-            <h5>You&#x27;re done!</h5>
-<p>You&#x27;re now ready to use PygmalionAI! Make sure you delete (or stop, if you don&#x27;t mind paying for the hourly storage charges of 0.8 cents/hr) your instance so you won&#x27;t be billed when you&#x27;re not using your instance. If you delete the instance, you&#x27;ll have to go through the process of setting it up again, but stopping and resuming should pick up from where you left off.</p>
+<p>The model will now be loaded and be ready to be use, if you want to use it with SillyTavern, please go <a href="https://docs.alpindale.dev/local-installation-(gpu)/sillytavern/#connect-sillytavern">here</a>.</p>
         </div>
     </div>
 </div>
-<doc-anchor-target id="connecting-your-instance-to-tavernai">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#connecting-your-instance-to-tavernai">#</doc-anchor-trigger>
-        <span>Connecting your instance to TavernAI</span>
-    </h2>
+<doc-anchor-target id="linux">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#linux">#</doc-anchor-trigger>
+        <span>Linux</span>
+    </h3>
 </doc-anchor-target>
-<p>You can easily use TavernAI along with Kobold. Follow the instructions in the <a href="https://docs.alpindale.dev/local-installation-(gpu)/tavern/">Tavern guide</a> but instead of inputting <code v-pre>localhost:5000/api</code>, use your <code v-pre>trycloudflare.com</code> link. Assuming your URL was <code v-pre>https://pieces-strictly-transparency-luther.trycloudflare.com/new_ui</code>, you would paste it as <code v-pre>https://pieces-strictly-transparency-luther.trycloudflare.com/api</code> inside Tavern. Note that the <code v-pre>new_ui</code> part is removed and replaced with <code v-pre>/api</code>.</p>
+<p>With Linux, you should be able to get both 8bit and 4bit support using Occam&#x27;s fork. For 8bit, you will need the <a href="https://huggingface.co/PygmalionAI/pygmalion-6b">original model</a>. For 4-bit, you can download any of the GPTQ quantized models.</p>
+<doc-anchor-target id="requirements-1">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#requirements-1">#</doc-anchor-trigger>
+        <span>Requirements</span>
+    </h4>
+</doc-anchor-target>
+<ul>
+<li><code v-pre>git</code></li>
+<li><code v-pre>python==3.10.9</code></li>
+<li><code v-pre>aria2</code></li>
+<li><code v-pre>cmake</code></li>
+<li><code v-pre>make</code></li>
+<li><code v-pre>gcc</code></li>
+</ul>
+<doc-anchor-target id="installation-1">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#installation-1">#</doc-anchor-trigger>
+        <span>Installation</span>
+    </h4>
+</doc-anchor-target>
+<ol>
+<li>Clone Occam&#x27;s fork of KoboldAI</li>
+</ol>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">git clone https://github.com/0cc4m/KoboldAI -b latestgptq --recurse-submodules &amp;&amp; cd KoboldAI</code></pre>
+</doc-codeblock></div>
+<ol start="2">
+<li>Install the Kobold requirements</li>
+</ol>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">chmod +x install_requirements.sh \
+./install_requirements.sh</code></pre>
+</doc-codeblock></div>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-300" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>This is a 2.5GB download.</p>
+        </div>
+    </div>
+</div>
+<ol start="3">
+<li><p>Download the 4bit Pygmalion model from <a href="https://huggingface.co/mayaeary/pygmalion-6b-4bit-128g">here</a>, rename it to <code v-pre>4bit-128g.safetensors</code> and place it inside Kobold&#x27;s <code v-pre>models</code> folder.</p>
+</li>
+<li><p>Start KoboldAI by running <code v-pre>./play.sh</code>.</p>
+</li>
+<li><p>Navigate to the NewUI (you can simply add <code v-pre>new_ui</code> at the end of the URL) and activate the Experimental UI.
+<figure class="content-center">
+    <img src="../../static/koboldai-4bit-7.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+</li>
+<li><p>Click on <code v-pre>Load Model</code> on the left-side menu and choose the following option:
+<figure class="content-center">
+    <img src="../../static/koboldai-4bit-10.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+</li>
+<li><p>On the list, pick the <code v-pre>Load a model from it's directory</code> option.</p>
+</li>
+</ol>
+<p><figure class="content-center">
+    <img src="../../static/koboldai-4bit-11.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<ol start="8">
+<li>Pick the model we just downloaded, <em><strong>MAKE SURE THE 4 BIT MODE IS ON</strong></em>, then click on load !</li>
+</ol>
+<p><figure class="content-center">
+    <img src="../../static/koboldai-4bit-12.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-green-500"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-green-500" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M21 9.09c-.55 0-1 .45-1 1v.92c0 4.96-4.04 8.99-9 8.99-4.97 0-9-4.04-9-9s4.04-9 9-9c1.27 0 2.5.26 3.66.78.51.22 1.1 0 1.32-.51.23-.5 0-1.1-.51-1.32C14.06.32 12.56 0 11.01 0H11C4.94 0 0 4.93 0 10.99 0 17.06 4.93 22 10.99 22H11c6.06 0 11-4.93 11-10.99v-.92c0-.56-.45-1-1-1z"></path>
+                    <path d="M8.71 9.31a.996.996 0 10-1.41 1.41l3 3c.19.19.44.29.71.29.27 0 .52-.11.71-.29l10-10.01a.996.996 0 10-1.41-1.41L11 11.6 8.71 9.31z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Enjoy!</h5>
+<p>You can now run Pygmalion 6B on your low VRAM GPU. Rejoice.</p>
+        </div>
+    </div>
+</div>
 
                                 
                                 <!-- Required only on API pages -->
@@ -337,7 +502,7 @@
                             </div>
                             <footer class="clear-both">
                                 <div class="flex flex-wrap items-center justify-between mt-14">
-                                    <a class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-blue-500 dark:text-blue-400 hover:text-blue-700 hover:underline" href="https://github.com/AlpinDale/pygmalion-docs/blob/main/src/Cloud Installation/vast.md" target="_blank" rel="noopener">
+                                    <a class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-blue-500 dark:text-blue-400 hover:text-blue-700 hover:underline" href="https://github.com/AlpinDale/pygmalion-docs/blob/main/src/Local Installation (GPU)/KoboldAI4bit.md" target="_blank" rel="noopener">
                                         <svg class="mr-1.5" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M20 12c-.55 0-1 .45-1 1v7c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h7c.55 0 1-.45 1-1s-.45-1-1-1H4C2.35 3 1 4.35 1 6v14c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-7c0-.55-.45-1-1-1z" /><path d="M22.21 1.79c-1.18-1.18-3.24-1.18-4.41 0l-9.5 9.5c-.13.13-.22.29-.26.46l-1 4c-.08.34.01.7.26.95.18.2.44.3.7.3.08 0 .16-.01.24-.03l4-1c.18-.04.34-.13.46-.26l9.5-9.5c1.22-1.22 1.22-3.2.01-4.42zm-1.42 3l-9.3 9.3-2.11.53.53-2.11 9.3-9.3c.42-.42 1.16-.42 1.59 0 .43.43.43 1.15-.01 1.58z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         <span>Edit this page</span>
                                     </a>
@@ -345,20 +510,20 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../cloud-installation/koboldai/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../local-installation-(gpu)/kobold/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Kobold​AI Notebooks</span>
+                                                <span class="block mt-1">Kobold​AI</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../local-installation-(gpu)/overview/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../local-installation-(gpu)/oobabooga/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Overview</span>
+                                                <span class="block mt-1">Text​Gen Web​UI</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -402,7 +567,7 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Vast AI", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "KoboldAI 4bit", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
     <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="387ba2b4-1f5e-4710-89eb-a5e044c6af98";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 </body>
 </html>

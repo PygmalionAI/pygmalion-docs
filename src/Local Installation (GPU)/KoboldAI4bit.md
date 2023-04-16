@@ -1,12 +1,14 @@
 ---
 order: 1000
 icon: note
-title: KoboldAI-4bit
+title: KoboldAI 4bit
 ---
 
 KoboldAI is a browser-based front-end for AI-assisted writing and chatting with multiple local and remote AI models. 
 
-KoboldAI also supports PygmalionAI - although most primarily use it to load Pygmalion, and then connect Kobold to Tavern. You can still use Kobold in its New UI with Chat mode. 
+This guide is for users with less than 10GB of VRAM. Pygmalion 6B with 4bit quantization can run on GPUs with 6GB of VRAM and above.
+
+Use the Table of Contents to navigate.
 
 ![](/static/KoboldAI-newui.PNG)
 
@@ -14,15 +16,17 @@ KoboldAI also supports PygmalionAI - although most primarily use it to load Pygm
 
 Please make sure you :
 
-- have read the [Overview](https://docs.alpindale.dev/local-installation-(gpu)/overview/#overview) and Setting up your GPU pages first. 
-- have Git installed, tutorial [here](https://docs.alpindale.dev/tools/git/#whats-git-and-do-i-need-it).
-- don't have a `B:` Drive.
+- Have read the [Overview](https://docs.alpindale.dev/local-installation-(gpu)/overview/#overview) and Setting up your GPU pages first. 
+- Have Git installed, tutorial [here](https://docs.alpindale.dev/tools/git/#whats-git-and-do-i-need-it).
+- Don't have a `B:` Drive (Windows only)
 
 
 
 ## Installation
 
 ### Windows
+
+The Windows Guide was written with the help of Peepy (lunarlemon#4643).
 
 #### Installing 0cc4m's KoboldAI fork
 
@@ -128,7 +132,55 @@ The model will now be loaded and be ready to be use, if you want to use it with 
 !!!
 
 
+### Linux
 
+With Linux, you should be able to get both 8bit and 4bit support using Occam's fork. For 8bit, you will need the [original model](https://huggingface.co/PygmalionAI/pygmalion-6b). For 4-bit, you can download any of the GPTQ quantized models.
+
+#### Requirements
+- `git`
+- `python==3.10.9`
+- `aria2`
+- `cmake`
+- `make`
+- `gcc`
+
+#### Installation
+
+1. Clone Occam's fork of KoboldAI
+```bash
+git clone https://github.com/0cc4m/KoboldAI -b latestgptq --recurse-submodules && cd KoboldAI
+```
+
+2. Install the Kobold requirements
+```bash
+chmod +x install_requirements.sh \
+./install_requirements.sh
+```
+!!!info
+This is a 2.5GB download.
+!!!
+
+3. Download the 4bit Pygmalion model from [here](https://huggingface.co/mayaeary/pygmalion-6b-4bit-128g), rename it to `4bit-128g.safetensors` and place it inside Kobold's `models` folder.
+
+4. Start KoboldAI by running `./play.sh`.
+
+5. Navigate to the NewUI (you can simply add `new_ui` at the end of the URL) and activate the Experimental UI.
+![](/static/KoboldAI-4bit-7.PNG)
+
+6. Click on `Load Model` on the left-side menu and choose the following option: 
+![](/static/KoboldAI-4bit-10.PNG)
+
+7. On the list, pick the `Load a model from it's directory` option.
+
+![](/static/KoboldAI-4bit-11.PNG)
+
+8. Pick the model we just downloaded, ***MAKE SURE THE 4 BIT MODE IS ON***, then click on load !
+
+![](/static/KoboldAI-4bit-12.PNG)
+
+!!!success Enjoy!
+You can now run Pygmalion 6B on your low VRAM GPU. Rejoice.
+!!!
 
 
 

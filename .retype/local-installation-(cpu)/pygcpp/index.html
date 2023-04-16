@@ -5,8 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-root" content="/pygmalion-docs">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.734228842005">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.734996029720">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -17,29 +16,29 @@
     <meta name="description" content="Initially, the only way to run Pygmalion C++ was through this repo: AlpinDale/pygmalion.cpp." />
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://docs.alpindale.dev/pygmalion-docs/local-installation-(cpu)/pygcpp/" />
+    <link rel="canonical" href="https://docs.alpindale.dev/local-installation-(cpu)/pygcpp/" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.alpindale.dev/pygmalion-docs/local-installation-(cpu)/pygcpp/">
+    <meta property="og:url" content="https://docs.alpindale.dev/local-installation-(cpu)/pygcpp/">
     <meta property="og:title" content="Pygmalion C++ - Pygmalion AI">
     <meta property="og:description" content="Initially, the only way to run Pygmalion C++ was through this repo: AlpinDale/pygmalion.cpp.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.alpindale.dev/pygmalion-docs/local-installation-(cpu)/pygcpp/">
+    <meta property="twitter:url" content="https://docs.alpindale.dev/local-installation-(cpu)/pygcpp/">
     <meta property="twitter:title" content="Pygmalion C++ - Pygmalion AI">
     <meta property="twitter:description" content="Initially, the only way to run Pygmalion C++ was through this repo: AlpinDale/pygmalion.cpp.">
 
-    <script>(function () { var el = document.documentElement, m = localStorage.getItem("/pygmalion-docs/doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
+    <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/icons/pyggy.svg" rel="icon" />
-    <link href="../../resources/css/retype.css?v=2.4.0.734228842005" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.734996029720" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.734228842005" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.734996029720" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.734228842005" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.734228842005" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.734996029720" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.734996029720" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -220,6 +219,13 @@
     </h1>
 </doc-anchor-target>
 <p>Initially, the only way to run Pygmalion C++ was through this repo: <a href="https://github.com/AlpinDale/pygmalion.cpp">AlpinDale/pygmalion.cpp</a>. However, thanks to the efforts of concedo from the KoboldAI team, we now have an easy-to-run executable for windows, and a compilable UI for Linux/MacOS/Android users.</p>
+<doc-anchor-target id="the-4-bit-quantized-6b-model">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#the-4-bit-quantized-6b-model">#</doc-anchor-trigger>
+        <span>The 4-bit quantized 6B model</span>
+    </h2>
+</doc-anchor-target>
+<p>You can download the model from <a href="https://huggingface.co/concedo/pygmalion-6bv3-ggml-ggjt/resolve/main/pygmalion-6b-v3-ggml-ggjt-q4_0.bin">here</a>. This should be faster than the previous version quantized by me, but if you run into any issues, you can still download the old version from <a href="https://huggingface.co/alpindale/pygmalion-6b-ggml/resolve/main/pygmalion-6b-v3-q4_0.bin">here</a>.</p>
 <hr />
 <doc-anchor-target id="windows-guide">
     <h2>
@@ -227,7 +233,7 @@
         <span>Windows Guide</span>
     </h2>
 </doc-anchor-target>
-<p>Running on Windows is exceedingly simple. You can download the <code v-pre>.exe</code> file from <a href="https://github.com/LostRuins/koboldcpp/releases/latest">here</a>, and the converted 4-bit quantized Pygmalion 6B model from <a href="https://huggingface.co/alpindale/pygmalion-6b-ggml/resolve/main/pygmalion-6b-v3-q4_0.bin">here</a>.</p>
+<p>Running on Windows is exceedingly simple. You can download the <code v-pre>.exe</code> file from <a href="https://github.com/LostRuins/koboldcpp/releases/latest">here</a>, and the Pygmalion 6B model linked above.</p>
 <p>Once you have both files downloaded, all you need to do is drag the <code v-pre>pygmalion-6b-v3-q4_0.bin</code> file and drop it into <code v-pre>koboldcpp.exe</code> file. This will load the model and start a Kobold instance in <a href="http://127.0.0.1:5001">localhost:5001</a> on your browser.</p>
 <hr />
 <doc-anchor-target id="macos-guide">
@@ -247,6 +253,22 @@
 <li>Python</li>
 <li>C toolchain</li>
 </ul>
+<doc-anchor-target id="install-the-requirements">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#install-the-requirements">#</doc-anchor-trigger>
+        <span>Install the requirements:</span>
+    </h5>
+</doc-anchor-target>
+<ol>
+<li>Open a terminal.</li>
+<li>Paste this command and press enter to execute it:</li>
+</ol>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">xcode-select --install</code></pre>
+</doc-codeblock></div>
+<ol start="3">
+<li>Install Python from <a href="https://www.python.org/ftp/python/3.10.9/python-3.10.9-macos11.pkg">here</a>.</li>
+</ol>
 <doc-anchor-target id="installation">
     <h5>
         <doc-anchor-trigger class="header-anchor-trigger" to="#installation">#</doc-anchor-trigger>
@@ -258,35 +280,27 @@
 <li>Extract it anywhere you want.</li>
 <li>Open a Terminal inside the extracted folder.</li>
 <li>Type in <code v-pre>make</code> and let it compile the program.</li>
-<li>Once it&#x27;s finished, download the model <a href="https://huggingface.co/alpindale/pygmalion-6b-ggml/resolve/main/pygmalion-6b-v3-q4_0.bin">here</a> and place it inside the <code v-pre>koboldcpp</code> folder.</li>
+<li>Once it&#x27;s finished, download the model and place it inside the <code v-pre>koboldcpp</code> folder.</li>
 <li>Run the model with:</li>
 </ol>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-bash"><code v-pre class="language-bash">python koboldcpp.py pygmalion-6b-v3-q4_0.bin</code></pre>
+<pre class="language-bash"><code v-pre class="language-bash">python3 koboldcpp.py pygmalion-6b-v3-ggml-ggjt-q4_0.bin</code></pre>
 </doc-codeblock></div>
 <ol start="7">
 <li>Open your browser and navigate to <a href="http://127.0.0.1:5001">http://127.0.0.1:5001</a>.</li>
 <li>You&#x27;re done!</li>
 </ol>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-300" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-            <h5>No module named &#x27;psutil&#x27;?</h5>
-<p>If you receive such an error doing step 6, run <code v-pre>pip install psutil</code> and then try again.</p>
-        </div>
-    </div>
-</div>
-<hr />
+<doc-anchor-target id="macos-quickstart">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#macos-quickstart">#</doc-anchor-trigger>
+        <span>macOS Quickstart</span>
+    </h6>
+</doc-anchor-target>
+<p>If you want to launch it again later, all you need to do is open a terminal inside the <code v-pre>koboldcpp</code> folder, and running:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">python3 koboldcpp.py pygmalion-6b-v3-ggml-ggjt-q4_0.bin</code></pre>
+</doc-codeblock></div>
+<p>Make sure you bookmark <a href="http://localhost:5001">http://localhost:5001</a> so you can easily open the Koboldcpp interface.</p>
 <doc-anchor-target id="linux-guide">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#linux-guide">#</doc-anchor-trigger>
@@ -317,28 +331,21 @@
 <pre class="language-bash"><code v-pre class="language-bash">git clone https://github.com/LostRuins/koboldcpp        # Clone the koboldcpp repo
 cd koboldcpp                                            # Change directories to the repo
 make                                                    # Compile binaries
-wget https://huggingface.co/alpindale/pygmalion-6b-ggml/resolve/main/pygmalion-6b-v3-q4_0.bin   # Download the model
-python koboldcpp.py pygmalion-6b-v3-q4_0.bin            # Load the model</code></pre>
+wget https://huggingface.co/concedo/pygmalion-6bv3-ggml-ggjt/resolve/main/pygmalion-6b-v3-ggml-ggjt-q4_0.bin   # Download the model, skip if you've already done this
+python koboldcpp.py pygmalion-6b-v3-ggml-ggjt-q4_0.bin            # Load the model</code></pre>
 </doc-codeblock></div>
 <p>Open your browser and navigate to <a href="http:127.0.0.1:5001">localhost:5001</a>. You&#x27;re all set.</p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-300" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-            <h5>No module named &#x27;psutil&#x27;?</h5>
-<p>If you receive such an error doing step 6, run <code v-pre>pip install psutil</code> and then try again.</p>
-        </div>
-    </div>
-</div>
+<doc-anchor-target id="linux-quickstart">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#linux-quickstart">#</doc-anchor-trigger>
+        <span>Linux Quickstart</span>
+    </h6>
+</doc-anchor-target>
+<p>If you want to launch it again later, all you need to do is open a terminal inside the <code v-pre>koboldcpp</code> folder, and running:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">python3 koboldcpp.py pygmalion-6b-v3-ggml-ggjt-q4_0.bin</code></pre>
+</doc-codeblock></div>
+<p>Make sure you bookmark <a href="http://localhost:5001">http://localhost:5001</a> so you can easily open the Koboldcpp interface.</p>
 <hr />
 <doc-anchor-target id="android">
     <h2>
@@ -382,22 +389,36 @@ python koboldcpp.py pygmalion-6b-v3-q4_0.bin            # Load the model</code><
 <ol>
 <li>Open Termux.</li>
 <li>Type in the following commands one by one and press enter to run them:</li>
-<li><code v-pre>pkg update &amp;&amp; pkg install python clang python-pip git openssl</code></li>
+<li><code v-pre>pkg update &amp;&amp; pkg upgrade</code></li>
+<li><code v-pre>pkg install python clang python-pip git openssl</code></li>
 <li><code v-pre>pip install psutil</code></li>
 <li><code v-pre>git clone https://github.com/LostRuins/koboldcpp &amp;&amp; cd koboldcpp</code></li>
 <li><code v-pre>make</code></li>
-<li><code v-pre>wget https://huggingface.co/alpindale/pygmalion-6b-ggml/resolve/main/pygmalion-6b-v3-q4_0.bin</code></li>
-<li><code v-pre>python koboldcpp.py pygmalion-6b-v3-q4_0.bin</code></li>
+<li><code v-pre>wget https://huggingface.co/concedo/pygmalion-6bv3-ggml-ggjt/resolve/main/pygmalion-6b-v3-ggml-ggjt-q4_0.bin</code></li>
+<li><code v-pre>python koboldcpp.py pygmalion-6b-v3-ggml-ggjt-q4_0.bin</code></li>
 <li>Switch to your browser (don&#x27;t close Termux) and go to <a href="http://127.0.0.1:5001">localhost:5001</a>.</li>
 <li>You&#x27;re done!</li>
 </ol>
+<doc-anchor-target id="android-quickstart">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#android-quickstart">#</doc-anchor-trigger>
+        <span>Android Quickstart</span>
+    </h5>
+</doc-anchor-target>
+<p>If you want to launch it again, open Termux and make sure you&#x27;re in the koboldcpp folder. You can confirm this by checking whether the bash prompt is <code v-pre>~ $</code> or <code v-pre>~/koboldcpp $</code>. If it&#x27;s the former, run <code v-pre>cd koboldcpp</code>. If it&#x27;s the latter, continue.</p>
+<p>Type this in to run koboldcpp again:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">python koboldcpp.py pygmalion-6b-v3-ggml-ggjt-q4_0.bin</code></pre>
+</doc-codeblock></div>
+<p>Now open <a href="http://localhost:5001">http://localhost:5001</a> on your browser.</p>
+<hr />
 <doc-anchor-target id="connecting-to-tavern">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#connecting-to-tavern">#</doc-anchor-trigger>
         <span>Connecting to Tavern</span>
     </h2>
 </doc-anchor-target>
-<p>You can connect Pygmalion C++ to Tavern the same way you would the regular KoboldAI. There&#x27;s a guide included <a href="https://docs.alpindale.dev/pygmalion-docs/local-installation-(gpu)/tavern/">here</a>. Note that this won&#x27;t work for Android, as TavernAI is currently not available for Android locally.</p>
+<p>You can connect Pygmalion C++ to Tavern the same way you would the regular KoboldAI. There&#x27;s a guide included <a href="https://docs.alpindale.dev/local-installation-(gpu)/tavern/">here</a>. Note that this won&#x27;t work for Android, as TavernAI is currently not available for Android locally.</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -423,10 +444,10 @@ python koboldcpp.py pygmalion-6b-v3-q4_0.bin            # Load the model</code><
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../settingsandparams/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../tools/git/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Settings and Parameters</span>
+                                                <span class="block mt-1">Git</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
