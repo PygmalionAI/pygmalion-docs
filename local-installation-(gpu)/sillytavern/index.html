@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.734989758263">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.734999842544">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -13,7 +13,7 @@
     <!-- Primary Meta Tags -->
     <title>SillyTavern - Pygmalion AI</title>
     <meta name="title" content="SillyTavern - Pygmalion AI">
-    <meta name="description" content="SillyTavern is a user interface you can install on your computer (and Android phones) that allows you to interact text generation AIs and..." />
+    <meta name="description" content="SillyTavern is a user interface you can install on your computer (and Android phones) that allows you to interact with text generation AIs and..." />
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.alpindale.dev/local-installation-(gpu)/sillytavern/" />
@@ -22,24 +22,25 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.alpindale.dev/local-installation-(gpu)/sillytavern/">
     <meta property="og:title" content="SillyTavern - Pygmalion AI">
-    <meta property="og:description" content="SillyTavern is a user interface you can install on your computer (and Android phones) that allows you to interact text generation AIs and...">
+    <meta property="og:description" content="SillyTavern is a user interface you can install on your computer (and Android phones) that allows you to interact with text generation AIs and...">
     <meta property="og:image" content="https://docs.alpindale.dev/static/sillytavern.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.alpindale.dev/local-installation-(gpu)/sillytavern/">
     <meta property="twitter:title" content="SillyTavern - Pygmalion AI">
-    <meta property="twitter:description" content="SillyTavern is a user interface you can install on your computer (and Android phones) that allows you to interact text generation AIs and...">
+    <meta property="twitter:description" content="SillyTavern is a user interface you can install on your computer (and Android phones) that allows you to interact with text generation AIs and...">
     <meta property="twitter:image" content="https://docs.alpindale.dev/static/sillytavern.png">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/icons/pyggy.svg" rel="icon" />
-    <link href="../../resources/css/retype.css?v=2.4.0.734989758263" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.734999842544" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.734989758263" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.734999842544" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.734989758263" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.734999842544" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.734999842544" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -219,7 +220,7 @@
         <span>SillyTavern</span>
     </h1>
 </doc-anchor-target>
-<p>SillyTavern is a user interface you can install on your computer (and Android phones) that allows you to interact text generation AIs and chat/roleplay with characters you or the community create.</p>
+<p>SillyTavern is a user interface you can install on your computer (and Android phones) that allows you to interact with text generation AIs and chat/roleplay with the characters you or the community create.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -233,7 +234,7 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>SillyTavern is just an UI, you need to connect it to a backend (<a href="https://docs.alpindale.dev/local-installation-(gpu)/kobold/">KoboldAI</a>, <a href="https://docs.alpindale.dev/local-installation-(gpu)/oobabooga/">TextGen WebUI</a> or a <a href="https://docs.alpindale.dev/cloud-installation/koboldai/">Google Colab</a> that run the model of your choice (We&#x27;ll see that later)</p>
+<p>SillyTavern is just a UI; you will need to connect it to a backend: <a href="https://docs.alpindale.dev/local-installation-(gpu)/kobold/">KoboldAI</a>, <a href="https://docs.alpindale.dev/local-installation-(gpu)/oobabooga/">TextGen WebUI</a> or <a href="https://docs.alpindale.dev/cloud-installation/koboldai/">Google Colab</a>.</p>
         </div>
     </div>
 </div>
@@ -248,11 +249,12 @@
         <span>Installation</span>
     </h2>
 </doc-anchor-target>
-<p>Installing SillyTavern is simple. It <em>officially</em> supports the following operating systems:</p>
+<p>Installing SillyTavern is simple. It supports the following operating systems:</p>
 <ul>
 <li><a href="https://docs.alpindale.dev/local-installation-(gpu)/sillytavern/#windows-installation">Windows x64</a></li>
 <li><a href="https://docs.alpindale.dev/local-installation-(gpu)/sillytavern/#linuxmacos-installation">Linux x64</a></li>
 <li><a href="https://docs.alpindale.dev/local-installation-(gpu)/sillytavern/#linuxmacos-installation">MacOS (Darwin x64)</a></li>
+<li><a href="https://docs.alpindale.dev/local-installation-(gpu)/sillytavern/#android-installation">Android (aarch64)</a></li>
 </ul>
 <doc-anchor-target id="windows-installation">
     <h3>
@@ -345,6 +347,19 @@
 <li>nodejs</li>
 <li>git</li>
 </ul>
+<p>Install <code v-pre>nvm</code> (NodeJS Version Manager) by running the following command in Terminal:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash</code></pre>
+</doc-codeblock></div>
+<p>Run this to make <code v-pre>nvm</code> usable:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">export NVM_DIR=&quot;$([ -z &quot;${XDG_CONFIG_HOME-}&quot; ] &amp;&amp; printf %s &quot;${HOME}/.nvm&quot; || printf %s &quot;${XDG_CONFIG_HOME}/nvm&quot;)&quot;
+[ -s &quot;$NVM_DIR/nvm.sh&quot; ] &amp;&amp; \. &quot;$NVM_DIR/nvm.sh&quot;</code></pre>
+</doc-codeblock></div>
+<p>Install NodeJS by running the following command:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">nvm install node</code></pre>
+</doc-codeblock></div>
 <doc-anchor-target id="installation-1">
     <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#installation-1">#</doc-anchor-trigger>
@@ -352,28 +367,59 @@
     </h4>
 </doc-anchor-target>
 <ul>
-<li>Download <code v-pre>nodejs</code> via your package manager of choice.</li>
-</ul>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">sudo pacman -S nodejs               # Arch Linux
-sudo apt install nodejs             # Debian/Ubuntu
-doas apk add nodejs-current         # Alpine Linux
-sudo dnf install nodejs:19/common   # Fedora/RHEL
-sudo emerge nodejs                  # Gentoo
-brew install node                   # MacOS
-sudo xbps-install -Sy nodejs        # Void Linux</code></pre>
-</doc-codeblock></div>
-<ul>
 <li>Clone the repo</li>
 </ul>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">git clone https://github.com/Cohee1207/SillyTavern &amp;&amp; cd TavernAI</code></pre>
+<pre class="language-none"><code v-pre class="language-none">git clone -b dev https://github.com/Cohee1207/SillyTavern &amp;&amp; cd TavernAI</code></pre>
 </doc-codeblock></div>
 <ul>
 <li>Run TavernAI</li>
 </ul>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">npm i &amp;&amp; node server.js</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="android-installation">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#android-installation">#</doc-anchor-trigger>
+        <span>Android Installation</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Install <a href="https://f-droid.org/repo/com.termux_118.apk">Termux</a>.</li>
+<li>Run the following commands inside Termux, in order:</li>
+</ul>
+<p>Update repos/packages:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">pkg update &amp;&amp; pkg upgrade</code></pre>
+</doc-codeblock></div>
+<p>Install NodeJS and git:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">pkg install nodejs openssl git</code></pre>
+</doc-codeblock></div>
+<p>Download Silly Tavern:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">git clone -b dev https://github.com/Cohee1207/SillyTavern &amp;&amp; cd Tavern</code></pre>
+</doc-codeblock></div>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-yellow-500"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-yellow-500" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M22.48 15.59L14.01 1.45A2.968 2.968 0 0012.16.09c-.78-.19-1.58-.07-2.27.35-.41.25-.76.6-1.01 1.01v.01L.4 15.6c-.83 1.43-.33 3.27 1.1 4.1.45.26.95.4 1.48.4h16.95c.8-.01 1.55-.33 2.11-.9.56-.57.87-1.33.86-2.13a3.04 3.04 0 00-.42-1.48zm-1.87 2.21c-.19.19-.44.3-.69.3H2.99c-.17 0-.34-.05-.49-.13a.992.992 0 01-.37-1.35L10.6 2.48c.08-.14.2-.25.34-.33a.992.992 0 011.37.33l8.46 14.13c.09.15.13.32.13.49 0 .26-.1.51-.29.7z"></path>
+                    <path d="M11.45 12.1c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .56.45 1 1 1zM11.46 14.1c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>fatal: destination path &#x27;SillyTavern&#x27; already exists</h5>
+<p>If you receive the above error, it means you&#x27;ve already downloaded SillyTavern before. In that case, you can simply update it. Change directories to SillyTavern by running <code v-pre>cd SillyTavern</code>, and then updating it by running <code v-pre>git pull</code>.</p>
+        </div>
+    </div>
+</div>
+<p>Run SillyTavern:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">npm i &amp;&amp; node server.js</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="connect-sillytavern">
     <h2>
@@ -401,6 +447,24 @@ sudo xbps-install -Sy nodejs        # Void Linux</code></pre>
         <div class="pr-5 ml-3 w-full">
             <h5>The API URL</h5>
 <p>If you&#x27;re running KoboldAI locally, all you need to paste in there is <code v-pre>http://localhost:5000/api</code>. If you&#x27;re using Google Colab, copy your <a href="https://docs.alpindale.dev/cloud-installation/koboldai/#using-the-remote-url-to-connect-sillytavern">remote URL</a> instead. If it ends with a # or new_ui, remove them and replace them with /api. If they don&#x27;t, simply adding /api will suffice.</p>
+        </div>
+    </div>
+</div>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-300" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Note for Mobile Users</h5>
+<p>Please switch to <code v-pre>Desktop Mode</code> in your browser settings.</p>
         </div>
     </div>
 </div>
@@ -446,7 +510,7 @@ sudo xbps-install -Sy nodejs        # Void Linux</code></pre>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../pygmalion-extra/soft-prompt/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../pygmalion-extras/soft-prompt/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
                                                 <span class="block mt-1">Soft Prompts</span>
@@ -493,7 +557,7 @@ sudo xbps-install -Sy nodejs        # Void Linux</code></pre>
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "SillyTavern", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "SillyTavern", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
     <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="387ba2b4-1f5e-4710-89eb-a5e044c6af98";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 </body>
 </html>

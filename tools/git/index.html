@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.734989758263">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.734999842544">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -35,11 +35,11 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/icons/pyggy.svg" rel="icon" />
-    <link href="../../resources/css/retype.css?v=2.4.0.734989758263" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.734999842544" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.734989758263" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.734999842544" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.734989758263" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.734999842544" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -220,7 +220,7 @@
     </h1>
 </doc-anchor-target>
 <p>Git is a popular version control system used by software developers to manage their code. It allows developers to track changes to their code over time, collaborate with others, and revert back to previous versions if needed.<br />
-Git gives you access to useful commands, such as <code v-pre>git clone</code>. You can use it to create a local copy of a remote repository, including all its files and history, on your local machine.</p>
+Git gives you access to useful commands, such as <code v-pre>git clone</code>. You can use it to create a local copy of a remote repository, including all its files and history, on your local machine. The most useful command for an end-user is <code v-pre>git pull</code>, which allows you to update a cloned repository easily without having to re-download the zip file and merging it into your cloned folder.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -240,8 +240,8 @@ Git gives you access to useful commands, such as <code v-pre>git clone</code>. Y
 </div>
 <ul>
 <li><a href="https://docs.alpindale.dev/tools/git/#windows">Windows x64</a></li>
-<li><a href="">Linux x64</a></li>
 <li><a href="https://docs.alpindale.dev/tools/git/#macos">MacOS (Darwin x64)</a></li>
+<li><a href="https://docs.alpindale.dev/tools/git/#linux">Linux x64</a></li>
 </ul>
 <doc-anchor-target id="windows">
     <h2>
@@ -262,7 +262,7 @@ Git gives you access to useful commands, such as <code v-pre>git clone</code>. Y
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<p>Once it&#x27;s done, run those two command one by one :</p>
+<p>Once it&#x27;s done, run those two command one by one:</p>
 <p><code v-pre>irm get.scoop.sh | iex</code></p>
 <p><code v-pre>scoop install git</code></p>
 <div class="flex mb-6">
@@ -285,15 +285,41 @@ Git gives you access to useful commands, such as <code v-pre>git clone</code>. Y
 <doc-anchor-target id="macos">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#macos">#</doc-anchor-trigger>
-        <span>MacOS</span>
+        <span>macOS</span>
     </h2>
 </doc-anchor-target>
-<p>To make things easier, we gonna use &quot;Homebrew&quot;.</p>
-<p>First you gonna open the Terminal application on your Mac. You can find it in the &quot;Utilities&quot; folder within the &quot;Applications&quot; folder.</p>
-<p>Then you gonna have to run this command in the terminal :</p>
-<p><code v-pre>$ /bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)</code> (Copy paste it in the terminal and press enter).</p>
-<p>Once it&#x27;s done, simply run <code v-pre>$ brew install git</code></p>
-<p>At this point, you&#x27;ve installed Git on your Mac. You can now verify by running this command in your terminal: <code v-pre>$ Git --version</code></p>
+<p>To make things easier, we will use &quot;Homebrew&quot;, a commandline software installer for macOS.</p>
+<p>First you will need to open the Terminal application on your Mac. You can find it in the &quot;Utilities&quot; folder within the &quot;Applications&quot; folder.</p>
+<p>Then run this command in the terminal (Copy paste it in the terminal and press enter):</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">$ /bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)</code></pre>
+</doc-codeblock></div>
+<p>Once it&#x27;s done, simply run <code v-pre>brew install git</code></p>
+<p>At this point, you&#x27;ve installed Git on your Apple Silicon. You can now verify by running this command in your terminal: <code v-pre>$ Git --version</code></p>
+<doc-anchor-target id="linux">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#linux">#</doc-anchor-trigger>
+        <span>Linux</span>
+    </h2>
+</doc-anchor-target>
+<p>I shouldn&#x27;t have to explain this to you, Linux user. <code v-pre>git</code> is on every package manager. However, I like extensive documentation, so I will list instructions for all distros.</p>
+<ol>
+<li><p>Check what your distro is. Run <code v-pre>uname -a</code> in the Terminal.</p>
+</li>
+<li><p>Install <code v-pre>git</code>:</p>
+</li>
+</ol>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">sudo pacman -S git                  # Arch/Manjaro/Endeavour
+sudo apt install git                # Debian/Ubuntu/Mint
+doas apk add git                    # Alpine Linux
+sudo dnf install git                # Fedora/RHEL
+sudo emerge dev-vcs/git             # Gentoo
+sudo xbps-install git               # Void Linux
+sudo zypper in git-core             # OpenSUSE
+nix-env -iA nixos.git               # NixOS
+nix-env -iA nixpkgs.git             # Nix</code></pre>
+</doc-codeblock></div>
 
                                 
                                 <!-- Required only on API pages -->
