@@ -14,7 +14,7 @@ KoboldAI also supports PygmalionAI - although most primarily use it to load Pygm
 
 Please make sure you :
 
-- have read the Overview and Setting up your GPU pages first. 
+- have read the [Overview](https://docs.alpindale.dev/local-installation-(gpu)/overview/#overview) and Setting up your GPU pages first. 
 - have Git installed, tutorial [here](https://docs.alpindale.dev/tools/git/#whats-git-and-do-i-need-it).
 - don't have a `B:` Drive.
 
