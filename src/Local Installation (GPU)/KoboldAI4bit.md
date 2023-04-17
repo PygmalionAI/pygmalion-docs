@@ -98,11 +98,12 @@ In your Kobold folder, navigate to the `models` folder.
 
 ![](/static/KoboldAI-4bit-8.PNG)
 
-Open PowerShell inside the folder and download the model with [git](https://docs.alpindale.dev/tools/git):
+Right click on the models folder and select "Open in Terminal". You may download a model now using [git](https://docs.alpindale.dev/tools/git) clone commands.
+There are two models to choose from. If you run
 ```bash
 git clone https://huggingface.co/OccamRazor/pygmalion-6b-gptq-4bit
 ```
-This will download the main Pygmalion version, V3.
+it will download the main Pygmalion version, V3.
 
 As an alternative, Pygmalion Version 8 Part 4 is also available for download. In comparison to V3, V8 was fine tuned on a larger dataset which according to user feedback improved coherency and general knowledge of the model at the cost of being a little less inclined to engage in NSFW roleplay. To download it, run
 ```bash
@@ -110,7 +111,7 @@ git clone https://huggingface.co/mayaeary/pygmalion-6b_dev-4bit-128g
 ```
 instead.
 
-Your preferred model should be downloaded in your `models` folder. The following steps are identical, regardless of which model you've downloaded.
+Your preferred model should be downloaded in your `models` folder. The following steps are identical no matter which model you've downloaded.
 
 !!!warning Rename your model file if you download from another repo!
 The current GPTQ implementation on Kobold needs your model name to be either `4bit.pt`/`4bit.safetensors` or `4bit-128g.pt`/`4bit-128g.safetensors`. Please rename them appropriately:
@@ -169,7 +170,8 @@ chmod +x install_requirements.sh \
 This is a 2.5GB download.
 !!!
 
-3. Download the 4bit Pygmalion model from [here](https://huggingface.co/OccamRazor/pygmalion-6b-gptq-4bit) and place all the files inside Kobold's `models` folder. Create a separate folder for the model first.
+3. Navigate to your Kobold folder and right click on the models folder. Choose Actions -> Open Terminal Here. As the steps for downloading a model are the same for Windows, you may refer to this part of the guide: #### Downloading the model.
+
 !!!danger Rename the model if you download from another repo!
 The model needs to be named either `4bit.pt`/`4bit.safetensors` or `4bit-128g.pt`/`4bit-128g.safetensors` to work. Make sure you properly rename it. 
 !!!
