@@ -94,11 +94,14 @@ After you've done that, congrats! You're almost there. You need to download the 
 
 #### Downloading the model
 
-In your Kobold folder, naviguate to the `models` folder. 
+In your Kobold folder, navigate to the `models` folder. 
 
 ![](/static/KoboldAI-4bit-8.PNG)
 
-Download the model from [this link](https://huggingface.co/OccamRazor/pygmalion-6b-gptq-4bit/resolve/main/4bit-128g.pt). Navigate to the KoboldAI folder, go the `models` folder, create a new folder for pygmalion and copy/paste the file you downloaded there.
+Open PowerShell inside the folder and download the model with [git](https://docs.alpindale.dev/tools/git):
+```bash
+git clone https://huggingface.co/OccamRazor/pygmalion-6b-gptq-4bit
+```
 
 The model should be downloaded in your `models` folder.
 
@@ -159,7 +162,7 @@ chmod +x install_requirements.sh \
 This is a 2.5GB download.
 !!!
 
-3. Download the 4bit Pygmalion model from [here](https://huggingface.co/OccamRazor/pygmalion-6b-gptq-4bit/resolve/main/4bit-128g.pt) and place it inside Kobold's `models` folder. Create a separate folder for the model first.
+3. Download the 4bit Pygmalion model from [here](https://huggingface.co/OccamRazor/pygmalion-6b-gptq-4bit) and place all the files inside Kobold's `models` folder. Create a separate folder for the model first.
 !!!danger Rename the model if you download from another repo!
 The model needs to be named either `4bit.pt`/`4bit.safetensors` or `4bit-128g.pt`/`4bit-128g.safetensors` to work. Make sure you properly rename it. 
 !!!
