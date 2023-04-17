@@ -98,15 +98,14 @@ In your Kobold folder, naviguate to the `models` folder.
 
 ![](/static/KoboldAI-4bit-8.PNG)
 
-Inside, open a PowerShell in that folder and run the following command :
-
-`git lfs clone https://huggingface.co/mayaeary/pygmalion-6b-4bit-128g`
+Download the model from [this link](https://huggingface.co/OccamRazor/pygmalion-6b-gptq-4bit/resolve/main/4bit-128g.pt). Navigate to the KoboldAI folder, go the `models` folder, create a new folder for pygmalion and copy/paste the file you downloaded there.
 
 The model should be downloaded in your `models` folder.
 
-Go into the freshly downloaded `\KoboldAI\models\pygmalion-6b-4bit-128g` folder, and rename the `pygmalion-6b-4bit-128g.safetensors` to `4bit-128g.safetensors`
-
+!!!warning Rename your model file if you download from another repo!
+The current GPTQ implementation on Kobold needs your model name to be either `4bit.pt`/`4bit.safetensors` or `4bit-128g.pt`/`4bit-128g.safetensors`. Please rename them appropriately:
 ![](/static/KoboldAI-4bit-9.PNG)
+!!!
 
 
 !!!info
@@ -160,8 +159,10 @@ chmod +x install_requirements.sh \
 This is a 2.5GB download.
 !!!
 
-3. Download the 4bit Pygmalion model from [here](https://huggingface.co/mayaeary/pygmalion-6b-4bit-128g), rename it to `4bit-128g.safetensors` and place it inside Kobold's `models` folder.
-
+3. Download the 4bit Pygmalion model from [here](https://huggingface.co/OccamRazor/pygmalion-6b-gptq-4bit/resolve/main/4bit-128g.pt) and place it inside Kobold's `models` folder. Create a separate folder for the model first.
+!!!danger Rename the model if you download from another repo!
+The model needs to be named either `4bit.pt`/`4bit.safetensors` or `4bit-128g.pt`/`4bit-128g.safetensors` to work. Make sure you properly rename it. 
+!!!
 4. Start KoboldAI by running `./play.sh`.
 
 5. Navigate to the NewUI (you can simply add `new_ui` at the end of the URL) and activate the Experimental UI.
