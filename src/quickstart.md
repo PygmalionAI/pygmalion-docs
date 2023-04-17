@@ -51,10 +51,10 @@ In that case, proceed to [this section](https://docs.alpindale.dev/quickstart/#i
 
 ## What to do now?
 
-There are several options, depending on how much VRAM your system had. Outlined below are the multiple scenarios and the recommended method of running Pygmalion for each. Please use the Table of Contents for navigating.
+There are several options, depending on how much VRAM your system has. Outlined below are the multiple scenarios and the recommended method of running Pygmalion for each. Please use the Table of Contents for navigating.
 
 ### I have no VRAM!
-In this case, your only choice is to whether run on the Cloud or use Pygmalion C++ to run the model on your CPU.
+In this case, your only choice is to either run on the Cloud or use Pygmalion C++ to run the model on your CPU.
 
 ##### Cloud
 There are several options for running on the cloud - Google Colab and GPU rental services.
