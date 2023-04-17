@@ -102,8 +102,15 @@ Open PowerShell inside the folder and download the model with [git](https://docs
 ```bash
 git clone https://huggingface.co/OccamRazor/pygmalion-6b-gptq-4bit
 ```
+This will download the main Pygmalion version, V3.
 
-The model should be downloaded in your `models` folder.
+As an alternative, Pygmalion Version 8 Part 4 is also available for download. In comparison to V3, V8 was fine tuned on a larger dataset which according to user feedback improved coherency and general knowledge of the model at the cost of being a little less inclined to engage in NSFW roleplay. To download it, run
+```bash
+git clone https://huggingface.co/mayaeary/pygmalion-6b_dev-4bit-128g
+```
+instead.
+
+Your preferred model should be downloaded in your `models` folder. The following steps are identical, regardless of which model you've downloaded.
 
 !!!warning Rename your model file if you download from another repo!
 The current GPTQ implementation on Kobold needs your model name to be either `4bit.pt`/`4bit.safetensors` or `4bit-128g.pt`/`4bit-128g.safetensors`. Please rename them appropriately:
