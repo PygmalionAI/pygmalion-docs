@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.735033145289">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.735045182484">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -35,12 +35,12 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/icons/pyggy.svg" rel="icon" />
-    <link href="../../resources/css/retype.css?v=2.4.0.735033145289" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.735045182484" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.735033145289" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.735045182484" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.735033145289" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.735033145289" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.735045182484" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.735045182484" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -314,14 +314,24 @@
         <span>Downloading the model</span>
     </h4>
 </doc-anchor-target>
-<p>In your Kobold folder, naviguate to the <code v-pre>models</code> folder.</p>
+<p>In your Kobold folder, navigate to the <code v-pre>models</code> folder.</p>
 <p><figure class="content-center">
     <img src="../../static/koboldai-4bit-8.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<p>Download the model from <a href="https://huggingface.co/OccamRazor/pygmalion-6b-gptq-4bit/resolve/main/4bit-128g.pt">this link</a>. Navigate to the KoboldAI folder, go the <code v-pre>models</code> folder, create a new folder for pygmalion and copy/paste the file you downloaded there.</p>
-<p>The model should be downloaded in your <code v-pre>models</code> folder.</p>
+<p>Right click on the models folder and select &quot;Open in Terminal&quot;. You may download a model now using <a href="https://docs.alpindale.dev/tools/git">git</a> clone commands.
+There are two models to choose from. If you run</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">git clone https://huggingface.co/OccamRazor/pygmalion-6b-gptq-4bit</code></pre>
+</doc-codeblock></div>
+<p>it will download the main Pygmalion version, V3.</p>
+<p>As an alternative, Pygmalion Version 8 Part 4 is also available for download. In comparison to V3, V8 was fine tuned on a larger dataset which according to user feedback improved coherency and general knowledge of the model at the cost of being a little less inclined to engage in NSFW roleplay. To download it, run</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">git clone https://huggingface.co/mayaeary/pygmalion-6b_dev-4bit-128g</code></pre>
+</doc-codeblock></div>
+<p>instead.</p>
+<p>Your preferred model should be downloaded in your <code v-pre>models</code> folder. The following steps are identical no matter which model you&#x27;ve downloaded.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-yellow-500"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -459,7 +469,7 @@
     </div>
 </div>
 <ol start="3">
-<li>Download the 4bit Pygmalion model from <a href="https://huggingface.co/OccamRazor/pygmalion-6b-gptq-4bit/resolve/main/4bit-128g.pt">here</a> and place it inside Kobold&#x27;s <code v-pre>models</code> folder. Create a separate folder for the model first.</li>
+<li>Navigate to your Kobold folder and right click on the models folder. Choose Actions -&gt; Open Terminal Here. As the steps for downloading a model are the same for Windows, you may refer to this part of the guide: <a href="https://docs.alpindale.dev/local-installation-(gpu)/koboldai4bit/#downloading-the-model">Downloading the model</a>.</li>
 </ol>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-red-500"></div>
