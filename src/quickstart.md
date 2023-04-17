@@ -69,11 +69,11 @@ If you have a decent CPU, you can run Pygmalion with no GPU required, using the 
 ### I have less than 4GB!
 In that case, please refer to the section above for Cloud and C++ options.
 
-### I have more than 6GB but less than 10GB!
+### I have 6GB or more but less than 10GB!
 
 Please refer to the [4-bit guide](https://docs.alpindale.dev/local-installation-(gpu)/koboldai4bit). Alternatively, you can also use one of the Cloud options if you find the 4bit model undesirable.
 
-### I have more than 10GB but less than 16GB!
+### I have 10GB or more but less than 16GB!
 
 Please refer to the [TextGen WebUI guide](https://docs.alpindale.dev/local-installation-(gpu)/oobabooga) to run Pygmalion at 8bit precision. Make sure you pass the `--load-in-8bit` argument when launching the WebUI. Alternatively, if you're using Linux, you can also use KoboldAI for 8-bit precision mode. Please refer to the [4-bit guide](https://docs.alpindale.dev/local-installation-(gpu)/koboldai4bit) for instructions.
 
