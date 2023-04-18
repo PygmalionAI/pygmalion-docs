@@ -47,8 +47,6 @@ First you want to clone the Kobold-4bit repository: `git clone https://github.co
 
 It shouldn't take more than a few seconds to clone it.
 
-Once it's done, run : `cd KoboldAI`. This will take you to the KoboldAI directory you just downloaded.
-
 This is how your PowerShell look like so far:
 
 ![](/static/KoboldAI-4bit-1.PNG)
