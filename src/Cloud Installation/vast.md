@@ -51,5 +51,5 @@ You're now ready to use PygmalionAI! Make sure you delete (or stop, if you don't
 
 ## Connecting your instance to TavernAI
 
-You can easily use TavernAI along with Kobold. Follow the instructions in the [Tavern guide](https://docs.alpindale.dev/local-installation-(gpu)/tavern/) but instead of inputting `localhost:5000/api`, use your `trycloudflare.com` link. Assuming your URL was `https://pieces-strictly-transparency-luther.trycloudflare.com/new_ui`, you would paste it as `https://pieces-strictly-transparency-luther.trycloudflare.com/api` inside Tavern. Note that the `new_ui` part is removed and replaced with `/api`. 
+You can easily use TavernAI along with Kobold. Follow the instructions in the [Tavern guide](https://docs.alpindale.dev/local-installation-(gpu)/sillytavern/) but instead of inputting `localhost:5000/api`, use your `trycloudflare.com` link. Assuming your URL was `https://pieces-strictly-transparency-luther.trycloudflare.com/new_ui`, you would paste it as `https://pieces-strictly-transparency-luther.trycloudflare.com/api` inside Tavern. Note that the `new_ui` part is removed and replaced with `/api`. 
 
