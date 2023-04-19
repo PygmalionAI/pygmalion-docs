@@ -43,7 +43,7 @@ git clone https://github.com/henk717/KoboldAI && cd KoboldAI
 ./play-rocm.sh  # for AMD
 ```
 
-### Using KoboldAI
+## Using KoboldAI
 
 Once you've launched KoboldAI, click on `AI` on the top-left corner of the screen, then click on `Chat Models` and select `PygmalionAI/pygmalion-6b`. You can then click on `Load`.
 
