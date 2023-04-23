@@ -26,4 +26,4 @@ Language models, including Pygmalion, generally run on GPUs since they need acce
 
 If you don't have a powerful enough GPU, there are luckily alternative solutions. Google's [Colaboratory](https://colab.research.google.com){ target="_blank" } offers free GPUs for all users - though for a limited time. We have ready-made notebooks that you can run to access Pygmalion. You can also use Colab on your mobile phone.
 
-These docs will attempt to explain all the possible methods for running the AI, and in a language that is easy to understand. We will start with Google Colab, as it's generally the easiest method.
+These docs will attempt to explain all the possible methods for running the AI, and in a language that is easy to understand. Please navigate to the next section to begin using Pygmalion.
