@@ -21,32 +21,24 @@ Installing SillyTavern is simple. It supports the following operating systems:
 
 ### Windows Installation
 
-First, you gonna need to install [Node.js](https://nodejs.org/en/download/current){target="blank"}.
+<!-- First, you will need to install [Node.js](https://nodejs.org/en/download/current){target="blank"}.
 
 ![](/static/NodeJSWindows.PNG)
 
-Just open the installer, and click on Next, Next, etc.. (You don't have to change anything in the installer)
+Just open the installer, and click on Next, Next, etc.. (You don't have to change anything in the installer) -->
 
-Once Node.JS is installed, you can download Silly Tavern
+Open PowerShell (you can search for it in the start menu) and type in `winget install -e --id OpenJS.NodeJS`. Once it's finished, close PowerShell.
 
-[!file SillyTavern](https://github.com/Cohee1207/SillyTavern/archive/refs/heads/main.zip)
+You can confirm whether NodeJS is installed by running `node -v` in PowerShell.
 
-!!!info
-You'll need a program such as [7zip](https://www.7-zip.org/download.html){target="blank"} or [WinRAR](www.win-rar.com/predownload.html){target="blank"} to extract the folder.
-!!!
-
-
-Extract it in the folder of your choice (right click -> extract here).
-
-To open SillyTavern, just double click on the start.bat file. 
-![](/static/StartBat.PNG)
+To run SillyTavern, all you'll need to do is open PowerShell again and running `npx sillytavern@latest`. This will open SillyTavern in your browser. You can re-launch SillyTavern anytime by running `npx sillytavern@latest`. 
 
 If everything is working, the CMD should look like this and a SillyTavern tab should be open in your browser.
 
 ![](/static/STcmd.PNG)
 
-!!!danger
-You still have to [connect](https://docs.alpindale.dev/local-installation-(gpu)/sillytavern/#connect-sillytavern) it !
+!!!warning
+You still have to [connect](https://docs.alpindale.dev/local-installation-(gpu)/sillytavern/#connect-sillytavern) it!
 !!!
 
 
@@ -77,8 +69,12 @@ Install NodeJS by running the following command:
 nvm install node
 ```
 
-#### Installation
+#### Installation (with `npx`)
 
+Run `npx sillytavern@latest`. You can re-open it anytime by running the command again.
+
+
+#### Installation (manual)
 
 - Clone the repo
 ```
@@ -102,9 +98,9 @@ pkg update && pkg upgrade
 
 Install NodeJS and git:
 ```bash
-pkg install nodejs openssl git
+pkg install nodejs openssl
 ```
-
+<!-- 
 Download Silly Tavern:
 ```bash
 git clone -b dev https://github.com/Cohee1207/SillyTavern && cd Tavern
@@ -112,11 +108,15 @@ git clone -b dev https://github.com/Cohee1207/SillyTavern && cd Tavern
 !!!warning fatal: destination path 'SillyTavern' already exists
 If you receive the above error, it means you've already downloaded SillyTavern before. In that case, you can simply update it. Change directories to SillyTavern by running `cd SillyTavern`, and then updating it by running `git pull`. 
 !!!
-
+ -->
 Run SillyTavern:
 ```bash
-npm i && node server.js
+npx sillytavern@latest
 ```
+!!!info
+You can run SillyTavern again by simply opening Termux and entering the command above!
+!!!
+
 ## Connect SillyTavern
 
 ![](/static/STconnect.PNG)
