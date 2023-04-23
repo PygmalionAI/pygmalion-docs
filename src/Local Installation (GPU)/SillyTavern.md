@@ -44,8 +44,6 @@ You still have to [connect](https://docs.alpindale.dev/local-installation-(gpu)/
 
 ### Linux/MacOS Installation
 
-If you're on Linux, an automatic installer script is available in the main Tavern repo now. It's still recommended to use your package manager, as the script might mess up if your environment is very custom-made (or you're using NixOS). If you already have nodejs installed, or would like to use the script, please skip the `nodejs` installation section.
-
 #### Requirements
 - nodejs
 - git
