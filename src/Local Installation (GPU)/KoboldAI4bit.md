@@ -99,13 +99,13 @@ In your Kobold folder, navigate to the `models` folder.
 Right click on the models folder and select "Open in Terminal". You may download a model now using [git](https://docs.alpindale.dev/tools/git) clone commands.
 There are two models to choose from. If you run
 ```bash
-git clone https://huggingface.co/OccamRazor/pygmalion-6b-gptq-4bit
+git lfs clone https://huggingface.co/OccamRazor/pygmalion-6b-gptq-4bit
 ```
 it will download the main Pygmalion version, V3.
 
 As an alternative, Pygmalion Version 8 Part 4 is also available for download. In comparison to V3, V8 was fine tuned on a larger dataset which according to user feedback improved coherency and general knowledge of the model at the cost of being a little less inclined to engage in NSFW roleplay. To download it, run
 ```bash
-git clone https://huggingface.co/mayaeary/pygmalion-6b_dev-4bit-128g
+git lfs clone https://huggingface.co/mayaeary/pygmalion-6b_dev-4bit-128g
 ```
 instead.
 
