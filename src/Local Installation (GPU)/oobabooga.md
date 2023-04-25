@@ -6,7 +6,7 @@ title: TextGen WebUI
 
 Oobabooga's Text Generation WebUI is a gradio frontend for running large language models. 
 
-Unlike KoboldAI, it can be used as a standalone front-end - more importantly, you cannot connect Oobabooga's Text Generation WebUI to Tavern. 
+Unlike KoboldAI, it can be used as a standalone front-end - you can still connect to SillyTavern though.
 
 ![](/static/ooba-cloud1.PNG)
 
@@ -22,6 +22,8 @@ Oobabooga has generously created a one-click installation script for Text-Gen We
 
 Simply extract the `one-click-installers-oobabooga-windows.zip` file and click on `install.bat`. That will install everything for you. Once the installation is finished, open the `start-webui.bat` file.
 
+If you want to, you can connect Oobabooga to [SillyTavern](https://docs.alpindale.dev/local-installation-(gpu)/sillytavern/).
+
 
 ### Linux
 
@@ -29,6 +31,7 @@ Oobabooga has created a one-click installer for Linux as well. Simply download t
 
 [!file Text-Gen WebUI Linux Installer](https://github.com/oobabooga/one-click-installers/archive/refs/heads/oobabooga-linux.zip)
 
+If you want to, you can connect Oobabooga to [SillyTavern](https://docs.alpindale.dev/local-installation-(gpu)/sillytavern/).
 
 ## Manual Installation
 You can also manually install the WebUI. This method is recommended because it's more fun. The following guide is applicable to both Windows and Linux, though the primary audience is Linux users.
@@ -78,4 +81,6 @@ The `PygmalionAI/` part is for if you want to download the model first. If you a
 Please don't forget to pass the `--load-in-8bit` argument too if you have a low VRAM PC! `--auto-devices` should take care of the memory assignment if you have less 10GB VRAM.
 !!!
 
-You can view the full list of commands [here](https://github.com/oobabooga/text-generation-webui#starting-the-web-ui){target="_blank"}
+You can view the full list of commands [here](https://github.com/oobabooga/text-generation-webui#starting-the-web-ui){target="_blank"}.
+
+If you want to, you can connect Oobabooga to [SillyTavern](https://docs.alpindale.dev/local-installation-(gpu)/sillytavern/).

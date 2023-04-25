@@ -6,7 +6,7 @@ title: SillyTavern
 SillyTavern is a user interface you can install on your computer (and Android phones) that allows you to interact with text generation AIs and chat/roleplay with the characters you or the community create.
 
 !!!info
-SillyTavern is just a UI; you will need to connect it to a backend: [KoboldAI](https://docs.alpindale.dev/local-installation-(gpu)/kobold/), [TextGen WebUI](https://docs.alpindale.dev/local-installation-(gpu)/oobabooga/) or [Google Colab](https://docs.alpindale.dev/cloud-installation/koboldai/).
+SillyTavern is just a UI; you will need to connect it to a backend: [KoboldAI](https://docs.alpindale.dev/local-installation-(gpu)/kobold/) or [TextGen WebUI](https://docs.alpindale.dev/local-installation-(gpu)/oobabooga/).
 !!!
 
 ![](/static/SillyTavern.PNG)
