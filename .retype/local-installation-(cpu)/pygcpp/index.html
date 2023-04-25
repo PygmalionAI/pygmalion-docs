@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
 <head>
-    <script defer data-domain="docs.alpindale.dev/pygmalion-docs" src="https://plausible.io/js/plausible.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1T6NPEB6QT"></script>
+    <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-1T6NPEB6QT');</script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.735045182484">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.735741861511">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -33,12 +34,12 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/icons/pyggy.svg" rel="icon" />
-    <link href="../../resources/css/retype.css?v=2.4.0.735045182484" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.735741861511" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.735045182484" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.735741861511" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.735045182484" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.735045182484" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.735741861511" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.735741861511" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -225,7 +226,35 @@
         <span>The 4-bit quantized 6B model</span>
     </h2>
 </doc-anchor-target>
-<p>You can download the model from <a href="https://huggingface.co/concedo/pygmalion-6bv3-ggml-ggjt/resolve/main/pygmalion-6b-v3-ggml-ggjt-q4_0.bin">here</a>. This should be faster than the previous version quantized by me, but if you run into any issues, you can still download the old version from <a href="https://huggingface.co/alpindale/pygmalion-6b-ggml/resolve/main/pygmalion-6b-v3-q4_0.bin">here</a>.</p>
+<p>
+<div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
+    <div class="flex items-center text-blue-500 dark:text-blue-400">
+        <span class="inline-block mb-px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"/><path d="M21 14c-.55 0-1 .45-1 1v4c0 .55-.45 1-1 1H5c-.55 0-1-.45-1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-4c0-.55-.45-1-1-1z"/><path d="M11.29 15.71c.09.09.2.17.33.22.12.04.25.07.38.07s.26-.03.38-.08.23-.12.33-.22l5-5a.996.996 0 10-1.41-1.41l-3.3 3.3V3c0-.55-.45-1-1-1s-1 .45-1 1v9.59l-3.29-3.3A.996.996 0 106.3 10.7l4.99 5.01z"/></svg>
+        </span>
+        <span class="inline-block font-medium ml-2">Pygmalion-6B 4bit (concedo)</span>
+    </div>
+    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
+        <span>pygmalion-6b-v3-ggml-ggjt-q4_0.bin</span>
+    </div>
+    <a href="https://huggingface.co/concedo/pygmalion-6bv3-ggml-ggjt/resolve/main/pygmalion-6b-v3-ggml-ggjt-q4_0.bin" class="absolute block inset-0"></a>
+</div>
+</p>
+<p>If the model above doesn&#x27;t work for any reason, you can download the old one instead:</p>
+<p>
+<div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
+    <div class="flex items-center text-blue-500 dark:text-blue-400">
+        <span class="inline-block mb-px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"/><path d="M21 14c-.55 0-1 .45-1 1v4c0 .55-.45 1-1 1H5c-.55 0-1-.45-1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-4c0-.55-.45-1-1-1z"/><path d="M11.29 15.71c.09.09.2.17.33.22.12.04.25.07.38.07s.26-.03.38-.08.23-.12.33-.22l5-5a.996.996 0 10-1.41-1.41l-3.3 3.3V3c0-.55-.45-1-1-1s-1 .45-1 1v9.59l-3.29-3.3A.996.996 0 106.3 10.7l4.99 5.01z"/></svg>
+        </span>
+        <span class="inline-block font-medium ml-2">Pygmalion-6B 4bit (alpindale)</span>
+    </div>
+    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
+        <span>pygmalion-6b-v3-q4_0.bin</span>
+    </div>
+    <a href="https://huggingface.co/alpindale/pygmalion-6b-ggml/resolve/main/pygmalion-6b-v3-q4_0.bin" class="absolute block inset-0"></a>
+</div>
+</p>
 <hr />
 <doc-anchor-target id="windows-guide">
     <h2>
@@ -234,7 +263,7 @@
     </h2>
 </doc-anchor-target>
 <p>Running on Windows is exceedingly simple. You can download the <code v-pre>.exe</code> file from <a href="https://github.com/LostRuins/koboldcpp/releases/latest">here</a>, and the Pygmalion 6B model linked above.</p>
-<p>Once you have both files downloaded, all you need to do is drag the <code v-pre>pygmalion-6b-v3-q4_0.bin</code> file and drop it into <code v-pre>koboldcpp.exe</code> file. This will load the model and start a Kobold instance in <a href="http://127.0.0.1:5001">localhost:5001</a> on your browser.</p>
+<p>Once you have both files downloaded, all you need to do is drag the <code v-pre>pygmalion-6b-v3-q4_0.bin</code> file and drop it into <code v-pre>koboldcpp.exe</code> file. This will load the model and start a Kobold instance in <a href="http://127.0.0.1:5001">localhost:5001</a> on your browser. <strong>You can also simply double-click on the .exe file.</strong></p>
 <hr />
 <doc-anchor-target id="macos-guide">
     <h2>
@@ -296,7 +325,7 @@
         <span>macOS Quickstart</span>
     </h6>
 </doc-anchor-target>
-<p>If you want to launch it again later, all you need to do is open a terminal inside the <code v-pre>koboldcpp</code> folder, and running:</p>
+<p>If you want to launch it again later, all you need to do is open a terminal inside the <code v-pre>koboldcpp</code> folder, and run:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-bash"><code v-pre class="language-bash">python3 koboldcpp.py pygmalion-6b-v3-ggml-ggjt-q4_0.bin</code></pre>
 </doc-codeblock></div>
@@ -418,7 +447,7 @@ python koboldcpp.py pygmalion-6b-v3-ggml-ggjt-q4_0.bin            # Load the mod
         <span>Connecting to Tavern</span>
     </h2>
 </doc-anchor-target>
-<p>You can connect Pygmalion C++ to Tavern the same way you would the regular KoboldAI. There&#x27;s a guide included <a href="https://docs.alpindale.dev/local-installation-(gpu)/tavern/">here</a>. Note that this won&#x27;t work for Android, as TavernAI is currently not available for Android locally.</p>
+<p>You can connect Pygmalion C++ to Tavern the same way you would the regular KoboldAI. There&#x27;s a guide included <a href="https://docs.alpindale.dev/local-installation-(gpu)/sillytavern/">here</a>.</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -492,6 +521,5 @@ python koboldcpp.py pygmalion-6b-v3-ggml-ggjt-q4_0.bin            # Load the mod
     <div id="docs-overlay-target"></div>
 
     <script>window.__DOCS__ = { "title": "Pygmalion C++", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
-    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="387ba2b4-1f5e-4710-89eb-a5e044c6af98";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 </body>
 </html>

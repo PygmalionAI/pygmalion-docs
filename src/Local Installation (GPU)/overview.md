@@ -24,7 +24,7 @@ Radeon RX 6800      | AMD               | 16GB
 
 
 !!!warning Your card isn't listed here?
-If you don't have any of these cards, but still have over 8GB of VRAM, chances are you can run the model just fine. You just have to make sure your card supports CUDA (NVIDIA) or ROCm (AMD). We'll get to that later.
+If you don't have any of these cards, but have still have 6GB or more VRAM, you can still run Pygmalion! (Provided you're using NVIDIA) Please refer to the [Quickstart page](https://docs.alpindale.dev/quickstart/).
 !!!
 
 Please continue to the next section.

@@ -20,7 +20,21 @@ Many of our tutorials use Git, so you should consider installing it by following
 
 ## Windows
 
-You can easily install Git by following a few simple steps. Start by navigating to your desktop and then hold down the Shift key while right-clicking. From the context menu, select the option to `Open PowerShell Window here`.
+Installation is very simple. Open the Start Menu and search for `PowerShell`. Right-click on it and Open as Administrator. Once the blue PowerShell window pops up, simply type these two commands in order and **press enter to execute them**:
+
+1. Install `git`:
+```bash
+winget install -e --id Git.Git
+```
+
+2. Install `git lfs`
+```bash
+winget install -e --id GitHub.GitLFS
+```
+
+3. Close PowerShell.
+
+<!-- You can easily install Git by following a few simple steps. Start by navigating to your desktop and then hold down the Shift key while right-clicking. From the context menu, select the option to `Open PowerShell Window here`.
 
 ![](/static/OpenPSWindows.PNG)
 
@@ -38,7 +52,7 @@ Once it's done, run those two command one by one:
 
 !!!success You're done
 Git should be properly installed now.
-!!!
+!!! -->
 
 ## macOS
 To make things easier, we will use "Homebrew", a commandline software installer for macOS.
@@ -60,18 +74,17 @@ At this point, you've installed Git on your Apple Silicon. You can now verify by
 
 I shouldn't have to explain this to you, Linux user. `git` is on every package manager. However, I like extensive documentation, so I will list instructions for all distros.
 
-1. Check what your distro is. Run `uname -a` in the Terminal.
-
-2. Install `git`:
+If you're unsure what your distro is, run `uname -v | awk '{print $4}'`.
+- Install `git` and `git-lfs`:
 
 ```
-sudo pacman -S git                  # Arch/Manjaro/Endeavour
-sudo apt install git                # Debian/Ubuntu/Mint
-doas apk add git                    # Alpine Linux
-sudo dnf install git                # Fedora/RHEL
-sudo emerge dev-vcs/git             # Gentoo
-sudo xbps-install git               # Void Linux
-sudo zypper in git-core             # OpenSUSE
-nix-env -iA nixos.git               # NixOS
-nix-env -iA nixpkgs.git             # Nix
+sudo pacman -S git git-lfs                # Arch/Manjaro/Endeavour
+sudo apt install git git-lfs              # Debian/Ubuntu/Mint
+doas apk add git git-lfs                  # Alpine Linux
+sudo dnf install git git-l                # Fedora/RHEL
+sudo emerge dev-vcs/git dev-vcs/git-lfs   # Gentoo
+sudo xbps-install git git-lfs             # Void Linux
+sudo zypper in git-core git-lfs           # OpenSUSE
+nix-env -iA nixos.git nixos.git-lfs       # NixOS
+nix-env -iA nixpkgs.git nixpkgs.git-lfs   # Nix
 ```
