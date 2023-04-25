@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.735566075370">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.735743639969">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -24,23 +24,22 @@
     <meta property="og:url" content="https://docs.alpindale.dev/tools/git/">
     <meta property="og:title" content="Git - Pygmalion AI">
     <meta property="og:description" content="Git is a popular version control system used by software developers to manage their code.">
-    <meta property="og:image" content="https://docs.alpindale.dev/static/openpswindows.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.alpindale.dev/tools/git/">
     <meta property="twitter:title" content="Git - Pygmalion AI">
     <meta property="twitter:description" content="Git is a popular version control system used by software developers to manage their code.">
-    <meta property="twitter:image" content="https://docs.alpindale.dev/static/openpswindows.png">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/icons/pyggy.svg" rel="icon" />
-    <link href="../../resources/css/retype.css?v=2.4.0.735566075370" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.735743639969" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.735566075370" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.735743639969" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.735566075370" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.735743639969" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.735743639969" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -250,39 +249,41 @@ Git gives you access to useful commands, such as <code v-pre>git clone</code>. Y
         <span>Windows</span>
     </h2>
 </doc-anchor-target>
-<p>You can easily install Git by following a few simple steps. Start by navigating to your desktop and then hold down the Shift key while right-clicking. From the context menu, select the option to <code v-pre>Open PowerShell Window here</code>.</p>
-<p><figure class="content-center">
-    <img src="../../static/openpswindows.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<p>In the PowerShell, run this command : <code v-pre>Set-ExecutionPolicy RemoteSigned -Scope CurrentUser</code> (Copy paste it into the PowerShell and press enter).</p>
-<p>You should get a message asking you if you want to change the &quot;execution policy&quot;, press <code v-pre>y</code> then enter.</p>
-<p><figure class="content-center">
-    <img src="../../static/psexecutionpolicy.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<p>Once it&#x27;s done, run those two command one by one:</p>
-<p><code v-pre>irm get.scoop.sh | iex</code></p>
-<p><code v-pre>scoop install git</code></p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-green-500"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-green-500" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M21 9.09c-.55 0-1 .45-1 1v.92c0 4.96-4.04 8.99-9 8.99-4.97 0-9-4.04-9-9s4.04-9 9-9c1.27 0 2.5.26 3.66.78.51.22 1.1 0 1.32-.51.23-.5 0-1.1-.51-1.32C14.06.32 12.56 0 11.01 0H11C4.94 0 0 4.93 0 10.99 0 17.06 4.93 22 10.99 22H11c6.06 0 11-4.93 11-10.99v-.92c0-.56-.45-1-1-1z"></path>
-                    <path d="M8.71 9.31a.996.996 0 10-1.41 1.41l3 3c.19.19.44.29.71.29.27 0 .52-.11.71-.29l10-10.01a.996.996 0 10-1.41-1.41L11 11.6 8.71 9.31z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-            <h5>You&#x27;re done</h5>
-<p>Git should be properly installed now.</p>
-        </div>
-    </div>
-</div>
+<p>Installation is very simple. Open the Start Menu and search for <code v-pre>PowerShell</code>. Right-click on it and Open as Administrator. Once the blue PowerShell window pops up, simply type these two commands in order and <strong>press enter to execute them</strong>:</p>
+<ol>
+<li>Install <code v-pre>git</code>:</li>
+</ol>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">winget install -e --id Git.Git</code></pre>
+</doc-codeblock></div>
+<ol start="2">
+<li>Install <code v-pre>git lfs</code></li>
+</ol>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">winget install -e --id GitHub.GitLFS</code></pre>
+</doc-codeblock></div>
+<ol start="3">
+<li>Close PowerShell.</li>
+</ol>
+<!-- You can easily install Git by following a few simple steps. Start by navigating to your desktop and then hold down the Shift key while right-clicking. From the context menu, select the option to `Open PowerShell Window here`.
+
+![](/static/OpenPSWindows.PNG)
+
+In the PowerShell, run this command : `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser` (Copy paste it into the PowerShell and press enter).
+
+You should get a message asking you if you want to change the "execution policy", press `y` then enter.
+
+![](/static/PSExecutionPolicy.PNG)
+
+Once it's done, run those two command one by one:
+
+`irm get.scoop.sh | iex`
+
+`scoop install git`
+
+!!!success You're done
+Git should be properly installed now.
+!!! -->
 <doc-anchor-target id="macos">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#macos">#</doc-anchor-trigger>
@@ -304,22 +305,20 @@ Git gives you access to useful commands, such as <code v-pre>git clone</code>. Y
     </h2>
 </doc-anchor-target>
 <p>I shouldn&#x27;t have to explain this to you, Linux user. <code v-pre>git</code> is on every package manager. However, I like extensive documentation, so I will list instructions for all distros.</p>
-<ol>
-<li><p>Check what your distro is. Run <code v-pre>uname -a</code> in the Terminal.</p>
-</li>
-<li><p>Install <code v-pre>git</code>:</p>
-</li>
-</ol>
+<p>If you&#x27;re unsure what your distro is, run <code v-pre>uname -v | awk '{print $4}'</code>.</p>
+<ul>
+<li>Install <code v-pre>git</code> and <code v-pre>git-lfs</code>:</li>
+</ul>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">sudo pacman -S git                  # Arch/Manjaro/Endeavour
-sudo apt install git                # Debian/Ubuntu/Mint
-doas apk add git                    # Alpine Linux
-sudo dnf install git                # Fedora/RHEL
-sudo emerge dev-vcs/git             # Gentoo
-sudo xbps-install git               # Void Linux
-sudo zypper in git-core             # OpenSUSE
-nix-env -iA nixos.git               # NixOS
-nix-env -iA nixpkgs.git             # Nix</code></pre>
+<pre class="language-none"><code v-pre class="language-none">sudo pacman -S git git-lfs                # Arch/Manjaro/Endeavour
+sudo apt install git git-lfs              # Debian/Ubuntu/Mint
+doas apk add git git-lfs                  # Alpine Linux
+sudo dnf install git git-l                # Fedora/RHEL
+sudo emerge dev-vcs/git dev-vcs/git-lfs   # Gentoo
+sudo xbps-install git git-lfs             # Void Linux
+sudo zypper in git-core git-lfs           # OpenSUSE
+nix-env -iA nixos.git nixos.git-lfs       # NixOS
+nix-env -iA nixpkgs.git nixpkgs.git-lfs   # Nix</code></pre>
 </doc-codeblock></div>
 
                                 
@@ -393,6 +392,6 @@ nix-env -iA nixpkgs.git             # Nix</code></pre>
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Git", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "Git", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>

@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.735566075370">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.735743639969">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -36,11 +36,11 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/icons/pyggy.svg" rel="icon" />
-    <link href="../../resources/css/retype.css?v=2.4.0.735566075370" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.735743639969" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.735566075370" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.735743639969" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.735566075370" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.735743639969" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -227,7 +227,7 @@
     </h2>
 </doc-anchor-target>
 <p>A soft prompt is a file that modifies the style and behavior of the language model. It can create a bias towards the tone or the style of an author or series, and the model can then use this information to generate an output that fits your purposes for a specific bot(s).
-Even if they can help the model to internalize lore, facts or information, they are not suited for it. SPs <em>do not</em> re-train model and as such, no new knowledge is acquired.</p>
+Even if they can help the model to internalize lore, facts or information, they are not suited for it. SPs <em>do not</em> re-train model and as such, no new knowledge is acquired. If you&#x27;re interested in how softprompts work on a <em>technical</em> level, please refer to [this section]</p>
 <doc-anchor-target id="using-soft-prompts">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#using-soft-prompts">#</doc-anchor-trigger>
@@ -293,7 +293,7 @@ Even if they can help the model to internalize lore, facts or information, they 
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>For Google Colab user, you have to click on the remote URL provide by the colab to reach that UI !</p>
+<p>For Google Colab user, please click on the remote URL provide by the colab to reach that UI!</p>
         </div>
     </div>
 </div>
@@ -308,12 +308,30 @@ Even if they can help the model to internalize lore, facts or information, they 
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<p>If your Soft Prompt is loaded, the light bulb should be green !</p>
+<p>If your Soft Prompt is loaded, the light bulb should be green!</p>
 <p><figure class="content-center">
     <img src="../../static/sp-kobold-3.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
+<doc-anchor-target id="how-do-soft-prompts-work">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-do-soft-prompts-work">#</doc-anchor-trigger>
+        <span>How do Soft Prompts work?</span>
+    </h2>
+</doc-anchor-target>
+<p>Refer to <a href="https://arxiv.org/abs/2104.08691">this paper</a> for a more detailed overview, and this <a href="https://github-wiki-see.page/m/KoboldAI/KoboldAI-Client/wiki/Soft-Prompts">wiki page</a> for a more in-depth and human-readable explanation.</p>
+<p>Soft prompting is an alternative to model <a href="https://huggingface.co/docs/transformers/training">fine-tuning</a> that freezes the weights of a model and updates the parameters of a prompt to adapt the model to different downstream tasks. This results in a &quot;soft prompt&quot;.</p>
+<p>The advantage of soft prompting is that it allows the same model to be used for mutliple tasks by appending the appropriate prompts at inference time. This makes batching across different tasks easier. Soft prompts trained for a single model across multiple tasks will often be of the same token length. The vectors of values of the tokens can be considered as model parameters, and the model can be further trained by adjusting only the weights of these prompts.</p>
+<p>Prompt tuning performs better with larger models, and using more than 20 tokens doesn&#x27;t yield significant performance gains.</p>
+<p><strong>TL;DR</strong>, Soft prompts are learnable vectors that are concatenated to the input text and optimized end-to-end over a training dataset. Mixtures of soft prompts can be used to query LMs, allowing us to learn which prompts are most effective and how to ensemble them.</p>
+<doc-anchor-target id="how-do-i-create-a-soft-prompt">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-do-i-create-a-soft-prompt">#</doc-anchor-trigger>
+        <span>How do I create a Soft Prompt?</span>
+    </h2>
+</doc-anchor-target>
+<p>Creating a softprompt for a a GPT-J model needs several times the computation power it takes to inference the model. KoboldAI has a <a href="https://colab.research.google.com/gist/henk717/281fd57ebd2e88d852ef9dcc3f29bebf/easy-softprompt-tuner.ipynb#sandboxMode=true">Colab Notebook</a>. As of now (2023-04-22), Colab&#x27;s TPUs have a driver issue and so the Easy Tuner won&#x27;t work. You can instead refer to <a href="https://github.com/exelents/soft-prompt-tuning">this repo</a> for GPU tuning - though you&#x27;ll likely need a powerful GPU.</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -339,10 +357,10 @@ Even if they can help the model to internalize lore, facts or information, they 
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../local-installation-(cpu)/overview/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../pygmalion-extras/lora/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Overview</span>
+                                                <span class="block mt-1">Lo​RA</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
