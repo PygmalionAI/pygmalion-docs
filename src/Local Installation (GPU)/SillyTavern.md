@@ -126,7 +126,7 @@ pkg install nodejs openssl
 
 Download Silly Tavern:
 ```bash
-git clone -b dev https://github.com/Cohee1207/SillyTavern && cd Tavern
+git clone -b dev https://github.com/Cohee1207/SillyTavern && cd SillyTavern
 ```
 !!!warning fatal: destination path 'SillyTavern' already exists
 If you receive the above error, it means you've already downloaded SillyTavern before. In that case, you can simply update it. Change directories to SillyTavern by running `cd SillyTavern`, and then updating it by running `git pull`. 
