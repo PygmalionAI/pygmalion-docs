@@ -39,13 +39,17 @@ After installing GitHub Desktop, click on `Clone a repository from the internet.
 On the menu, go into the `URL` tab, enter this url `https://github.com/Cohee1207/SillyTavern` and click `clone`.
 
 !!!info
-You can change the path where SillyTavern is going to be downloaded.
+You can change the `Local path` to change where SillyTavern is going to be downloaded.
 !!!
 
 ![](/static/GUI-Clone.PNG)
 
 
-To open SillyTavern, just go into the folder and double click on the start.bat file. 
+To open SillyTavern, just go into the folder where you cloned the repository, and double click on the start.bat file. 
+!!!info
+By default, the repository will be clone here : `C:\Users[Your Account Name]\Documents\GitHub\SillyTavern`
+!!!
+
 ![](/static/StartBat.PNG)
 
 <!-- Open PowerShell (you can search for it in the start menu) and type in `winget install -e --id OpenJS.NodeJS`. Once it's finished, close PowerShell.
@@ -133,6 +137,11 @@ If you receive the above error, it means you've already downloaded SillyTavern b
 npx sillytavern@latest
 ```
  -->
+ Run SillyTavern:
+```bash
+npm i && node server.js
+```
+
 !!!info
 You can run SillyTavern again by simply opening Termux and entering the command above!
 !!!
