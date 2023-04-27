@@ -101,7 +101,7 @@ Run `npx sillytavern@latest`. You can re-open it anytime by running the command 
 
 - Clone the repo
 ```
-git clone -b dev https://github.com/Cohee1207/SillyTavern && cd TavernAI
+git clone -b dev https://github.com/Cohee1207/SillyTavern && cd SillyTavern
 ```
 
 - Run TavernAI
