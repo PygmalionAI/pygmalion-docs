@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 10000
 icon: ":desktop_computer:"
 title: SillyTavern
 ---
@@ -13,10 +13,10 @@ SillyTavern is just a UI; you will need to connect it to a backend: [KoboldAI](h
 
 ## Installation
 Installing SillyTavern is simple. It supports the following operating systems:
-- [Windows x64](https://docs.alpindale.dev/local-installation-(gpu)/sillytavern/#windows-installation)
-- [Linux x64](https://docs.alpindale.dev/local-installation-(gpu)/sillytavern/#linuxmacos-installation)
-- [MacOS (Darwin x64)](https://docs.alpindale.dev/local-installation-(gpu)/sillytavern/#linuxmacos-installation)
-- [Android (aarch64)](https://docs.alpindale.dev/local-installation-(gpu)/sillytavern/#android-installation)
+- [Windows x64](https://docs.alpindale.dev/pygmalion-extras/sillytavern/#windows-installation)
+- [Linux x64](https://docs.alpindale.dev/pygmalion-extras/sillytavern/#linuxmacos-installation)
+- [MacOS (Darwin x64)](https://docs.alpindale.dev/pygmalion-extras/sillytavern/#linuxmacos-installation)
+- [Android (aarch64)](https://docs.alpindale.dev/pygmalion-extras/sillytavern/#android-installation)
 
 
 ### Windows Installation
@@ -145,6 +145,9 @@ npm i && node server.js
 !!!info
 You can run SillyTavern again by simply opening Termux and entering the command above!
 !!!
+
+#### Connect to Horde
+![Recommended for Phone Users](/static/quickstart1.png)
 
 ## Connect SillyTavern
 

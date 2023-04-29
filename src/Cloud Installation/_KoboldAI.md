@@ -25,6 +25,6 @@ You might be warned that the notebook is not authored by Google - you can ignore
 ![](/static/kobold-cloud2.PNG)
 
 !!!success You're done! 
-You can start using Pygmalion if you clicked on the second link. If you want to use it with Tavern, please refer to the [SillyTavern](https://docs.alpindale.dev/local-installation-(gpu)/sillytavern/) guide included here.
+You can start using Pygmalion if you clicked on the second link. If you want to use it with Tavern, please refer to the [SillyTavern](https://docs.alpindale.dev/pygmalion-extras/sillytavern/) guide included here.
 !!!
 

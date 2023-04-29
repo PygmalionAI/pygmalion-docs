@@ -22,7 +22,7 @@ Oobabooga has generously created a one-click installation script for Text-Gen We
 
 Simply extract the `one-click-installers-oobabooga-windows.zip` file and click on `install.bat`. That will install everything for you. Once the installation is finished, open the `start-webui.bat` file.
 
-If you want to, you can connect Oobabooga to [SillyTavern](https://docs.alpindale.dev/local-installation-(gpu)/sillytavern/).
+If you want to, you can connect Oobabooga to [SillyTavern](https://docs.alpindale.dev/pygmalion-extras/sillytavern/).
 
 
 ### Linux
@@ -31,7 +31,7 @@ Oobabooga has created a one-click installer for Linux as well. Simply download t
 
 [!file Text-Gen WebUI Linux Installer](https://github.com/oobabooga/one-click-installers/archive/refs/heads/oobabooga-linux.zip)
 
-If you want to, you can connect Oobabooga to [SillyTavern](https://docs.alpindale.dev/local-installation-(gpu)/sillytavern/).
+If you want to, you can connect Oobabooga to [SillyTavern](https://docs.alpindale.dev/pygmalion-extras/sillytavern/).
 
 ## Manual Installation
 You can also manually install the WebUI. This method is recommended because it's more fun. The following guide is applicable to both Windows and Linux, though the primary audience is Linux users.
@@ -83,4 +83,4 @@ Please don't forget to pass the `--load-in-8bit` argument too if you have a low 
 
 You can view the full list of commands [here](https://github.com/oobabooga/text-generation-webui#starting-the-web-ui){target="_blank"}.
 
-If you want to, you can connect Oobabooga to [SillyTavern](https://docs.alpindale.dev/local-installation-(gpu)/sillytavern/).
+If you want to, you can connect Oobabooga to [SillyTavern](https://docs.alpindale.dev/pygmalion-extras/sillytavern/).

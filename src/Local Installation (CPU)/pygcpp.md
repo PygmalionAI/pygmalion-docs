@@ -130,4 +130,4 @@ Now open [http://localhost:5001](http://localhost:5001) on your browser.
 ***
 ## Connecting to Tavern
 
-You can connect Pygmalion C++ to Tavern the same way you would the regular KoboldAI. There's a guide included [here](https://docs.alpindale.dev/local-installation-(gpu)/sillytavern/).
+You can connect Pygmalion C++ to Tavern the same way you would the regular KoboldAI. There's a guide included [here](https://docs.alpindale.dev/pygmalion-extras/sillytavern/).

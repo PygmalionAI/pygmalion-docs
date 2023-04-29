@@ -9,12 +9,41 @@ title: Quickstart
 
 There are multiple ways to run a large language model like Pygmalion, including using cloud computing instances or locally installed software. For users who want to run the model locally, it's important to ensure that their computer meets the minimum requirements, including having a GPU with enough memory. Outlined below are instructions for Windows Users to find out which criteria they meet so they can quickly get started.
 
-## Windows
+
+
+## Mobile
+
+You have a few options for running Pygmalion on your mobile phone, depending on what phone you're using. 
+
+### iOS (iPhone)
+Your only choice is to use Kobold Horde. You can use this URL to start chatting:
+
+[!button Kobold Horde](https://koboldai.org/pygmalion)
+
+!!!warning The Horde can be slow!
+Keep in mind that the Kobold Horde is run by generous donors running Pygmalion on their own PCs and allowing other people to use them. The number of users far exceeds the number of hosts. You're encouraged to also chip in by hosting Pygmalion yourself if you meet the required specifications to run it locally on your PC.
+!!!
+
+### Android
+Android users have more options than iOS users. You can either run the model locally on your phone, no internet connection required, or use the Kobold Horde via SillyTavern. 
+
+#### Locally
+To run Pygmalion locally on your phone, you'll need to make sure you have **at least** 8GB of RAM. You can find out the memory size for your phone by looking it up online.
+You can refer to our guide here for instructions on how to set it up:
+
+[!button koboldcpp](https://docs.alpindale.dev/local-installation-(cpu)/pygcpp/#android)
+
+#### SillyTavern
+You can also run Pygmalion using SillyTavern via Kobold Horde. Simply follow the Android instructions in SillyTavern guide:
+
+[!button SillyTavern](https://docs.alpindale.dev/pygmalion-extras/sillytavern/#android-installation)
+
+## Local (PC)
 
 ### Identifying your GPU
-
 Find out what GPU you're using (if any at all) by performing the following steps:
 
+#### Windows
 1. Press the `Windows Key` + `R`. This will open the `Run` window.
 2. Type in `dxdiag` and press enter.
 ![](/static/quick1.jpg)
@@ -29,9 +58,8 @@ You might be greeted with a dialogue box if it's the first time launcing `dxdiag
 Unfortunately, the framework required to enable compute on AMD GPUs (ROCm) is currently unavailable on Windows. While we wait for AMD to add ROCm support to Windows, you will either have to switch to Linux or use the Cloud/C++ solutions.
 !!!
 
-## Linux
+#### Linux
 
-### Identifying your GPU
 Use the following command to find out whether you have a discrete GPU or not:
 ```bash
 lspci -k | grep -A 2 -E "(VGA|3D)"
@@ -49,7 +77,7 @@ In that case, proceed to [this section](https://docs.alpindale.dev/quickstart/#i
 
 
 
-## What to do now?
+### What to do now?
 
 There are several options, depending on how much VRAM your system has. Outlined below are the multiple scenarios and the recommended method of running Pygmalion for each. Please use the Table of Contents for navigating.
 
