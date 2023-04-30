@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.736201488983">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.736213933506">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -36,11 +36,12 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/icons/pyggy.svg" rel="icon" />
-    <link href="../../resources/css/retype.css?v=2.4.0.736201488983" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.736213933506" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.736201488983" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.736213933506" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.736201488983" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.736213933506" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.736213933506" defer></script>
     <link href="../../resources/css/katex.css?v=2.4.0" rel="stylesheet" />
     <script id="katex-js" type="text/javascript" src="../../resources/js/katex.js?v=2.4.0" defer></script>
 </head>
@@ -292,6 +293,73 @@
     </h2>
 </doc-anchor-target>
 <p>The <a href="https://github.com/stochasticai/xturing">xTuring</a> repository contains code for both LoRA and full fine-tuning of LLMs such as LLaMA, GPT-J, and more. The current GPT-J (Pygmalion 6B) training code is only compatible with Alpaca and GPT4All dataset formats, so it will likely be useless for most users. There&#x27;s currently work being done on creating INT4 LoRA training code for GPT-J, so please be patient and keep an eye out for any updates here.</p>
+<doc-anchor-target id="how-do-i-load-a-lora">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-do-i-load-a-lora">#</doc-anchor-trigger>
+        <span>How do I load a LoRA?</span>
+    </h2>
+</doc-anchor-target>
+<p>First, choose what LoRA you want to use. We have a list in the <a href="https://discord.com/invite/pygmalionai">Discord Server</a>. The steps will differ for both Kobold and Oobabooga (TextGen WebUI).</p>
+<doc-anchor-target id="oobabooga-textgen-webui">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#oobabooga-textgen-webui">#</doc-anchor-trigger>
+        <span>Oobabooga (TextGen WebUI)</span>
+    </h3>
+</doc-anchor-target>
+<p>Currently, the easiest way to load a LoRA is via Oobabooga. Open a PowerShell/Terminal instance (press Shift + Righ-Click inside the folder and not on a file, then select &quot;Open in PowerShell), and run this command:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">python3 download-model.py tloen/alpaca-lora-7b</code></pre>
+</doc-codeblock></div>
+<blockquote>
+<p>Replace <code v-pre>tloen/alpaca-lora-7b</code> with the name of the LoRA repo you want. For example, if the link in the Discord post for the LoRA says <code v-pre>https://huggingface.co/nomic-ai/gpt4all-lora</code>, then you&#x27;ll have to put <code v-pre>nomic-ai/gpt4all-lora</code> in there instead.</p>
+</blockquote>
+<p>Then you can launch Oobabooga normally and then select the LoRA from the &quot;Parameters&quot; tab.</p>
+<doc-anchor-target id="koboldai">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#koboldai">#</doc-anchor-trigger>
+        <span>KoboldAI</span>
+    </h3>
+</doc-anchor-target>
+<p>To use a LoRA with KoboldAI, you will need to merge the LoRA with the base model first. First, grab the LoRA you want from the <a href="https://discord.com/invite/pygmalionai">Discord Server</a>. You can use <a href="https://docs.alpindale.dev/tools/git"><code v-pre>git lfs</code></a> to download the LoRA. Place the downloaded LoRA (if you&#x27;re on Windows, the default download path is C:\Users&lt;username&gt;) inside KoboldAI&#x27;s <code v-pre>models</code> folder.</p>
+<p>Then grab the merge script from <a href="https://github.com/AlpinDale/lora-merge/blob/main/merge.py">here</a> and place it in the <code v-pre>models</code> folder of your KoboldAI directory.</p>
+<p>Assuming your Pygmalion model folder is named &quot;pygmalion-7b&quot;, open a PowerShell/Terminal instance inside the <code v-pre>models</code> folder (on Windows, press Shift + Right-Click inside the folder and choose &quot;Open in Powershell&quot;), and type this command in:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">python3 merge.py --base_model pygmalion-7b --lora alpaca-lora --output pygmalion-7b-alpaca-lora</code></pre>
+</doc-codeblock></div>
+<blockquote>
+<p>Replace <code v-pre>alpaca-lora</code> with the name of the LoRA folder!</p>
+</blockquote>
+<p>Now, you can load the new model from the <code v-pre>pygmalion-7b-alpaca-lora</code> folder, or whatever else you decided to name it.</p>
+<doc-anchor-target id="koboldcpp">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#koboldcpp">#</doc-anchor-trigger>
+        <span>koboldcpp</span>
+    </h3>
+</doc-anchor-target>
+<p>Using LoRAs with <a href="https://docs.alpindale.dev/local-installation-(cpu)/pygcpp/">koboldcpp</a> requires converting the LoRA to the ggml format first. To do this, grab the LoRA you want from the <a href="https://discord.com/invite/pygmalionai">Discord Server</a>. You can use <a href="https://docs.alpindale.dev/tools/git"><code v-pre>git lfs</code></a> to download the LoRA.</p>
+<p>Download <a href="https://github.com/ggerganov/llama.cpp/blob/master/convert-lora-to-ggml.py">the lora-to-ggml script</a> from the llama.cpp repo, and place as the LoRA folder, but not inside it.</p>
+<p>Then you can convert the LoRA using this command:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">python3 convert-lora-to-ggml.py alpaca-lora alpaca-lora-ggml</code></pre>
+</doc-codeblock></div>
+<blockquote>
+<p>Replace <code v-pre>alpaca-lora</code> with the name of the LoRA folder you&#x27;ve downloaded. Same for the output folder.</p>
+</blockquote>
+<p>Place the converted folder in a path you can easily remember, preferably inside the koboldcpp folder (or where the .exe file is for windows).</p>
+<p>Then you can run this command:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">python koboldcpp.py --lora alpaca-lora-ggml --nommap --unbantokens</code></pre>
+</doc-codeblock></div>
+<blockquote>
+<p>Replace the <code v-pre>alpaca-lora-ggml</code> with the LoRA folder name. You can add any other arguments you want aside from these.</p>
+</blockquote>
+<doc-anchor-target id="koboldai-4bit">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#koboldai-4bit">#</doc-anchor-trigger>
+        <span>KoboldAI 4bit</span>
+    </h3>
+</doc-anchor-target>
+<p>There&#x27;s no way to directly use a LoRA in Kobold, not even in the 4bit branch. You will need to merge it with the <em>base</em> model, and then convert it to 4bit. The conversion process for 7B takes about 9GB of VRAM so it might be impossible for most users. If you still want to attempt it, follow the steps for KoboldAI until you get a merged model. Then use the <a href="https://github.com/qwopqwop200/GPTQ-for-LLaMa">GPTQ-for-LLaMA</a> repo to convert the model to 4bit GPTQ format. There are guides in the repo on how to do that.</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -364,6 +432,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "LoRA", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: true }</script>
+    <script>window.__DOCS__ = { "title": "LoRA", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: true }</script>
 </body>
 </html>

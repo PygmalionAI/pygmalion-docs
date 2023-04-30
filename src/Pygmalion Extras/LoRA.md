@@ -62,3 +62,59 @@ LoRA also has its limitations. For example, it's not straightforward to batch in
 ## How do I train a LoRA?
 
 The [xTuring](https://github.com/stochasticai/xturing) repository contains code for both LoRA and full fine-tuning of LLMs such as LLaMA, GPT-J, and more. The current GPT-J (Pygmalion 6B) training code is only compatible with Alpaca and GPT4All dataset formats, so it will likely be useless for most users. There's currently work being done on creating INT4 LoRA training code for GPT-J, so please be patient and keep an eye out for any updates here.
+
+## How do I load a LoRA?
+
+First, choose what LoRA you want to use. We have a list in the [Discord Server](https://discord.com/invite/pygmalionai). The steps will differ for both Kobold and Oobabooga (TextGen WebUI).
+
+### Oobabooga (TextGen WebUI)
+Currently, the easiest way to load a LoRA is via Oobabooga. Open a PowerShell/Terminal instance (press Shift + Righ-Click inside the folder and not on a file, then select "Open in PowerShell), and run this command:
+
+```bash
+python3 download-model.py tloen/alpaca-lora-7b
+```
+>Replace `tloen/alpaca-lora-7b` with the name of the LoRA repo you want. For example, if the link in the Discord post for the LoRA says `https://huggingface.co/nomic-ai/gpt4all-lora`, then you'll have to put `nomic-ai/gpt4all-lora` in there instead.
+
+Then you can launch Oobabooga normally and then select the LoRA from the "Parameters" tab.
+
+### KoboldAI
+
+To use a LoRA with KoboldAI, you will need to merge the LoRA with the base model first. First, grab the LoRA you want from the [Discord Server](https://discord.com/invite/pygmalionai). You can use [`git lfs`](https://docs.alpindale.dev/tools/git) to download the LoRA. Place the downloaded LoRA (if you're on Windows, the default download path is C:\Users\<username>) inside KoboldAI's `models` folder. 
+
+Then grab the merge script from [here](https://github.com/AlpinDale/lora-merge/blob/main/merge.py) and place it in the `models` folder of your KoboldAI directory.
+
+Assuming your Pygmalion model folder is named "pygmalion-7b", open a PowerShell/Terminal instance inside the `models` folder (on Windows, press Shift + Right-Click inside the folder and choose "Open in Powershell"), and type this command in:
+```bash
+python3 merge.py --base_model pygmalion-7b --lora alpaca-lora --output pygmalion-7b-alpaca-lora
+```
+>Replace `alpaca-lora` with the name of the LoRA folder!
+
+Now, you can load the new model from the `pygmalion-7b-alpaca-lora` folder, or whatever else you decided to name it.
+
+### koboldcpp
+
+Using LoRAs with [koboldcpp](https://docs.alpindale.dev/local-installation-(cpu)/pygcpp/) requires converting the LoRA to the ggml format first. To do this, grab the LoRA you want from the [Discord Server](https://discord.com/invite/pygmalionai). You can use [`git lfs`](https://docs.alpindale.dev/tools/git) to download the LoRA.
+
+Download [the lora-to-ggml script](https://github.com/ggerganov/llama.cpp/blob/master/convert-lora-to-ggml.py) from the llama.cpp repo, and place as the LoRA folder, but not inside it.
+
+Then you can convert the LoRA using this command:
+
+```bash
+python3 convert-lora-to-ggml.py alpaca-lora alpaca-lora-ggml
+```
+>Replace `alpaca-lora` with the name of the LoRA folder you've downloaded. Same for the output folder.
+
+Place the converted folder in a path you can easily remember, preferably inside the koboldcpp folder (or where the .exe file is for windows).
+
+Then you can run this command:
+
+```bash
+python koboldcpp.py --lora alpaca-lora-ggml --nommap --unbantokens
+```
+>Replace the `alpaca-lora-ggml` with the LoRA folder name. You can add any other arguments you want aside from these.
+
+
+### KoboldAI 4bit
+
+There's no way to directly use a LoRA in Kobold, not even in the 4bit branch. You will need to merge it with the *base* model, and then convert it to 4bit. The conversion process for 7B takes about 9GB of VRAM so it might be impossible for most users. If you still want to attempt it, follow the steps for KoboldAI until you get a merged model. Then use the [GPTQ-for-LLaMA](https://github.com/qwopqwop200/GPTQ-for-LLaMa) repo to convert the model to 4bit GPTQ format. There are guides in the repo on how to do that.
+
