@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.736134031837">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.736134604762">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -34,12 +34,12 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../static/icons/pyggy.svg" rel="icon" />
-    <link href="../resources/css/retype.css?v=2.4.0.736134031837" rel="stylesheet" />
+    <link href="../resources/css/retype.css?v=2.4.0.736134604762" rel="stylesheet" />
 
-    <script type="text/javascript" src="../resources/js/config.js?v=2.4.0.736134031837" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../resources/js/config.js?v=2.4.0.736134604762" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../resources/js/lunr.js?v=2.4.0.736134031837" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../resources/js/prism.js?v=2.4.0.736134031837" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../resources/js/lunr.js?v=2.4.0.736134604762" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../resources/js/prism.js?v=2.4.0.736134604762" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -331,7 +331,24 @@ urllib3==1.26.15</code></pre>
 </doc-anchor-target>
 <p>Apply the XOR files by running the following script using the script provided in the <a href="https://huggingface.co/pygmalion-7b">repo</a>:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-bash"><code v-pre class="language-bash">python xor_codec.py pygmalion-7b/ llama7b_hf/</code></pre>
+<pre class="language-bash"><code v-pre class="language-bash">python3 xor_codec.py \
+  ./pygmalion-7b \
+  ./xor_encoded_files \
+  /path/to/hf-converted/llama-7b \
+  --decode
+</code></pre>
+</doc-codeblock></div>
+<p>Confirm the hashes by running <code v-pre>rhash -M *</code>:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">4608facb4910118f8dfa80f090cbc4dc  config.json
+2917a1cafb895cf57e746cfd7696bfe5  generation_config.json
+98764eb949eea16f8e2e1c2d3dea0066  pytorch_model-00001-of-00002.bin
+be9ba2f37228a0a9ea0eaf6530aba4de  pytorch_model-00002-of-00002.bin
+81648ef3915ed2e83d49fed93122d53e  pytorch_model.bin.index.json
+6b2e0a735969660e720c27061ef3f3d3  special_tokens_map.json
+fdb311c39b8659a5d5c1991339bafc09  tokenizer.json
+eeec4125e9c7560836b4873b6f8e3025  tokenizer.model
+f0b65b44265ba51881b1e1881102504f  tokenizer_config.json</code></pre>
 </doc-codeblock></div>
 
                                 
