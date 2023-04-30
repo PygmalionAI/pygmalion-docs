@@ -82,5 +82,23 @@ python src/transformers/models/llama/convert_llama_weights_to_hf.py --input_dir 
 Apply the XOR files by running the following script using the script provided in the [repo](https://huggingface.co/pygmalion-7b):
 
 ```bash
-python xor_codec.py pygmalion-7b/ llama7b_hf/
+python3 xor_codec.py \
+  ./pygmalion-7b \
+  ./xor_encoded_files \
+  /path/to/hf-converted/llama-7b \
+  --decode
+
+```
+Confirm the hashes by running `rhash -M *`:
+
+```
+4608facb4910118f8dfa80f090cbc4dc  config.json
+2917a1cafb895cf57e746cfd7696bfe5  generation_config.json
+98764eb949eea16f8e2e1c2d3dea0066  pytorch_model-00001-of-00002.bin
+be9ba2f37228a0a9ea0eaf6530aba4de  pytorch_model-00002-of-00002.bin
+81648ef3915ed2e83d49fed93122d53e  pytorch_model.bin.index.json
+6b2e0a735969660e720c27061ef3f3d3  special_tokens_map.json
+fdb311c39b8659a5d5c1991339bafc09  tokenizer.json
+eeec4125e9c7560836b4873b6f8e3025  tokenizer.model
+f0b65b44265ba51881b1e1881102504f  tokenizer_config.json
 ```
