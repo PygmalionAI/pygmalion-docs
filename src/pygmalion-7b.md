@@ -79,7 +79,7 @@ python src/transformers/models/llama/convert_llama_weights_to_hf.py --input_dir 
 
 ### Merge the weights
 
-Apply the XOR files by running the following script using the script provided in the [repo](https://huggingface.co/pygmalion-7b):
+Apply the XOR files by running the following script using the script provided in the [repo](https://huggingface.co/PygmalionAI/pygmalion-7b):
 
 ```bash
 python3 xor_codec.py \
