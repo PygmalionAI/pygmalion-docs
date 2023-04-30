@@ -1,6 +1,6 @@
 ---
 order: 100
-icon: ":floppy_disk:"
+icon: file-symlink-file
 title: LoRA
 ---
 

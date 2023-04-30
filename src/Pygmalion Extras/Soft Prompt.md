@@ -1,6 +1,6 @@
 ---
 order: 1000
-icon: ":spiral_note_pad:"
+icon: log
 title: Soft Prompts
 ---
 

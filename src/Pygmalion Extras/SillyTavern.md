@@ -1,6 +1,6 @@
 ---
 order: 10000
-icon: ":speech_balloon:"
+icon: comment-discussion
 title: SillyTavern
 ---
 SillyTavern is a user interface you can install on your computer (and Android phones) that allows you to interact with text generation AIs and chat/roleplay with the characters you or the community create.

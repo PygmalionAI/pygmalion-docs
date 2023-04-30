@@ -1,6 +1,6 @@
 ---
 order: 1000
-icon: terminal
+icon: zap
 title: Pygmalion 7B
 ---
 
@@ -15,16 +15,32 @@ This model is based on Meta's LLaMA 7B, fine-tuned with the regular Pygmalion 6B
 This is an experimental model with a new prompt format used during training. It is capable of Chatting, RolePlaying, and Storytelling all at once. The prompting format is entirely different from the Chat Models, so Tavern will likely *not work*. 
 
 !!!warning These instructions are incomplete!
-We're working on finalizng these
+We're working on finalizng these guides.
 !!!
 
 ## Merging the weights
 
 **Note that this won't work on Windows. If you're using Windows, you will need to do this with WSL2**.
 
+### Create a WSL2 environment (Windows Only)
+
+Download Ubuntu from Microsoft Store (click on the image):
+
+[-![](/static/microsoft.png)](https://apps.microsoft.com/store/detail/ubuntu/9PDXGNCFSCZV){target="_blank"}
+
+<!-- 2. Reboot your PC.
+3. Search for Ubuntu in Start Menu and continue to the next section. -->
+
+You're done! Look up "Ubuntu" in the Start Menu and continue to the next section.
+
 ### Convert Original LLaMA weights to HF (optional)
+
+#### Requirements
+- `python==3.10`
+- `git`
+
 **This step can be skipped if you have the weights in HF format already.**
-1. Acquire the original LLaMA weights. Apply for access [here](https://docs.google.com/forms/d/e/1FAIpQLSfqNECQnMkycAp2jP4Z9TFX0cGR4uf7b_fBxjY_OjhJILlKGA/viewform).
+1. Acquire the original LLaMA weights. Apply for access [here](https://docs.google.com/forms/d/e/1FAIpQLSfqNECQnMkycAp2jP4Z9TFX0cGR4uf7b_fBxjY_OjhJILlKGA/viewform). Place them in a location you can easily remember.
 2. Open a Terminal instance, and create a clean **Python 3.10** virtual environment:
 ```bash
 python3.10 -m venv xor_venv
@@ -76,10 +92,15 @@ urllib3==1.26.15
 ```bash
 python src/transformers/models/llama/convert_llama_weights_to_hf.py --input_dir <input_path_llama_base>  --output_dir <output_path_llama7b_hf> --model_size 7B
 ```
+> Replace `<input_path_llama_base>` with the path to the "LLaMA" folder (this is the folder with all the model variants, including 7B, 13B, 30B, and 65B). Same thing for `<output_path_llama7b_hf>` but for the output path. Can be anywhere you want it to be.
 
 ### Merge the weights
 
-Apply the XOR files by running the following script using the script provided in the [repo](https://huggingface.co/PygmalionAI/pygmalion-7b):
+!!!danger `decapoda-research/llama-7b-hf` will **not** work!
+decapoda-research's repo is severely outdated and will not work. You will need to have a set of 7B weights that have been converted in the past 2 weeks. Please apply for access to the LLaMA weights and convert them yourself.
+!!!
+
+1. Apply the XOR files by running the following command using the script provided in the [repo](https://huggingface.co/PygmalionAI/pygmalion-7b/blob/main/xor_codec.py){target="_blank"}:
 
 ```bash
 python3 xor_codec.py \
@@ -89,7 +110,11 @@ python3 xor_codec.py \
   --decode
 
 ```
-Confirm the hashes by running `rhash -M *`:
+
+> Replace `/path/to/hf-converted/llama-7b` with the location of your converted LLaMA-7B model.
+
+
+2. Confirm the hashes by running `rhash -M *` (alternatively, `md5sum *`):
 
 ```
 4608facb4910118f8dfa80f090cbc4dc  config.json
@@ -102,3 +127,9 @@ fdb311c39b8659a5d5c1991339bafc09  tokenizer.json
 eeec4125e9c7560836b4873b6f8e3025  tokenizer.model
 f0b65b44265ba51881b1e1881102504f  tokenizer_config.json
 ```
+
+3. Download this zip file and extract its contents inside the new pygmalion-7b folder:
+
+[!file icon="download" text="Pygmalion 7B JSONs"](https://cdn.discordapp.com/attachments/1068926294017970237/1102062414905749514/pyg-7b.zip)
+
+[!file icon="download" text="Metharme 7B JSONs"](https://cdn.discordapp.com/attachments/1068926294017970237/1102062681722204270/met-7b.zip)
