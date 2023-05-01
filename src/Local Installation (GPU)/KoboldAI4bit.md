@@ -118,7 +118,7 @@ instead.
 Your preferred model should be downloaded in your `models` folder. The following steps are identical no matter which model you've downloaded.
 
 !!!warning Rename your model file if you download from another repo!
-The current GPTQ implementation on Kobold needs your model name to be either `4bit.pt`/`4bit.safetensors` or `4bit-128g.pt`/`4bit-128g.safetensors`. Please rename them appropriately:
+The current GPTQ implementation on Kobold needs your model name to be either `4bit.pt`/`4bit.safetensors` or `4bit-128g.pt`/`4bit-128g.safetensors`. **This is the file, and not the folder itself! Look for the ~4GB file inside the folder you've downloaded!** Please rename them appropriately:
 ![](/static/KoboldAI-4bit-9.PNG)
 !!!
 
