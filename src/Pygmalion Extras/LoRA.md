@@ -79,7 +79,7 @@ Then you can launch Oobabooga normally and then select the LoRA from the "Parame
 
 ### KoboldAI
 
-To use a LoRA with KoboldAI, you will need to merge the LoRA with the base model first. First, grab the LoRA you want from the [Discord Server](https://discord.com/invite/pygmalionai). You can use [`git lfs`](https://docs.alpindale.dev/tools/git) to download the LoRA. Place the downloaded LoRA (if you're on Windows, the default download path is C:\Users\<username>) inside KoboldAI's `models` folder. 
+To use a LoRA with KoboldAI, you will need to merge the LoRA with the base model first. First, grab the LoRA you want from the [Discord Server](https://discord.com/invite/pygmalionai). You can use [`git lfs`](https://docs.alpindale.dev/tools/git) to download the LoRA. Place the downloaded LoRA (if you're on Windows, the default download path is C:\Users\[username]) inside KoboldAI's `models` folder. 
 
 Then grab the merge script from [here](https://github.com/AlpinDale/lora-merge/blob/main/merge.py) and place it in the `models` folder of your KoboldAI directory.
 
