@@ -116,5 +116,5 @@ python koboldcpp.py --lora alpaca-lora-ggml --nommap --unbantokens
 
 ### KoboldAI 4bit
 
-There's no way to directly use a LoRA in Kobold, not even in the 4bit branch. You will need to merge it with the *base* model, and then convert it to 4bit. The conversion process for 7B takes about 9GB of VRAM so it might be impossible for most users. If you still want to attempt it, follow the steps for KoboldAI until you get a merged model. Then use the [GPTQ-for-LLaMA](https://github.com/qwopqwop200/GPTQ-for-LLaMa) repo to convert the model to 4bit GPTQ format. There are guides in the repo on how to do that.
+There's no way to directly use a LoRA in Kobold, not even in the 4bit branch. You will need to merge it with the *base* model, and then convert it to 4bit. The conversion process for 7B takes about 9GB of VRAM so it might be impossible for most users. If you still want to attempt it, follow the steps for KoboldAI until you get a merged model. Then use the [GPTQ-for-LLaMA](https://github.com/0cc4m/GPTQ-for-LLaMa) repo to convert the model to 4bit GPTQ format. There are guides in the repo on how to do that.
 
