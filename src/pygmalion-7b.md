@@ -6,11 +6,13 @@ title: Pygmalion 7B
 
 Due to the LLaMA licensing issues, the weights for Pygmalion-7B and Metharme-7B are released as XOR files - which means they're useless by themselves unless you combine them with the original LLaMA weights. You will need to apply for access to the weights [here](https://docs.google.com/forms/d/e/1FAIpQLSfqNECQnMkycAp2jP4Z9TFX0cGR4uf7b_fBxjY_OjhJILlKGA/viewform). Note that you will need a .edu email address for access. For more info, please refer to the #help-and-questions channel in our [Discord](https://discord.gg/pygmalionai).
 
-## Chat Model (Pygmalion 7B)
+## Models
+
+### Chat Model (Pygmalion 7B)
 
 This model is based on Meta's LLaMA 7B, fine-tuned with the regular Pygmalion 6B dataset. This model is purely for chatting and roleplaying purposes, and the same prompt formattings you're used to will work here.
 
-## Instruction Model (Metharme 7B)
+### Instruction Model (Metharme 7B)
 
 This is an experimental model with a new prompt format used during training. It is capable of Chatting, RolePlaying, and Storytelling all at once. The prompting format is entirely different from the Chat Models, so Tavern will likely *not work*. 
 
