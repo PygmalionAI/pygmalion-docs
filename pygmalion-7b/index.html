@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.736280843326">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.736281043553">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -36,12 +36,12 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../static/icons/pyggy.svg" rel="icon" />
-    <link href="../resources/css/retype.css?v=2.4.0.736280843326" rel="stylesheet" />
+    <link href="../resources/css/retype.css?v=2.4.0.736281043553" rel="stylesheet" />
 
-    <script type="text/javascript" src="../resources/js/config.js?v=2.4.0.736280843326" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../resources/js/config.js?v=2.4.0.736281043553" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../resources/js/lunr.js?v=2.4.0.736280843326" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../resources/js/prism.js?v=2.4.0.736280843326" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../resources/js/lunr.js?v=2.4.0.736281043553" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../resources/js/prism.js?v=2.4.0.736281043553" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -222,18 +222,24 @@
     </h1>
 </doc-anchor-target>
 <p>Due to the LLaMA licensing issues, the weights for Pygmalion-7B and Metharme-7B are released as XOR files - which means they&#x27;re useless by themselves unless you combine them with the original LLaMA weights. You will need to apply for access to the weights <a href="https://docs.google.com/forms/d/e/1FAIpQLSfqNECQnMkycAp2jP4Z9TFX0cGR4uf7b_fBxjY_OjhJILlKGA/viewform">here</a>. Note that you will need a .edu email address for access. For more info, please refer to the #help-and-questions channel in our <a href="https://discord.gg/pygmalionai">Discord</a>.</p>
-<doc-anchor-target id="chat-model-pygmalion-7b">
+<doc-anchor-target id="models">
     <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#models">#</doc-anchor-trigger>
+        <span>Models</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="chat-model-pygmalion-7b">
+    <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#chat-model-pygmalion-7b">#</doc-anchor-trigger>
         <span>Chat Model (Pygmalion 7B)</span>
-    </h2>
+    </h3>
 </doc-anchor-target>
 <p>This model is based on Meta&#x27;s LLaMA 7B, fine-tuned with the regular Pygmalion 6B dataset. This model is purely for chatting and roleplaying purposes, and the same prompt formattings you&#x27;re used to will work here.</p>
 <doc-anchor-target id="instruction-model-metharme-7b">
-    <h2>
+    <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#instruction-model-metharme-7b">#</doc-anchor-trigger>
         <span>Instruction Model (Metharme 7B)</span>
-    </h2>
+    </h3>
 </doc-anchor-target>
 <p>This is an experimental model with a new prompt format used during training. It is capable of Chatting, RolePlaying, and Storytelling all at once. The prompting format is entirely different from the Chat Models, so Tavern will likely <em>not work</em>.</p>
 <div class="flex mb-6">
