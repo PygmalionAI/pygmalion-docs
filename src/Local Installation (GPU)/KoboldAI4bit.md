@@ -176,7 +176,7 @@ This is a 2.5GB download.
 
 3. Navigate to your Kobold folder and right click on the models folder. Choose Actions -> Open Terminal Here. As the steps for downloading a model are the same for Windows, you may refer to this part of the guide: [Downloading the model](https://docs.alpindale.dev/local-installation-(gpu)/koboldai4bit/#downloading-the-model).
 
-!!!danger Rename the model if you download from another repo!
+!!!danger Rename the model file!
 The model needs to be named either `4bit.pt`/`4bit.safetensors` or `4bit-128g.pt`/`4bit-128g.safetensors` to work. Make sure you properly rename it. 
 !!!
 4. Start KoboldAI by running `./play.sh`.
