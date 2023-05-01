@@ -14,8 +14,8 @@ This model is based on Meta's LLaMA 7B, fine-tuned with the regular Pygmalion 6B
 
 This is an experimental model with a new prompt format used during training. It is capable of Chatting, RolePlaying, and Storytelling all at once. The prompting format is entirely different from the Chat Models, so Tavern will likely *not work*. 
 
-!!!warning These instructions are incomplete!
-We're working on finalizng these guides.
+!!!warning The exact transformers commit might be incorrect!
+I'm not sure exactly which commit we used for converting the original weights - just make sure your converted hashes match the ones [here](https://docs.alpindale.dev/pygmalion-7b/#file-hashes)
 !!!
 
 ## Merging the weights
@@ -46,6 +46,10 @@ You're done! Look up "Ubuntu" in the Start Menu and continue to the next section
 python3.10 -m venv xor_venv
 source xor_venv/bin/activate
 ```
+!!!danger The exact transformers commit might be incorrect!
+I'm not sure exactly which commit we used for converting the original weights - just make sure your converted hashes match the ones [here](https://docs.alpindale.dev/pygmalion-7b/#file-hashes). If you find it's incorrect, please submit a PR or an [issue](https://github.com/AlpinDale/pygmalion-docs/issues){target="_blank"} with the correct commit hash.
+!!!
+
 3. Clone transformers and switch to the tested version:
 ```bash
 git clone https://github.com/huggingface/transformers.git
@@ -114,22 +118,49 @@ python3 xor_codec.py \
 > Replace `/path/to/hf-converted/llama-7b` with the location of your converted LLaMA-7B model.
 
 
-2. Confirm the hashes by running `rhash -M *` (alternatively, `md5sum *`):
-
-```
-4608facb4910118f8dfa80f090cbc4dc  config.json
-2917a1cafb895cf57e746cfd7696bfe5  generation_config.json
-98764eb949eea16f8e2e1c2d3dea0066  pytorch_model-00001-of-00002.bin
-be9ba2f37228a0a9ea0eaf6530aba4de  pytorch_model-00002-of-00002.bin
-81648ef3915ed2e83d49fed93122d53e  pytorch_model.bin.index.json
-6b2e0a735969660e720c27061ef3f3d3  special_tokens_map.json
-fdb311c39b8659a5d5c1991339bafc09  tokenizer.json
-eeec4125e9c7560836b4873b6f8e3025  tokenizer.model
-f0b65b44265ba51881b1e1881102504f  tokenizer_config.json
-```
-
-3. Download this zip file and extract its contents inside the new pygmalion-7b folder:
+2. Download this zip file and extract its contents inside the new pygmalion-7b folder:
 
 [!file icon="download" text="Pygmalion 7B JSONs"](https://cdn.discordapp.com/attachments/1068926294017970237/1102062414905749514/pyg-7b.zip)
 
 [!file icon="download" text="Metharme 7B JSONs"](https://cdn.discordapp.com/attachments/1068926294017970237/1102062681722204270/met-7b.zip)
+
+## File hashes
+
+Make sure your files match these sha256 hashes:
+
+- Merged Pygmalion-7B weights:
+```
+$ sha256sum pygmalion-7b/*
+e6e95f80203ae4d3925d420e9eeb31fc11fa4d9a49b40d8c6499838365e3f5a8  config.json
+062a37a6d986c38231880f5cce4fa9a0145aeefcf8be9ab23ddf7d600c037aea  generation_config.json
+61bcb043c3c4dc4d567ffea91b3074c70d54089eb3f1872b945d7a4e32677edf  pytorch_model-00001-of-00002.bin
+41ebe6971edc8f04b0784ef8ed54216fcd36f8a4d51faf415851c9b824769ba2  pytorch_model-00002-of-00002.bin
+aca3c1facc89d12311a667c32e85ac86e625990992ea8a189e3b036ba371b931  pytorch_model.bin.index.json
+ff3b4a612c4e447acb02d40071bddd989fe0da87eb5b7fe0dbadfc4f74de7531  special_tokens_map.json
+9e7aa7d0f67f207036d981d7bbabfbf4b521c4c089c0280fcc08ef9c732634b5  tokenizer_config.json
+f9ffc4aede0845ab65324ce5dccb823dca2427f9a0710981e5bc2398d73d8162  tokenizer.json
+9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347  tokenizer.model
+```
+
+- Original LLaMA 7B weights along with the `tokenizer.model` file (can be found in the root LLaMA directory):
+```
+$ sha256sum LLaMA/7B
+7935c843a25ae265d60bf4543b90bfd91c4911b728412b5c1d5cff42a3cd5645  checklist.chk
+700df0d3013b703a806d2ae7f1bfb8e59814e3d06ae78be0c66368a50059f33d  consolidated.00.pth
+7e89e242ddc0dd6f060b43ca219ce8b3e8f08959a72cb3c0855df8bb04d46265  params.json
+9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347  tokenizer.model
+```
+
+- LLaMA 7B weights converted to HuggingFace format:
+```
+$ sha256sum llama-7b-hf
+e4c3dea29aefc16c0e63825f9ae097dbf5cb5d7c320843a84257e11be3b452c8  config.json
+fd7ff399e5568cc21a0a8414f43df88ef7c424995b9b97a90563165d2cf79efd  generation_config.json
+0087155d6df07106c1d910bfeb6aab1be8e612dfbf2b56ddfb4ccbde7dbd50d0  pytorch_model-00001-of-00002.bin
+461bc5e50200db7813ff99cc0b9316c48ccbd6aaaa31bf8cf7bee0b64bc3eda3  pytorch_model-00002-of-00002.bin
+aca3c1facc89d12311a667c32e85ac86e625990992ea8a189e3b036ba371b931  pytorch_model.bin.index.json
+ff3b4a612c4e447acb02d40071bddd989fe0da87eb5b7fe0dbadfc4f74de7531  special_tokens_map.json
+380608719f3af6ef2b343e2ed53bf55556678609337e88a14f58cc49177b9e18  tokenizer_config.json
+f9ffc4aede0845ab65324ce5dccb823dca2427f9a0710981e5bc2398d73d8162  tokenizer.json
+9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347  tokenizer.model
+```
