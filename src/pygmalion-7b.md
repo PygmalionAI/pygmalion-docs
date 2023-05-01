@@ -144,7 +144,7 @@ f9ffc4aede0845ab65324ce5dccb823dca2427f9a0710981e5bc2398d73d8162  tokenizer.json
 
 - Original LLaMA 7B weights along with the `tokenizer.model` file (can be found in the root LLaMA directory):
 ```
-$ sha256sum LLaMA/7B
+$ sha256sum LLaMA/7B/*
 7935c843a25ae265d60bf4543b90bfd91c4911b728412b5c1d5cff42a3cd5645  checklist.chk
 700df0d3013b703a806d2ae7f1bfb8e59814e3d06ae78be0c66368a50059f33d  consolidated.00.pth
 7e89e242ddc0dd6f060b43ca219ce8b3e8f08959a72cb3c0855df8bb04d46265  params.json
@@ -153,7 +153,7 @@ $ sha256sum LLaMA/7B
 
 - LLaMA 7B weights converted to HuggingFace format:
 ```
-$ sha256sum llama-7b-hf
+$ sha256sum llama-7b-hf/*
 e4c3dea29aefc16c0e63825f9ae097dbf5cb5d7c320843a84257e11be3b452c8  config.json
 fd7ff399e5568cc21a0a8414f43df88ef7c424995b9b97a90563165d2cf79efd  generation_config.json
 0087155d6df07106c1d910bfeb6aab1be8e612dfbf2b56ddfb4ccbde7dbd50d0  pytorch_model-00001-of-00002.bin
