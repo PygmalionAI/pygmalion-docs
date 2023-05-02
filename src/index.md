@@ -7,11 +7,11 @@ icon: home
 
 PygmalionAI is an open-source large language model (**LLM**) based on EleutherAI's [GPT-J 6B](https://huggingface.co/EleutherAI/gpt-j-6b){ target="_blank" }. 
 
-In simple terms, Pygmalion is an AI fine-tuned for chatting and roleplaying purposes. The current actively supported Pygmalion AI model is the 6B variant, a model with 6 billion parameters. 
+In simple terms, Pygmalion is an AI fine-tuned for chatting and roleplaying purposes. The current actively supported Pygmalion AI model is the 7B variant, based on Meta AI's [LLaMA](https://ai.facebook.com/blog/large-language-model-llama-meta-ai/) model.
 
 ## Features
 - **Unrestricted**: No measures have been put in place to restrict the output.
-- **Low VRAM requirement**: With only 16GB (or less) VRAM required, Pygmalion offers better chat capability than much larger language models with relatively minimal resources.
+- **Low VRAM requirement**: With only 18GB (or less) VRAM required, Pygmalion offers better chat capability than much larger language models with relatively minimal resources.
 - **Fine-tuned for RP**: Our curated dataset of high-quality roleplaying data ensures that your bot will be the optimal RP partner.
 - **Free and Open-Source**: Both the model weights and the code used to train it are completely open-source, and you can modify/re-distribute it for whatever purpose you want.*
 - **Regularly updated**: Pygmalion is regularly updated with new data to improve the model even further.
