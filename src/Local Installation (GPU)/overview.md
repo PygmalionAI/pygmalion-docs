@@ -4,27 +4,6 @@ icon: telescope
 title: Overview
 ---
 
-PygmalionAI is a large language model, and as the name might imply, it needs a lot of computation power to run it. You will need a minimum of 16GB VRAM to run the model - without any optimizations, that is. Here's a list of all the GPUs that would work without any tweaks, out-of-the-box:
-
-**Consumer-grade (Gaming) GPUs:**
-
-GPU                 | Manufacturer      | VRAM { class="compact" }
----                 | ---               | ---
-RTX 4090            | NVIDIA            | 24GB
-RTX 4080            | NVIDIA            | 16GB
-RTX 3090 Ti         | NVIDIA            | 24GB
-RTX 3090            | NVIDIA            | 24GB
-Titan RTX           | NVIDIA            | 24GB
-Radeon RX 7900 XTX  | AMD               | 24GB
-Radeon RX 6950 XT   | AMD               | 16GB
-Radeon RX 6900 XT   | AMD               | 16GB
-Radeon RX 7900 XT   | AMD               | 20GB
-Radeon RX 6800 XT   | AMD               | 16GB
-Radeon RX 6800      | AMD               | 16GB
+The requirements for the 6B and 7B models can be easily met with either an RTX 3090 or a 4090. However, running at lower precision allows running on GPUs with VRAM as low as 6GB. With [koboldcpp](https://docs.alpindale.dev/local-installation-(cpu)/pygcpp/), you can even run these models entirely on CPU! This section of the docs, however, focus on running the models on GPU, so please proceed **only** if you have at least 6GB of VRAM. The [Quickstart](https://docs.alpindale.dev/quickstart) has guides for finding out your VRAM amount if you're unsure.
 
 
-!!!warning Your card isn't listed here?
-If you don't have any of these cards, but have still have 6GB or more VRAM, you can still run Pygmalion! (Provided you're using NVIDIA) Please refer to the [Quickstart page](https://docs.alpindale.dev/quickstart/).
-!!!
-
-Please continue to the next section.

@@ -58,6 +58,8 @@ apt install nvidia-cuda-toolkit
 
 ROCm is (currently) not supported by Windows. You cannot run any language model on Windows if you have an AMD card - this isn't a Pygmalion-only issue. You will need to either dual-boot Linux or switch to Linux entirely if you wish to run language models on your AMD GPU.
 
+I highly recommend following this rentry by an AMD anon who managed to get Oobabooga's TextGen working on a 6900 XT GPU: https://rentry.org/eq3hg
+
 ### Linux
 The ROCm installation is only (relatively) easy on Arch Linux. For other distros, you will need to manually install the binaries by building ROCm from source (not recommended for beginners). 
 

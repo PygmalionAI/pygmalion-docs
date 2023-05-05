@@ -25,8 +25,8 @@ First, you will need to install [Node.js](https://nodejs.org/en/download/current
 
 ![](/static/NodeJSWindows.PNG)
 
-Just open the installer, and click on Next, Next, etc.. (You don't have to change anything in the installer)
-Once Node.JS is installed, you can download Silly Tavern !
+Just open the installer, and click on Next, Next, etc... Leave everything as default.
+Once Node.JS is installed, you can download Silly Tavern!
 
 !!!info
 You'll need [Github Desktop](https://central.github.com/deployments/desktop/desktop/latest/win32) to clone the repository.
@@ -63,7 +63,7 @@ If everything is working, the CMD should look like this and a SillyTavern tab sh
 ![](/static/STcmd.PNG)
 
 !!!warning
-You still have to [connect](https://docs.alpindale.dev/local-installation-(gpu)/sillytavern/#connect-sillytavern) it!
+You still have to [connect](https://docs.alpindale.dev/local-installation-(gpu)/sillytavern/#connect-sillytavern) it to a backend API!
 !!!
 
 
@@ -94,7 +94,7 @@ nvm install node
 
 #### Installation (with `npx`)
 
-Run `npx sillytavern@latest`. You can re-open it anytime by running the command again.
+Run `npx sillytavern@latest`. You can re-open it anytime by running the command again. Omit the `@latest` part of the command to not auto-pull the latest update as that might overwrite all your previous characters and chatlogs. 
 
 
 #### Installation (manual)
@@ -154,12 +154,9 @@ You can run SillyTavern again by simply opening Termux and entering the command 
 ![](/static/STconnect.PNG)
 
 !!!info The API URL
-If you're running KoboldAI locally, all you need to paste in there is `http://localhost:5000/api`. If you're using Google Colab, copy your [remote URL](https://docs.alpindale.dev/cloud-installation/koboldai/#using-the-remote-url-to-connect-sillytavern) instead. If it ends with a # or new_ui, remove them and replace them with /api. If they don't, simply adding /api will suffice.
+If you're running KoboldAI locally, all you need to paste in there is `http://localhost:5000/api`. If you're using Google Colab, copy your [remote URL](https://docs.alpindale.dev/cloud-installation/koboldai/#using-the-remote-url-to-connect-sillytavern) instead. If it ends with a `#` or `new_ui`, remove them and replace them with `/api`. If they don't, simply adding `/api` will suffice.
 !!!
 
-!!!info Note for Mobile Users
-Please switch to `Desktop Mode` in your browser settings.
-!!!
 
 !!!success You're done!
 You can now start using SillyTavern! SillyTavern uses Character Cards, which are images (PNG and WEBP) that can be imported to Tavern as Characters. You can also find new characters in the unofficial [Discord server](https://discord.com/invite/pygmalionai).

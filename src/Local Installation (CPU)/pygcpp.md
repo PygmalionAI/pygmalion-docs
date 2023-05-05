@@ -1,12 +1,12 @@
 ---
 order: 100000
 icon: code-square
-title: Pygmalion C++
+title: koboldcpp
 ---
 
-Initially, the only way to run Pygmalion C++ was through this repo: [AlpinDale/pygmalion.cpp](https://github.com/AlpinDale/pygmalion.cpp). However, thanks to the efforts of concedo from the KoboldAI team, we now have an easy-to-run executable for windows, and a compilable UI for Linux/MacOS/Android users.
+Initially, the only way to run Pygmalion on CPU was through this repo: [AlpinDale/pygmalion.cpp](https://github.com/AlpinDale/pygmalion.cpp). However, thanks to the efforts of concedo from the KoboldAI team, we now have an easy-to-run executable for windows, and a compilable UI for Linux/MacOS/Android users.
 
-## The 4-bit quantized 6B model
+## 6B model
 
 [!file Pygmalion-6B 4bit (concedo)](https://huggingface.co/concedo/pygmalion-6bv3-ggml-ggjt/resolve/main/pygmalion-6b-v3-ggml-ggjt-q4_0.bin)
 
@@ -14,6 +14,48 @@ If the model above doesn't work for any reason, you can download the old one ins
 
 [!file Pygmalion-6B 4bit (alpindale)](https://huggingface.co/alpindale/pygmalion-6b-ggml/resolve/main/pygmalion-6b-v3-q4_0.bin)
 
+## 7B model
+
+You will need to obtain [your copy](pygmalion-7b/#merging-the-weights) of Pygmalion 7B by merging the original LLaMA (converted to HF format) with the XORed files in the [PygmalionAI/pygmalion-7b](https://huggingface.co/PygmalionAI/pygmalion-7b) repo. You will then have to convert the model to GGML format, and then quantize it down to 4bit/5bit. 
+
+### Linux
+
+#### Requirements
+- [`git`](https://docs.alpindale.dev/tools/git)
+- `python`
+#### Converstion
+1. Obtain the merged weights.
+2. Create a new folder and place the Pygmalion-7B weights (with its folder) in there.
+3. Open a PowerShell/Terminal instance inside the folder and run:
+```bash
+git clone https://github.com/ggerganov/llama.cpp
+```
+4. Convert to GGML format by running this:
+```bash
+python3 llama.cpp/convert.py pygmalion-7b/ --outtype f32
+```
+> This will produce a 32-bit GGML model. We convert to 32-bit instead of 16-bit because the original Pygmalion-7B model is in BFloat-16 format, and direct conversion to FP-16 seems to damage accuracy.
+
+5. Compile the quantize program:
+```
+pushd llama.cpp
+make quantize
+popd
+```
+6. Quantize the model:
+```
+./llama.cpp/quantize pygmalion-7b/model-f32.bin pygmalion-7b-ggml 5
+```
+> This will output the model in the `q4_2` format, which is the current best 4bit format for GGML. You can also q5_1 which has slightly better accuracy. Here's the full list of conversion types; note that q8_0 does not work with koboldcpp:
+
+```
+  type = "q4_0" or 2
+  type = "q4_1" or 3
+  type = "q4_2" or 5
+  type = "q5_0" or 8
+  type = "q5_1" or 9
+  type = "q8_0" or 7
+  ```
 
 ***
 ## Windows Guide

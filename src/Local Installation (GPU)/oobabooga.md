@@ -20,7 +20,31 @@ Oobabooga has generously created a one-click installation script for Text-Gen We
 
 [!file Text-Gen WebUI Windows Installer](https://github.com/oobabooga/one-click-installers/archive/refs/heads/oobabooga-windows.zip)
 
-Simply extract the `one-click-installers-oobabooga-windows.zip` file and click on `install.bat`. That will install everything for you. Once the installation is finished, open the `start-webui.bat` file.
+Simply extract the `oobabooga-windows.zip` file and click on the`start_windows.bat` file. This will install everything you need.
+
+For GPUs with low VRAM, you will need to use either 8bit or 4bit mode. For 4bit, refer to [KoboldAI 4bit](https://docs.alpindale.dev/local-installation-(gpu)/koboldai4bit/) guide to obtain the model. Place the model inside oobabooga's `models` folder, and rename the large file inside your model folder to `4bit-128g.safetensors` (this will vary between different quantization techniques).
+
+To enable **8-bit mode**, open the `webui.py` file with a text editor (notepad will work fine), and search for: `# put your flags here!`. The line will look like this:
+```py
+def run_model():
+    os.chdir("text-generation-webui")
+    run_cmd("python server.py --chat --model-menu", environment=True)  # put your flags here!
+```
+Change that to this:
+```py
+def run_model():
+    os.chdir("text-generation-webui")
+    run_cmd("python server.py --chat --load-in-8bit --auto-devices --xformers --api", environment=True)  # put your flags here!
+```
+> Change the `groupsize` value and the `--model_type` according to the model you're loading.
+
+To enable **4-bit mode**, change that line to:
+```py
+def run_model():
+    os.chdir("text-generation-webui")
+    run_cmd("python server.py --chat --wbits 4 --groupsize 128 --model_type llama --api", environment=True)  # put your flags here!
+```
+> Change the `groupsize` value and the `--model_type` according to the model you're loading.
 
 If you want to, you can connect Oobabooga to [SillyTavern](https://docs.alpindale.dev/pygmalion-extras/sillytavern/).
 

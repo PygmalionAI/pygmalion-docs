@@ -6,7 +6,7 @@ title: KoboldAI 4bit
 
 KoboldAI is a browser-based front-end for AI-assisted writing and chatting with multiple local and remote AI models. 
 
-This guide is for users with less than 10GB of VRAM. Pygmalion 6B with 4bit quantization can run on GPUs with 6GB of VRAM and above.
+This guide is for users with less than 10GB of VRAM. Pygmalion 6B and 7B with 4bit quantization can run on GPUs with 6GB of VRAM and above.
 
 Use the Table of Contents to navigate.
 
@@ -45,7 +45,7 @@ Now that you have opened PowerShell, you need to run a few commands. (Copy paste
 
 First you want to clone the Kobold-4bit repository: 
 ```bash
-git lfs clone https://github.com/0cc4m/KoboldAI -b latestgptq --recurse-submodules
+git clone https://github.com/0cc4m/KoboldAI -b latestgptq --recurse-submodules
 ``` 
 !!!warning
 Make sure you've read the [git installation guide](https://docs.alpindale.dev/tools/git/).
@@ -196,7 +196,7 @@ The model needs to be named either `4bit.pt`/`4bit.safetensors` or `4bit-128g.pt
 ![](/static/KoboldAI-4bit-12.PNG)
 
 !!!success Enjoy!
-You can now run Pygmalion 6B on your low VRAM GPU. Rejoice.
+You can now run Pygmalion 6B on your low VRAM GPU. Rejoice. Pygmalion 7B will require the same process, so you shouldn't have any trouble.
 !!!
 
 
