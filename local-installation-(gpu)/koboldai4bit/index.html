@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.736362528852">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.736633585918">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -36,12 +36,12 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/icons/pyggy.svg" rel="icon" />
-    <link href="../../resources/css/retype.css?v=2.4.0.736362528852" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.736633585918" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.736362528852" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.736633585918" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.736362528852" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.736362528852" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.736633585918" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.736633585918" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -222,7 +222,7 @@
     </h1>
 </doc-anchor-target>
 <p>KoboldAI is a browser-based front-end for AI-assisted writing and chatting with multiple local and remote AI models.</p>
-<p>This guide is for users with less than 10GB of VRAM. Pygmalion 6B with 4bit quantization can run on GPUs with 6GB of VRAM and above.</p>
+<p>This guide is for users with less than 10GB of VRAM. Pygmalion 6B and 7B with 4bit quantization can run on GPUs with 6GB of VRAM and above.</p>
 <p>Use the Table of Contents to navigate.</p>
 <p><figure class="content-center">
     <img src="../../static/koboldai-newui.png" alt="" />
@@ -271,7 +271,7 @@
 <p>Now that you have opened PowerShell, you need to run a few commands. (Copy paste the command and press enter).</p>
 <p>First you want to clone the Kobold-4bit repository:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-bash"><code v-pre class="language-bash">git lfs clone https://github.com/0cc4m/KoboldAI -b latestgptq --recurse-submodules</code></pre>
+<pre class="language-bash"><code v-pre class="language-bash">git clone https://github.com/0cc4m/KoboldAI -b latestgptq --recurse-submodules</code></pre>
 </doc-codeblock></div>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-yellow-500"></div>
@@ -553,7 +553,7 @@ There are two models to choose from. If you run</p>
         </div>
         <div class="pr-5 ml-3 w-full">
             <h5>Enjoy!</h5>
-<p>You can now run Pygmalion 6B on your low VRAM GPU. Rejoice.</p>
+<p>You can now run Pygmalion 6B on your low VRAM GPU. Rejoice. Pygmalion 7B will require the same process, so you shouldn&#x27;t have any trouble.</p>
         </div>
     </div>
 </div>

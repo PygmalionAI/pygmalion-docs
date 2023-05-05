@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.736362528852">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.736633585918">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -34,11 +34,12 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/icons/pyggy.svg" rel="icon" />
-    <link href="../../resources/css/retype.css?v=2.4.0.736362528852" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.736633585918" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.736362528852" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.736633585918" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.736362528852" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.736633585918" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.736633585918" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -253,7 +254,32 @@
     <a href="https://github.com/oobabooga/one-click-installers/archive/refs/heads/oobabooga-windows.zip" class="absolute block inset-0"></a>
 </div>
 </p>
-<p>Simply extract the <code v-pre>one-click-installers-oobabooga-windows.zip</code> file and click on <code v-pre>install.bat</code>. That will install everything for you. Once the installation is finished, open the <code v-pre>start-webui.bat</code> file.</p>
+<p>Simply extract the <code v-pre>oobabooga-windows.zip</code> file and click on the<code v-pre>start_windows.bat</code> file. This will install everything you need.</p>
+<p>For GPUs with low VRAM, you will need to use either 8bit or 4bit mode. For 4bit, refer to <a href="https://docs.alpindale.dev/local-installation-(gpu)/koboldai4bit/">KoboldAI 4bit</a> guide to obtain the model. Place the model inside oobabooga&#x27;s <code v-pre>models</code> folder, and rename the large file inside your model folder to <code v-pre>4bit-128g.safetensors</code> (this will vary between different quantization techniques).</p>
+<p>To enable <strong>8-bit mode</strong>, open the <code v-pre>webui.py</code> file with a text editor (notepad will work fine), and search for: <code v-pre># put your flags here!</code>. The line will look like this:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">def run_model():
+    os.chdir(&quot;text-generation-webui&quot;)
+    run_cmd(&quot;python server.py --chat --model-menu&quot;, environment=True)  # put your flags here!</code></pre>
+</doc-codeblock></div>
+<p>Change that to this:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">def run_model():
+    os.chdir(&quot;text-generation-webui&quot;)
+    run_cmd(&quot;python server.py --chat --load-in-8bit --auto-devices --xformers --api&quot;, environment=True)  # put your flags here!</code></pre>
+</doc-codeblock></div>
+<blockquote>
+<p>Change the <code v-pre>groupsize</code> value and the <code v-pre>--model_type</code> according to the model you&#x27;re loading.</p>
+</blockquote>
+<p>To enable <strong>4-bit mode</strong>, change that line to:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">def run_model():
+    os.chdir(&quot;text-generation-webui&quot;)
+    run_cmd(&quot;python server.py --chat --wbits 4 --groupsize 128 --model_type llama --api&quot;, environment=True)  # put your flags here!</code></pre>
+</doc-codeblock></div>
+<blockquote>
+<p>Change the <code v-pre>groupsize</code> value and the <code v-pre>--model_type</code> according to the model you&#x27;re loading.</p>
+</blockquote>
 <p>If you want to, you can connect Oobabooga to <a href="https://docs.alpindale.dev/pygmalion-extras/sillytavern/">SillyTavern</a>.</p>
 <doc-anchor-target id="linux">
     <h3>
@@ -493,6 +519,6 @@ pip install -r requirements.txt </code></pre>
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "TextGen WebUI", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "TextGen WebUI", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>
