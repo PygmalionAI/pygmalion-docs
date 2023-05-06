@@ -34,14 +34,14 @@ Change that to this:
 ```py
 def run_model():
     os.chdir("text-generation-webui")
-    run_cmd("python server.py --chat --load-in-8bit --auto-devices --xformers --api", environment=True)  # put your flags here!
+    run_cmd("python server.py --chat --load-in-8bit --auto-devices --xformers --extensions api", environment=True)  # put your flags here!
 ```
 
 To enable **4-bit mode**, change that line to:
 ```py
 def run_model():
     os.chdir("text-generation-webui")
-    run_cmd("python server.py --chat --wbits 4 --groupsize 128 --model_type llama --api", environment=True)  # put your flags here!
+    run_cmd("python server.py --chat --wbits 4 --groupsize 128 --model_type llama --extensions api", environment=True)  # put your flags here!
 ```
 > Change the `groupsize` value and the `--model_type` according to the model you're loading.
 
