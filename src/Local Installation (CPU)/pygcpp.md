@@ -16,7 +16,7 @@ If the model above doesn't work for any reason, you can download the old one ins
 
 ## 7B model
 
-You will need to obtain [your copy](pygmalion-7b/#merging-the-weights) of Pygmalion 7B by merging the original LLaMA (converted to HF format) with the XORed files in the [PygmalionAI/pygmalion-7b](https://huggingface.co/PygmalionAI/pygmalion-7b) repo. You will then have to convert the model to GGML format, and then quantize it down to 4bit/5bit. 
+You will need to obtain [your copy](https://docs.alpindale.dev/pygmalion-7b/#merging-the-weights) of Pygmalion 7B by merging the original LLaMA (converted to HF format) with the XORed files in the [PygmalionAI/pygmalion-7b](https://huggingface.co/PygmalionAI/pygmalion-7b) repo. You will then have to convert the model to GGML format, and then quantize it down to 4bit/5bit. 
 
 ### Linux
 
