@@ -63,7 +63,7 @@ If everything is working, the CMD should look like this and a SillyTavern tab sh
 ![](/static/STcmd.PNG)
 
 !!!warning
-You still have to [connect](https://docs.alpindale.dev/local-installation-(gpu)/sillytavern/#connect-sillytavern) it to a backend API!
+You still have to [connect](https://docs.alpindale.dev/pygmalion-extras/sillytavern/#connect-sillytavern) it to a backend API!
 !!!
 
 
