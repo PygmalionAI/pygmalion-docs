@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.736692208486">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.736872258497">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -24,24 +24,24 @@
     <meta property="og:url" content="https://docs.alpindale.dev/local-installation-(gpu)/koboldai4bit/">
     <meta property="og:title" content="KoboldAI 4bit - Pygmalion AI">
     <meta property="og:description" content="KoboldAI is a browser-based front-end for AI-assisted writing and chatting with multiple local and remote AI models.">
-    <meta property="og:image" content="https://docs.alpindale.dev/static/openpswindows.png">
+    <meta property="og:image" content="https://docs.alpindale.dev/static/koboldai-4bit-8.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.alpindale.dev/local-installation-(gpu)/koboldai4bit/">
     <meta property="twitter:title" content="KoboldAI 4bit - Pygmalion AI">
     <meta property="twitter:description" content="KoboldAI is a browser-based front-end for AI-assisted writing and chatting with multiple local and remote AI models.">
-    <meta property="twitter:image" content="https://docs.alpindale.dev/static/openpswindows.png">
+    <meta property="twitter:image" content="https://docs.alpindale.dev/static/koboldai-4bit-8.png">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/icons/pyggy.svg" rel="icon" />
-    <link href="../../resources/css/retype.css?v=2.4.0.736692208486" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.736872258497" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.736692208486" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.736872258497" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.736692208486" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.736692208486" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.736872258497" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.736872258497" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -253,79 +253,78 @@
         <span>Windows</span>
     </h3>
 </doc-anchor-target>
-<p>The Windows Guide was written with the help of Peepy (lunarlemon#4643).</p>
-<doc-anchor-target id="installing-0cc4ms-koboldai-fork">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#installing-0cc4ms-koboldai-fork">#</doc-anchor-trigger>
-        <span>Installing 0cc4m&#x27;s KoboldAI fork</span>
-    </h4>
-</doc-anchor-target>
-<p>This fork require a manual installation, you can easily do it by following the instructions below.</p>
-<p>First create a folder where you want it to be.</p>
-<p>Go inside that folder and open a PowerShell by holding down the Shift key while right-clicking. From the context menu, select the option to <code v-pre>Open PowerShell Window here</code>.</p>
-<p><figure class="content-center">
-    <img src="../../static/openpswindows.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<p>Now that you have opened PowerShell, you need to run a few commands. (Copy paste the command and press enter).</p>
-<p>First you want to clone the Kobold-4bit repository:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-bash"><code v-pre class="language-bash">git clone https://github.com/0cc4m/KoboldAI -b latestgptq --recurse-submodules</code></pre>
-</doc-codeblock></div>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-yellow-500"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-yellow-500" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M22.48 15.59L14.01 1.45A2.968 2.968 0 0012.16.09c-.78-.19-1.58-.07-2.27.35-.41.25-.76.6-1.01 1.01v.01L.4 15.6c-.83 1.43-.33 3.27 1.1 4.1.45.26.95.4 1.48.4h16.95c.8-.01 1.55-.33 2.11-.9.56-.57.87-1.33.86-2.13a3.04 3.04 0 00-.42-1.48zm-1.87 2.21c-.19.19-.44.3-.69.3H2.99c-.17 0-.34-.05-.49-.13a.992.992 0 01-.37-1.35L10.6 2.48c.08-.14.2-.25.34-.33a.992.992 0 011.37.33l8.46 14.13c.09.15.13.32.13.49 0 .26-.1.51-.29.7z"></path>
-                    <path d="M11.45 12.1c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .56.45 1 1 1zM11.46 14.1c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>Make sure you&#x27;ve read the <a href="https://docs.alpindale.dev/tools/git/">git installation guide</a>.</p>
-        </div>
-    </div>
-</div>
-<p>It shouldn&#x27;t take more than a few seconds to clone it.</p>
-<p>This is how your PowerShell look like so far:</p>
-<p><figure class="content-center">
-    <img src="../../static/koboldai-4bit-1.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<p>You can now close this PowerShell.</p>
-<p>Go into your KoboldAI folder and search for the <code v-pre>install_requirements.bat</code> file. Make a right click on it and choose <code v-pre>Run as administrator</code>.</p>
-<p>When running the <code v-pre>install_requirements.bat</code> command, it will first ask you which way you want to install it. The choice is up to you but we recommend the <code v-pre>1. Temporary Drive Letter</code> (Press 1 and enter).</p>
-<p><figure class="content-center">
-    <img src="../../static/koboldai-4bit-2.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<p>After that, The command prompt will take a few minutes to install all the Kobold requirements and create a umamba virtual environment. This environment will keep all the dependencies safely secured in one folder to prevent conflicts with external packages.</p>
-<p>When the end of the prompt look like this, you can press any key to close it.</p>
-<p><figure class="content-center">
-    <img src="../../static/koboldai-4bit-5.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<p>Now, go back into your Kobold folder again, and open the <code v-pre>play.bat</code> file.</p>
-<p><figure class="content-center">
-    <img src="../../static/koboldai-4bit-6.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<p>It should open a tab on your browser with this url <code v-pre>http://localhost:5000</code></p>
-<p>However, you want to change it to : <code v-pre>http://localhost:5000/new_ui</code></p>
-<p>Once in the new UI, go to the &quot;Interface&quot; tab and turn on <code v-pre>Experimental UI</code> option.</p>
-<p><figure class="content-center">
-    <img src="../../static/koboldai-4bit-7.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<p>This is what allows for 4bit (or on Linux, also 8bit!)</p>
+<p>Download the Kobold <strong>exe</strong>cutable file from here:</p>
+<p><a href="https://github.com/henk717/KoboldAI/releases" class="no-link inline-flex items-center font-medium cursor-pointer transition-colors duration-200 ease-out focus:outline-none bg-blue-500 hover:bg-blue-700 text-white px-4 h-10 text-sm rounded-md">
+    <span>KoboldAI</span>
+</a></p>
+<p>Run the .exe file and follow the instructions until you have an installed copy of KoboldAI. But you&#x27;re not done yet!
+Head over to the KoboldAI folder and double click on the <code v-pre>update-koboldai.bat</code> file. Input <code v-pre>https://github.com/0cc4m/KoboldAI</code> as the Git repo, and <code v-pre>latestgptq</code> as the branch.</p>
+<!-- The Windows Guide was written with the help of Peepy (lunarlemon#4643).
+
+#### Installing 0cc4m's KoboldAI fork
+
+This fork require a manual installation, you can easily do it by following the instructions below.
+
+First create a folder where you want it to be.
+
+Go inside that folder and open a PowerShell by holding down the Shift key while right-clicking. From the context menu, select the option to `Open PowerShell Window here`.
+
+![](/static/OpenPSWindows.PNG)
+
+
+
+
+Now that you have opened PowerShell, you need to run a few commands. (Copy paste the command and press enter).
+
+First you want to clone the Kobold-4bit repository: 
+```bash
+git clone https://github.com/0cc4m/KoboldAI -b latestgptq --recurse-submodules
+``` 
+!!!warning
+Make sure you've read the [git installation guide](https://docs.alpindale.dev/tools/git/).
+!!!
+
+It shouldn't take more than a few seconds to clone it.
+
+This is how your PowerShell look like so far:
+
+![](/static/KoboldAI-4bit-1.PNG)
+
+
+You can now close this PowerShell.
+
+
+
+Go into your KoboldAI folder and search for the `install_requirements.bat` file. Make a right click on it and choose `Run as administrator`.
+
+When running the `install_requirements.bat` command, it will first ask you which way you want to install it. The choice is up to you but we recommend the `1. Temporary Drive Letter` (Press 1 and enter).
+
+
+![](/static/KoboldAI-4bit-2.PNG)
+
+
+After that, The command prompt will take a few minutes to install all the Kobold requirements and create a umamba virtual environment. This environment will keep all the dependencies safely secured in one folder to prevent conflicts with external packages.
+
+When the end of the prompt look like this, you can press any key to close it.
+
+![](/static/KoboldAI-4bit-5.PNG)
+
+
+Now, go back into your Kobold folder again, and open the `play.bat` file.
+
+
+
+![](/static/KoboldAI-4bit-6.PNG)
+
+It should open a tab on your browser with this url `http://localhost:5000`
+
+However, you want to change it to : `http://localhost:5000/new_ui`
+
+Once in the new UI, go to the "Interface" tab and turn on `Experimental UI` option.
+
+![](/static/KoboldAI-4bit-7.PNG)
+
+This is what allows for 4bit (or on Linux, also 8bit!) -->
 <p>After you&#x27;ve done that, congrats! You&#x27;re almost there. You need to download the model now.</p>
 <doc-anchor-target id="downloading-the-model">
     <h4>
