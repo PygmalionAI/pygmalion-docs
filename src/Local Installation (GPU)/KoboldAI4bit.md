@@ -26,7 +26,14 @@ Please make sure you :
 
 ### Windows
 
-The Windows Guide was written with the help of Peepy (lunarlemon#4643).
+Download the Kobold **exe**cutable file from here:
+
+[!button KoboldAI](https://github.com/henk717/KoboldAI/releases)
+
+Run the .exe file and follow the instructions until you have an installed copy of KoboldAI. But you're not done yet!
+Head over to the KoboldAI folder and double click on the `update-koboldai.bat` file. Input `https://github.com/0cc4m/KoboldAI` as the Git repo, and `latestgptq` as the branch.
+
+<!-- The Windows Guide was written with the help of Peepy (lunarlemon#4643).
 
 #### Installing 0cc4m's KoboldAI fork
 
@@ -91,7 +98,7 @@ Once in the new UI, go to the "Interface" tab and turn on `Experimental UI` opti
 
 ![](/static/KoboldAI-4bit-7.PNG)
 
-This is what allows for 4bit (or on Linux, also 8bit!)
+This is what allows for 4bit (or on Linux, also 8bit!) -->
 
 After you've done that, congrats! You're almost there. You need to download the model now.
 
