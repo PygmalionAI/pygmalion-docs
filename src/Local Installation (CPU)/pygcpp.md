@@ -154,10 +154,11 @@ Install Termux from F-Droid.
 5. `pip install psutil`
 6. `git clone https://github.com/LostRuins/koboldcpp && cd koboldcpp`
 7. `make`
-8. `wget https://huggingface.co/concedo/pygmalion-6bv3-ggml-ggjt/resolve/main/pygmalion-6b-v3-ggml-ggjt-q4_0.bin`
-9. `python koboldcpp.py pygmalion-6b-v3-ggml-ggjt-q4_0.bin`
-10. Switch to your browser (don't close Termux) and go to [localhost:5001](http://127.0.0.1:5001).
-11. You're done!
+8. `pkg install wget`
+9. `wget https://huggingface.co/concedo/pygmalion-6bv3-ggml-ggjt/resolve/main/pygmalion-6b-v3-ggml-ggjt-q4_0.bin`
+10. `python koboldcpp.py pygmalion-6b-v3-ggml-ggjt-q4_0.bin`
+11. Switch to your browser (don't close Termux) and go to [localhost:5001](http://127.0.0.1:5001).
+12. You're done!
 
 ##### Android Quickstart
 If you want to launch it again, open Termux and make sure you're in the koboldcpp folder. You can confirm this by checking whether the bash prompt is `~ $` or `~/koboldcpp $`. If it's the former, run `cd koboldcpp`. If it's the latter, continue.
