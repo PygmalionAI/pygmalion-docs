@@ -31,7 +31,12 @@ Download the Kobold **exe**cutable file from here:
 [!button KoboldAI](https://github.com/henk717/KoboldAI/releases)
 
 Run the .exe file and follow the instructions until you have an installed copy of KoboldAI. But you're not done yet!
-Head over to the KoboldAI folder and double click on the `update-koboldai.bat` file. Input `https://github.com/0cc4m/KoboldAI` as the Git repo, and `latestgptq` as the branch.
+
+Download this file and place it inside the newly installed KoboldAI folder:
+
+[!button 4bit Patch](https://cdn.discordapp.com/attachments/1067465338905702572/1105952533421228032/update-koboldai-occam-4bit.bat)
+
+Once it's downloaded, you may simply double-click on the `update-koboldai-occam-4bit.bat` file and it'll patch your KoboldAI installation to support 4bit!
 
 <!-- The Windows Guide was written with the help of Peepy (lunarlemon#4643).
 
@@ -175,7 +180,7 @@ git clone https://github.com/0cc4m/KoboldAI -b latestgptq --recurse-submodules &
 2. Install the Kobold requirements
 ```bash
 chmod +x install_requirements.sh \
-./install_requirements.sh
+./install_requirements.sh cuda
 ```
 !!!info
 This is a 2.5GB download.
