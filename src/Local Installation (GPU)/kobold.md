@@ -19,7 +19,7 @@ Please make sure you've read the Overview and Setting up your GPU pages first.
 - Make sure you don't have a `B:` Drive.
 - Download KoboldAI and run the `.exe` file:
 
-[!file KoboldAI](https://koboldai.org/windows)
+[!file KoboldAI](https://github.com/henk717/KoboldAI/releases)
 - When you reach this part, type `2` and press enter.
 ![](/static/kobold-local-3.png)
 - Search for KoboldAI in the Start Menu and launch it.
