@@ -36,7 +36,7 @@ Download this file and place it inside the newly installed KoboldAI folder:
 
 [!button 4bit Patch](https://cdn.discordapp.com/attachments/1067465338905702572/1105952533421228032/update-koboldai-occam-4bit.bat)
 
-Once it's downloaded, you may simply double-click on the `update-koboldai-occam-4bit.bat` file and it'll patch your KoboldAI installation to support 4bit!
+Once in the KoboldAI folder, you may simply double-click on the `update-koboldai-occam-4bit.bat` file and it'll patch your KoboldAI installation to support 4bit!
 
 <!-- The Windows Guide was written with the help of Peepy (lunarlemon#4643).
 
