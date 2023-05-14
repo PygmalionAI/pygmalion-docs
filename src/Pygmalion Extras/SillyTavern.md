@@ -123,6 +123,9 @@ Install NodeJS and git:
 ```bash
 pkg install nodejs openssl
 ```
+```bash
+pkg install git
+```
 
 Download Silly Tavern:
 ```bash
