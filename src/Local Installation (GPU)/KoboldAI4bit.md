@@ -149,9 +149,9 @@ On the list, pick the `Load a model from it's directory` option.
 
 ![](/static/KoboldAI-4bit-11.PNG)
 
-Pick the model we just downloaded, ***MAKE SURE THE 4 BIT MODE IS ON***, then click on load !
+Pick the model we just downloaded, then click on load !
 
-![](/static/KoboldAI-4bit-12.PNG)
+![](/static/4Bit-Load.PNG)
 
 !!!success
 The model will now be loaded and be ready to be use, if you want to use it with SillyTavern, please go [here](https://docs.alpindale.dev/pygmalion-extras/sillytavern/#connect-sillytavern).
