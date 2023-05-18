@@ -4,6 +4,10 @@ icon: zap
 title: Pygmalion 7B
 ---
 
+!!!info Pygmalion 13B
+The same procedure can be applied to LLaMA 13B for obtaining the newly released Pygmalion and Metharme 13B models.
+!!!
+
 Due to the LLaMA licensing issues, the weights for Pygmalion-7B and Metharme-7B are released as XOR files - which means they're useless by themselves unless you combine them with the original LLaMA weights. You will need to apply for access to the weights [here](https://docs.google.com/forms/d/e/1FAIpQLSfqNECQnMkycAp2jP4Z9TFX0cGR4uf7b_fBxjY_OjhJILlKGA/viewform). Note that you will need a .edu email address for access. For more info, please refer to the #help-and-questions channel in our [Discord](https://discord.gg/pygmalionai).
 
 ## Models
