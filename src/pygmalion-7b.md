@@ -130,7 +130,7 @@ python3 xor_codec.py \
 
 [!file icon="download" text="Metharme 7B JSONs"](https://cdn.discordapp.com/attachments/1068926294017970237/1102062681722204270/met-7b.zip)
 
-## File hashes
+## 7B File hashes
 
 Make sure your files match these sha256 hashes:
 
@@ -166,6 +166,38 @@ fd7ff399e5568cc21a0a8414f43df88ef7c424995b9b97a90563165d2cf79efd  generation_con
 461bc5e50200db7813ff99cc0b9316c48ccbd6aaaa31bf8cf7bee0b64bc3eda3  pytorch_model-00002-of-00002.bin
 aca3c1facc89d12311a667c32e85ac86e625990992ea8a189e3b036ba371b931  pytorch_model.bin.index.json
 ff3b4a612c4e447acb02d40071bddd989fe0da87eb5b7fe0dbadfc4f74de7531  special_tokens_map.json
+380608719f3af6ef2b343e2ed53bf55556678609337e88a14f58cc49177b9e18  tokenizer_config.json
+f9ffc4aede0845ab65324ce5dccb823dca2427f9a0710981e5bc2398d73d8162  tokenizer.json
+9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347  tokenizer.model
+```
+
+## 13B File Hashes
+
+Metharme 13B Merged Weights:
+
+```
+$ sha256sum metharme-13b-merged/*
+be2c276865d1b0759257c0934275f05e02ee520657c2d8ebe3f2a2db1562949a  config.json
+a23652fc622a27b8863c39f524707796967095b2a85f334561b11422f71445a2  generation_config.json
+07727e130b7e4ec66162920b4e090554e6c58e87d25b433ab8123eb3a55fd5e7  pytorch_model-00001-of-00003.bin
+26b6f7e020c94347280d8952b054275fe2293267f9a0e99e1c2bf4df724d99d9  pytorch_model-00002-of-00003.bin
+5d00548d2c28ced08ec7b4123749f20e9ca4af2a821724f9ec47a1c5cf0f66d4  pytorch_model-00003-of-00003.bin
+72e91e29282dae48ea5562fcf4d6ca0d5a9c2a30ebc8d67174a19e192552a20b  pytorch_model.bin.index.json
+bd87e244d21d45c358e5d822aeb2efd4e4d60127e43b648ed3efe7823fd35060  tokenizer_config.json
+f9ffc4aede0845ab65324ce5dccb823dca2427f9a0710981e5bc2398d73d8162  tokenizer.json
+68147850c080987172d24ad27a9ba2c65c71b46e248e8ee0f0c4eda90e2ca558  tokenizer.model
+```
+
+Converted LLaMA 13B weights:
+
+```
+$ sha256sum llama-13b-hf/*
+ad440bbb8f4af8f499a905f13b073ce3abbc3d4c43d5570ba2583eb296b74727  config.json
+fd7ff399e5568cc21a0a8414f43df88ef7c424995b9b97a90563165d2cf79efd  generation_config.json
+dd20cdee2637408c6ab88c13f5c27d153bacd0e99f2d55f6a66fbd0269944436  pytorch_model-00001-of-00003.bin
+1aba886c5f28d2e2e9b04ab3c4f5bc250c6b06efc1baa3f557677b3097f70e6a  pytorch_model-00002-of-00003.bin
+eac58861ca5f3749c819676d908b906d3df38046c09efe055fe78d7678b718e7  pytorch_model-00003-of-00003.bin
+92c31ad5e853e9a6660e248871f9bd0cd273518de7ec12ca893e1b1078c10898  pytorch_model.bin.index.json
 380608719f3af6ef2b343e2ed53bf55556678609337e88a14f58cc49177b9e18  tokenizer_config.json
 f9ffc4aede0845ab65324ce5dccb823dca2427f9a0710981e5bc2398d73d8162  tokenizer.json
 9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347  tokenizer.model
