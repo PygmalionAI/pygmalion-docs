@@ -6,7 +6,7 @@ title: TextGen WebUI
 
 Oobabooga's Text Generation WebUI is a gradio frontend for running large language models. 
 
-Unlike KoboldAI, it can be used as a standalone front-end - you can still connect to SillyTavern though.
+Unlike KoboldAI, it can be used as a standalone front-end - you can still connect to SillyTavern or Agnaistic though.
 
 ![](/static/ooba-cloud1.PNG)
 
@@ -45,7 +45,7 @@ def run_model():
 ```
 > Change the `groupsize` value and the `--model_type` according to the model you're loading.
 
-If you want to, you can connect Oobabooga to [SillyTavern](https://docs.alpindale.dev/pygmalion-extras/sillytavern/).
+If you want to, you can connect Oobabooga to [SillyTavern](https://docs.alpindale.dev/pygmalion-extras/sillytavern/) or the [Agnaistic Guide](https://docs.alpindale.dev/pygmalion-extras/agnaistic/) included here  or the [Agnaistic Guide](https://docs.alpindale.dev/pygmalion-extras/agnaistic/) included here.
 
 
 ### Linux
@@ -54,7 +54,7 @@ Oobabooga has created a one-click installer for Linux as well. Simply download t
 
 [!file Text-Gen WebUI Linux Installer](https://github.com/oobabooga/one-click-installers/archive/refs/heads/oobabooga-linux.zip)
 
-If you want to, you can connect Oobabooga to [SillyTavern](https://docs.alpindale.dev/pygmalion-extras/sillytavern/).
+If you want to, you can connect Oobabooga to [SillyTavern](https://docs.alpindale.dev/pygmalion-extras/sillytavern/) or [Agnaistic](https://docs.alpindale.dev/pygmalion-extras/agnaistic/).
 
 ## Manual Installation
 You can also manually install the WebUI. This method is recommended because it's more fun. The following guide is applicable to both Windows and Linux, though the primary audience is Linux users.
@@ -106,4 +106,4 @@ Please don't forget to pass the `--load-in-8bit` argument too if you have a low 
 
 You can view the full list of commands [here](https://github.com/oobabooga/text-generation-webui#starting-the-web-ui){target="_blank"}.
 
-If you want to, you can connect Oobabooga to [SillyTavern](https://docs.alpindale.dev/pygmalion-extras/sillytavern/).
+If you want to, you can connect Oobabooga to [SillyTavern](https://docs.alpindale.dev/pygmalion-extras/sillytavern/) or [Agnaistic](https://docs.alpindale.dev/pygmalion-extras/agnaistic/).

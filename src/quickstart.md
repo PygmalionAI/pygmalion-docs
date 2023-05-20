@@ -25,7 +25,7 @@ Keep in mind that the Kobold Horde is run by generous donors running Pygmalion o
 !!!
 
 ### Android
-Android users have more options than iOS users. You can either run the model locally on your phone, no internet connection required, or use the Kobold Horde via SillyTavern. 
+Android users have more options than iOS users. You can either run the model locally on your phone, no internet connection required, or use the Kobold Horde via SillyTavern/Agnaistic. 
 
 #### Locally
 To run Pygmalion locally on your phone, you'll need to make sure you have **at least** 8GB of RAM. You can find out the memory size for your phone by looking it up online.

@@ -154,7 +154,7 @@ Pick the model we just downloaded, ***MAKE SURE THE 4 BIT MODE IS ON***, then cl
 ![](/static/KoboldAI-4bit-12.PNG)
 
 !!!success
-The model will now be loaded and be ready to be use, if you want to use it with SillyTavern, please go [here](https://docs.alpindale.dev/pygmalion-extras/sillytavern/#connect-sillytavern).
+The model will now be loaded and be ready to be use, if you want to use it with SillyTavern or Agnaistic, please go [here](https://docs.alpindale.dev/pygmalion-extras/sillytavern/#connect-sillytavern),  or the [Agnaistic Guide](https://docs.alpindale.dev/pygmalion-extras/agnaistic/) here.
 !!!
 
 
