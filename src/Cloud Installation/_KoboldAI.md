@@ -21,10 +21,12 @@ You might be warned that the notebook is not authored by Google - you can ignore
 -  Once it's loaded, two URLs will appear. If you wish to use Kobold by itself, please *click* on the second URL.
 ##### Using the remote URL to connect SillyTavern
 - If you wish to use KoboldAI with Tavern, please *copy* the first URL and *paste* it into the `API URL` box in SillyTavern.
+##### Using the remote URL to connect Agnaistic
+- If you wish to use KoboldAI with Agnaistic, please *copy* the first URL and *paste* it into the `Kobold-compatible / 3rd-party URL` box in Agnaistic and make sure the `Kobold / 3rd-party Format` dropdown is set to Kobold.
 
 ![](/static/kobold-cloud2.PNG)
 
 !!!success You're done! 
-You can start using Pygmalion if you clicked on the second link. If you want to use it with Tavern, please refer to the [SillyTavern](https://docs.alpindale.dev/pygmalion-extras/sillytavern/) guide included here.
+You can start using Pygmalion if you clicked on the second link. If you want to use it with Tavern, please refer to the [SillyTavern](https://docs.alpindale.dev/pygmalion-extras/sillytavern/) guide included here or the [Agnaistic Guide](https://docs.alpindale.dev/pygmalion-extras/agnaistic/) included here.
 !!!
 

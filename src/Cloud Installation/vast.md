@@ -53,3 +53,6 @@ You're now ready to use PygmalionAI! Make sure you delete (or stop, if you don't
 
 You can easily use TavernAI along with Kobold. Follow the instructions in the [Tavern guide](https://docs.alpindale.dev/pygmalion-extras/sillytavern/) but instead of inputting `localhost:5000/api`, use your `trycloudflare.com` link. Assuming your URL was `https://pieces-strictly-transparency-luther.trycloudflare.com/new_ui`, you would paste it as `https://pieces-strictly-transparency-luther.trycloudflare.com/api` inside Tavern. Note that the `new_ui` part is removed and replaced with `/api`. 
 
+## Connecting your instance to Agnaistic
+
+You can easily use Agnaistic along with Kobold. Follow the instructions in the [Agnaistic Guide](https://docs.alpindale.dev/pygmalion-extras/agnaistic/) but instead of inputting `localhost:5000/`, use your `trycloudflare.com` link. Assuming your URL was `https://pieces-strictly-transparency-luther.trycloudflare.com/new_ui`, you would paste it as `https://pieces-strictly-transparency-luther.trycloudflare.com` inside Agnaistic. Note that the `new_ui` part is removed. 
