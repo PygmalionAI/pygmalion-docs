@@ -5,7 +5,9 @@ title: Agnaistic
 ---
 Agnaistic is a user interface you can install on your computer (or use the [production version](https://agnai.chat)) that allows you to interact with text generation AIs and chat/roleplay with the characters you or the community create.
 
+!!!info
 Agnaistic is just a UI; you will need to connect it to a backend: [KoboldAI](https://docs.alpindale.dev/local-installation-(gpu)/kobold/) or [TextGen WebUI](https://docs.alpindale.dev/local-installation-(gpu)/oobabooga/).
+!!!
 
 ![](../static/Agnaistic.png)
 
