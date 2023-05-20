@@ -16,16 +16,16 @@ There are multiple ways to run a large language model like Pygmalion, including 
 You have a few options for running Pygmalion on your mobile phone, depending on what phone you're using. 
 
 ### iOS (iPhone)
-Your only choice is to use Kobold Horde. You can use this URL to start chatting:
+Your only choice is to use Kobold Horde. You can use the Agnaistic website to get started:
 
-[!button Kobold Horde](https://koboldai.org/pygmalion)
+[!button Kobold Horde](https://docs.alpindale.dev/cloud-installation/horde/#agnaistic)
 
 !!!warning The Horde can be slow!
 Keep in mind that the Kobold Horde is run by generous donors running Pygmalion on their own PCs and allowing other people to use them. The number of users far exceeds the number of hosts. You're encouraged to also chip in by hosting Pygmalion yourself if you meet the required specifications to run it locally on your PC.
 !!!
 
 ### Android
-Android users have more options than iOS users. You can either run the model locally on your phone, no internet connection required, or use the Kobold Horde via SillyTavern/Agnaistic. 
+Android users have more options than iOS users. You can either run the model locally on your phone, no internet connection required, or use the [Kobold Horde](https://docs.alpindale.dev/cloud-installation/horde) via SillyTavern/Agnaistic. 
 
 #### Locally
 To run Pygmalion locally on your phone, you'll need to make sure you have **at least** 8GB of RAM. You can find out the memory size for your phone by looking it up online.

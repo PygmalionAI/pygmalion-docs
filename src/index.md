@@ -5,7 +5,7 @@ icon: home
 ![](/static/1500x500.jpeg)
 # What is PygmalionAI?
 
-PygmalionAI is an open-source large language model (**LLM**) based on EleutherAI's [GPT-J 6B](https://huggingface.co/EleutherAI/gpt-j-6b){ target="_blank" } and Meta AI's [LLaMA 7B](https://ai.facebook.com/blog/large-language-model-llama-meta-ai/){ target="_blank" }.
+PygmalionAI is an open-source large language model (**LLM**) based on EleutherAI's [GPT-J 6B](https://huggingface.co/EleutherAI/gpt-j-6b){ target="_blank" } and Meta AI's [LLaMA](https://ai.facebook.com/blog/large-language-model-llama-meta-ai/){ target="_blank" } models.
 
 In simple terms, Pygmalion is an AI fine-tuned for chatting and roleplaying purposes. The current actively supported Pygmalion AI model is the 7B variant, based on Meta AI's LLaMA model.
 

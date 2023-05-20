@@ -1,22 +1,22 @@
 ---
 order: 1000
 icon: zap
-title: Pygmalion 7B
+title: Pygmalion 7B & 13B
 ---
 
 !!!info Pygmalion 13B
-The same procedure can be applied to LLaMA 13B for obtaining the newly released Pygmalion and Metharme 13B models.
+The same procedure can be applied to LLaMA 13B for obtaining the newly released Pygmalion and Metharme 13B models. Keep in mind that the VRAM requirements for Pygmalion 13B are double the 7B and 6B variants.
 !!!
 
 Due to the LLaMA licensing issues, the weights for Pygmalion-7B and Metharme-7B are released as XOR files - which means they're useless by themselves unless you combine them with the original LLaMA weights. You will need to apply for access to the weights [here](https://docs.google.com/forms/d/e/1FAIpQLSfqNECQnMkycAp2jP4Z9TFX0cGR4uf7b_fBxjY_OjhJILlKGA/viewform). Note that you will need a .edu email address for access. For more info, please refer to the #help-and-questions channel in our [Discord](https://discord.gg/pygmalionai).
 
 ## Models
 
-### Chat Model (Pygmalion 7B)
+### Chat Model (Pygmalion)
 
-This model is based on Meta's LLaMA 7B, fine-tuned with the regular Pygmalion 6B dataset. This model is purely for chatting and roleplaying purposes, and the same prompt formattings you're used to will work here.
+This model is based on Meta's LLaMA 7B and 13B, fine-tuned with the regular Pygmalion 6B dataset. This model is purely for chatting and roleplaying purposes, and the same prompt formattings you're used to will work here.
 
-### Instruction Model (Metharme 7B)
+### Instruction Model (Metharme)
 
 This is an experimental model with a new prompt format used during training. It is capable of Chatting, RolePlaying, and Storytelling all at once. The prompting format is entirely different from the Chat Models, so Tavern will likely *not work*. 
 
@@ -69,7 +69,7 @@ pip install .
 pip install torch==1.13.1 accelerate==0.18.0 sentencepiece==0.1.98 protobuf==3.20.1
 ```
 
-5. Confirm versions by running this command: `pip freeze`. The output should look **exactly** like this:
+<!-- 5. Confirm versions by running this command: `pip freeze`. The output should look **exactly** like this:
 ```bash
 accelerate==0.18.0
 certifi==2022.12.7
@@ -95,9 +95,9 @@ tqdm==4.65.0
 transformers @ file:///mnt/data/koepf/transformers
 typing_extensions==4.5.0
 urllib3==1.26.15
-```
+``` -->
 
-6. Run this in **root** transformers repo:
+5. Run this in **root** transformers repo:
 
 ```bash
 python src/transformers/models/llama/convert_llama_weights_to_hf.py --input_dir <input_path_llama_base>  --output_dir <output_path_llama7b_hf> --model_size 7B
@@ -136,11 +136,25 @@ Make sure your files match these sha256 hashes:
 
 - Merged Pygmalion-7B weights:
 ```
-$ sha256sum pygmalion-7b/*
+$ sha256sum pygmalion-7b-merged/*
 e6e95f80203ae4d3925d420e9eeb31fc11fa4d9a49b40d8c6499838365e3f5a8  config.json
 062a37a6d986c38231880f5cce4fa9a0145aeefcf8be9ab23ddf7d600c037aea  generation_config.json
 61bcb043c3c4dc4d567ffea91b3074c70d54089eb3f1872b945d7a4e32677edf  pytorch_model-00001-of-00002.bin
 41ebe6971edc8f04b0784ef8ed54216fcd36f8a4d51faf415851c9b824769ba2  pytorch_model-00002-of-00002.bin
+aca3c1facc89d12311a667c32e85ac86e625990992ea8a189e3b036ba371b931  pytorch_model.bin.index.json
+ff3b4a612c4e447acb02d40071bddd989fe0da87eb5b7fe0dbadfc4f74de7531  special_tokens_map.json
+9e7aa7d0f67f207036d981d7bbabfbf4b521c4c089c0280fcc08ef9c732634b5  tokenizer_config.json
+f9ffc4aede0845ab65324ce5dccb823dca2427f9a0710981e5bc2398d73d8162  tokenizer.json
+9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347  tokenizer.model
+```
+
+- Merged Metharme 7B weights:
+```
+$ sha256sum metharme-7b-merged/*
+e6e95f80203ae4d3925d420e9eeb31fc11fa4d9a49b40d8c6499838365e3f5a8  config.json
+062a37a6d986c38231880f5cce4fa9a0145aeefcf8be9ab23ddf7d600c037aea  generation_config.json
+7ba01a5594b0a507290cf5fbf77e2456801773dd62f1993a8f21b92156e70533  pytorch_model-00001-of-00002.bin
+58e523a7f79427ed166a505c54fa7ebe96bd6b2fde35f980b184039faca8989f  pytorch_model-00002-of-00002.bin
 aca3c1facc89d12311a667c32e85ac86e625990992ea8a189e3b036ba371b931  pytorch_model.bin.index.json
 ff3b4a612c4e447acb02d40071bddd989fe0da87eb5b7fe0dbadfc4f74de7531  special_tokens_map.json
 9e7aa7d0f67f207036d981d7bbabfbf4b521c4c089c0280fcc08ef9c732634b5  tokenizer_config.json
@@ -173,7 +187,23 @@ f9ffc4aede0845ab65324ce5dccb823dca2427f9a0710981e5bc2398d73d8162  tokenizer.json
 
 ## 13B File Hashes
 
-Metharme 13B Merged Weights:
+
+- Pygmalion 13B Merged Weights:
+
+```
+$ sha256sum pygmalion-13b-merged/*
+be2c276865d1b0759257c0934275f05e02ee520657c2d8ebe3f2a2db1562949a  config.json
+a23652fc622a27b8863c39f524707796967095b2a85f334561b11422f71445a2  generation_config.json
+6b05c8e8ae9c1065e4c7cfd2b61311191d2ad5735a2e4beab98fc53b49375af8  pytorch_model-00001-of-00003.bin
+4cd096ac310b6bbc3acd3d729277427ad3c3d5740619462dc8f907dfeac3e66f pytorch_model-00002-of-00003.bin
+a2fe9ac5d7005e65c58b8d14818678dd0730689f518612b90cca19fed7c483ad  pytorch_model-00003-of-00003.bin
+72e91e29282dae48ea5562fcf4d6ca0d5a9c2a30ebc8d67174a19e192552a20b  pytorch_model.bin.index.json
+bd87e244d21d45c358e5d822aeb2efd4e4d60127e43b648ed3efe7823fd35060  tokenizer_config.json
+f9ffc4aede0845ab65324ce5dccb823dca2427f9a0710981e5bc2398d73d8162  tokenizer.json
+68147850c080987172d24ad27a9ba2c65c71b46e248e8ee0f0c4eda90e2ca558  tokenizer.model
+```
+
+- Metharme 13B Merged Weights:
 
 ```
 $ sha256sum metharme-13b-merged/*
@@ -188,7 +218,7 @@ f9ffc4aede0845ab65324ce5dccb823dca2427f9a0710981e5bc2398d73d8162  tokenizer.json
 68147850c080987172d24ad27a9ba2c65c71b46e248e8ee0f0c4eda90e2ca558  tokenizer.model
 ```
 
-Converted LLaMA 13B weights:
+- Converted LLaMA 13B weights:
 
 ```
 $ sha256sum llama-13b-hf/*

@@ -3,7 +3,7 @@ order: 100000
 icon: comment-discussion
 title: Agnaistic
 ---
-Agnaistic is a user interface you can install on your computer (or use the [production version](https://agnai.chat)) that allows you to interact with text generation AIs and chat/roleplay with the characters you or the community create.
+Agnaistic is a user interface you can install on your computer (or use the [production version](https://agnai.chat)) that allows you to interact with text generation AIs and chat/roleplay with the characters you or the community create. Agnaistic is forked from the official Pygmalion website UI, [Galatea UI](https://github.com/PygmalionAI/galatea-ui).
 
 !!!info
 Agnaistic is just a UI; you will need to connect it to a backend: [KoboldAI](https://docs.alpindale.dev/local-installation-(gpu)/kobold/) or [TextGen WebUI](https://docs.alpindale.dev/local-installation-(gpu)/oobabooga/).
@@ -102,7 +102,8 @@ Agnaistic is bundled as an NPM package and can be installed globally:
 
 1. Clone the project
    - `git clone -b dev https://github.com/luminai-companion/agn-ai && cd agn-ai`
-2. With MongoDB: `docker compose -p agnai -f self-host.docker-compose.yml up -d`
+2. With MongoDB: 
+   - `docker compose -p agnai -f self-host.docker-compose.yml up -d`
 3. Without MongoDB: `docker run -dt --restart=always -p 3001:3001 ghcr.io/luminai-companion/agnaistic:latest`
     - `-dt` Run the container detached
     - `--restart=always` Restart at start up or if the server crashes
