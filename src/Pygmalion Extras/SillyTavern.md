@@ -9,13 +9,62 @@ SillyTavern is a user interface you can install on your computer (and Android ph
 SillyTavern is just a UI; you will need to connect it to a backend: [KoboldAI](https://docs.alpindale.dev/local-installation-(gpu)/kobold/) or [TextGen WebUI](https://docs.alpindale.dev/local-installation-(gpu)/oobabooga/).
 !!!
 
-![](/static/SillyTavern.PNG)
+<!-- ![](/static/SillyTavern.PNG) -->
+|![Bubble Chat](../static/st1.jpg) | ![Waifu Mode](../static/st2.jpg) |
+|:---:|:---:|
+|![VN mode](../static/st3.jpg) | ![Background images](../static/st4.png) |
+
+
+## Navigation
+
+#### API Menu
+![API](../static/st-api.png)
+
+This is where you select the API you wish to connect SillyTavern to. The currently supported APIs are: [KoboldAI](https://docs.alpindale.dev/local-installation-(gpu)/kobold/), [Kobold Horde](https://docs.alpindale.dev/cloud-installation/horde/), Oobabooga's [TextGen WebUI](https://docs.alpindale.dev/local-installation-(gpu)/oobabooga/), [NovelAI](https://novelai.net), [OpenAI](https://platform.openai.com), and [Poe](https://poe.com). **Pygmalion is only accessible through KoboldAI, Kobold Horde, and Oobabooga.** Instructions for acquring the API Key for those two are provided in their respective pages - SillyTavern itself offers guides for acquiring your API key for the other three.
+
+#### Advanced Formatting
+![Advanced Formatting](../static/st-adv.png)
+
+This is where you'll find various options for a more intimate control over the model's prompting and output. You can click on the question mark next to the "Advanced Formatting" title in SillyTavern for an in-depth explanation of each option. For Pygmalion, this can be left mostly alone - just make sure the Tokenizer is set to "Sentencepiece (LLaMA)" for Pygmalion 7B/13B. For Metharme models, select "Metharme" from the Presets drop-down menu and you're good to go.
+
+#### World Selector
+![World Info Selector](../static/st-ws.png)
+
+You can load your World Info and Soft Prompt file here. For a more in-depth explanation, refer to our [Soft Prompt](https://docs.alpindale.dev/pygmalion-extras/soft-prompt/) and [World Info](https://docs.alpindale.dev/settingsandparams/#wi-depth-world-info) pages. You can also click on the Question Mark next to each option in ST for a detailed overview.
+
+#### User Settings
+![User Settings](../static/st-user.png)
+
+You can customize the UI and basic SillyTavern behaviour here. Notable options are Waifu Mode, UI Theme Preset, Swipes, User Name, and UI Colors. The names are mostly self-explanatory - Waifu Mode crops the Chat Box so you can see your character's sprite (if you've added one).
+
+#### Background Images
+![BG](../static/st-bg.png)
+
+You can select or add new background images here. Make sure to pick one that fits the chat's mood!
+
+#### Extensions API
+![SillyTavern Extras](../static/st-ex.png)
+
+This menu is for SillyTavern Extras and various other extensions. You can add Expression images for your characters, use Stable Diffusion to generate images of the chat/story, TTS for making your characters talk, and image captioning so you can send images directly to your character! 
+
+You can either run SillyTavern-extras [locally](https://github.com/Cohee1207/SillyTavern-extras) or use the provided [Google Colab Notebook](https://colab.research.google.com/github/Cohee1207/SillyTavern/blob/main/colab/GPU.ipynb). If you went the local route, launch ST-Extras and click connect in ST. If you use Colab, copy your Remote URL and paste it in the API field, then click connect.
+
+Stable Diffusion generations are done through either SillyTavern-extras or Stable Horde. If you're not using the extras, make sure you check the "Use Stable Horde" option. If you have kudos, make sure you add your Horde API Key in the API menu first.
+
+#### Character Management
+![Characters](../static/st-char.png)
+You can create, upload, and manage your characters here. ST by default comes with 3 characters - Aqua, Darkness, and Megumin. You can also assign tags for each character based on their character style (docs on those are currently a WIP). You can also create Group Chats here (similar to Rooms in C.AI).
+
+#### Presets
+![Kobold Presets](../static/st-presets.png)
+
+Depending on which API you've selected, you can choose from the multiple presets provided by the ST team. You can also adjust the generation settings here (learn more about those [here](https://docs.alpindale.dev/settingsandparams/)). Keep in mind that all current Pygmalion/Metharme models have a hard-coded context limit of 2048 tokens, so please don't unlock the context size to assign a higher value.
 
 ## Installation
 Installing SillyTavern is simple. It supports the following operating systems:
 - [Windows x64](https://docs.alpindale.dev/pygmalion-extras/sillytavern/#windows-installation)
 - [Linux x64](https://docs.alpindale.dev/pygmalion-extras/sillytavern/#linuxmacos-installation)
-- [MacOS (Darwin x64)](https://docs.alpindale.dev/pygmalion-extras/sillytavern/#linuxmacos-installation)
+- [macOS (Darwin x64)](https://docs.alpindale.dev/pygmalion-extras/sillytavern/#linuxmacos-installation)
 - [Android (aarch64)](https://docs.alpindale.dev/pygmalion-extras/sillytavern/#android-installation)
 
 

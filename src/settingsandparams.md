@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 10
 icon: gear
 title: Settings and Parameters
 ---
