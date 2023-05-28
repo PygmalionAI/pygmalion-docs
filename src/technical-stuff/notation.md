@@ -197,3 +197,7 @@ Specifically, you've learned:
 - Notation for arithmetic, including variations of multiplication, exponents, roots, and logarithms.
 - Notation for sequences and sets, including indexing, summation, and set membership.
 - Tips on how to get help if you're struggling with notations.
+
+### Sources
+
+Mostly [this article](https://machinelearningmastery.com/basics-mathematical-notation-machine-learning/) from the excellent Machine Learning Master website.
