@@ -2,7 +2,7 @@
 order: 10000
 icon: comment-discussion
 title: TavernAI
-image: ../static/PygmaHeader1.png
+visibility: hidden
 ---
 
 [TavernAI](https://github.com/TavernAI/TavernAI) is chat front-end written in JavaScript for providing an atmospheric user interface to various LLM APIs. Projects such as [SillyTavern](https://github.com/Cohee1207/SillyTavern) have been [forked](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks) from TavernAI.
