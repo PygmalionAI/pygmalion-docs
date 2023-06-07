@@ -33,7 +33,7 @@ links:
 navigation:
     - title: 
 footer:
-  copyright: "&copy; Copyright {{ year }}. All rights reserved."
+  copyright: "&copy; Copyleft {{ year }}. All rights reserved."
 
 server:
   host: 127.0.0.1
