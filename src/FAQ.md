@@ -8,8 +8,6 @@ title: FAQ
 
 ### How do I use the latest `dev` (v8) version?
 
-If you're running on Google Colab, all notebooks have an option for downloading the `dev` (beta) model. Look for either `Pygmalion 6B Dev` or `Pygmalion 6B Experimental`. 
-
 If you're running locally, make sure `git` is installed and run the following command inside your `KoboldAI/models` or `text-generation-webui/models` folder:
 ```
 git lfs clone https://huggingface.co/PygmalionAI/pygmalion-6b --branch dev
