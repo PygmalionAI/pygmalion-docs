@@ -17,7 +17,7 @@ visibility: hidden
 
 This is the first thing you want to configure when opening TavernAI. Here, you can select which API to use, the model, the generation settings, and your own username.
 
-The currently supported APIs are [KoboldAI](https://docs.alpindale.dev/local-installation-(gpu)/kobold/), [Kobold Horde](https://docs.alpindale.dev/cloud-installation/horde/), [NovelAI](https://novelai.net/), and [OpenAI](https://platform.openai.com/). Pygmalion is only available through KoboldAI and Kobold Horde, so please refer to their respective pages on how to set them up for using with Pygmalion.
+The currently supported APIs are [KoboldAI](https://docs.pygmalion.chat/local-installation-(gpu)/kobold/), [Kobold Horde](https://docs.pygmalion.chat/cloud-installation/horde/), [NovelAI](https://novelai.net/), and [OpenAI](https://platform.openai.com/). Pygmalion is only available through KoboldAI and Kobold Horde, so please refer to their respective pages on how to set them up for using with Pygmalion.
 
 #### Character Menu
 ![Character Selection](../static/tavern3.png)

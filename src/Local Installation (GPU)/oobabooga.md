@@ -6,13 +6,13 @@ title: TextGen WebUI
 
 Oobabooga's Text Generation WebUI is a gradio frontend for running large language models. 
 
-Unlike KoboldAI, it can be used as a standalone front-end - you can still connect to SillyTavern or Agnaistic though.
+Unlike KoboldAI, it can be used as a standalone front-end. However, you can still connect to SillyTavern or Agnaistic if you wish.
 
 ![](/static/ooba-cloud1.PNG)
 
 
 ## Automatic Installation
-Please make sure you've read the [Overview](https://docs.alpindale.dev/local-installation-(gpu)/overview/) and [Setting up your GPU](https://docs.alpindale.dev/local-installation-(gpu)/gpu/) pages first. 
+Please make sure you've read the [Overview](https://docs.pygmalion.chat/local-installation-(gpu)/overview/) and [Setting up your GPU](https://docs.pygmalion.chat/local-installation-(gpu)/gpu/) pages first. 
 
 ### Windows
 
@@ -22,7 +22,7 @@ Oobabooga has generously created a one-click installation script for Text-Gen We
 
 Simply extract the `oobabooga-windows.zip` file and click on the`start_windows.bat` file. This will install everything you need.
 
-For GPUs with low VRAM, you will need to use either 8bit or 4bit mode. For 4bit, refer to [KoboldAI 4bit](https://docs.alpindale.dev/local-installation-(gpu)/koboldai4bit/) guide to obtain the model. Place the model inside oobabooga's `models` folder, and rename the large file inside your model folder to `4bit-128g.safetensors` (this will vary between different quantization techniques).
+For GPUs with low VRAM, you will need to use either 8bit or 4bit mode. For 4bit, refer to [KoboldAI 4bit](https://docs.pygmalion.chat/local-installation-(gpu)/koboldai4bit/) guide to obtain the model. Place the model inside oobabooga's `models` folder, and rename the large file inside your model folder to `4bit-128g.safetensors` (this will vary between different quantization techniques).
 
 To enable **8-bit mode**, open the `webui.py` file with a text editor (notepad will work fine), and search for: `# put your flags here!`. The line will look like this:
 ```py
@@ -45,7 +45,7 @@ def run_model():
 ```
 > Change the `groupsize` value and the `--model_type` according to the model you're loading.
 
-If you want to, you can connect Oobabooga to [SillyTavern](https://docs.alpindale.dev/pygmalion-extras/sillytavern/) or the [Agnaistic Guide](https://docs.alpindale.dev/pygmalion-extras/agnaistic/) included here  or the [Agnaistic Guide](https://docs.alpindale.dev/pygmalion-extras/agnaistic/) included here.
+If you want to, you can connect Oobabooga to [SillyTavern](https://docs.pygmalion.chat/pygmalion-extras/sillytavern/) or the [Agnaistic Guide](https://docs.pygmalion.chat/pygmalion-extras/agnaistic/) included here  or the [Agnaistic Guide](https://docs.pygmalion.chat/pygmalion-extras/agnaistic/) included here.
 
 
 ### Linux
@@ -54,7 +54,7 @@ Oobabooga has created a one-click installer for Linux as well. Simply download t
 
 [!file Text-Gen WebUI Linux Installer](https://github.com/oobabooga/one-click-installers/archive/refs/heads/oobabooga-linux.zip)
 
-If you want to, you can connect Oobabooga to [SillyTavern](https://docs.alpindale.dev/pygmalion-extras/sillytavern/) or [Agnaistic](https://docs.alpindale.dev/pygmalion-extras/agnaistic/).
+If you want to, you can connect Oobabooga to [SillyTavern](https://docs.pygmalion.chat/pygmalion-extras/sillytavern/) or [Agnaistic](https://docs.pygmalion.chat/pygmalion-extras/agnaistic/).
 
 ## Manual Installation
 You can also manually install the WebUI. This method is recommended because it's more fun. The following guide is applicable to both Windows and Linux, though the primary audience is Linux users.
@@ -106,4 +106,4 @@ Please don't forget to pass the `--load-in-8bit` argument too if you have a low 
 
 You can view the full list of commands [here](https://github.com/oobabooga/text-generation-webui#starting-the-web-ui){target="_blank"}.
 
-If you want to, you can connect Oobabooga to [SillyTavern](https://docs.alpindale.dev/pygmalion-extras/sillytavern/) or [Agnaistic](https://docs.alpindale.dev/pygmalion-extras/agnaistic/).
+If you want to, you can connect Oobabooga to [SillyTavern](https://docs.pygmalion.chat/pygmalion-extras/sillytavern/) or [Agnaistic](https://docs.pygmalion.chat/pygmalion-extras/agnaistic/).

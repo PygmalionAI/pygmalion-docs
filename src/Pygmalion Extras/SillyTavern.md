@@ -6,7 +6,7 @@ title: SillyTavern
 SillyTavern is a user interface you can install on your computer (and Android phones) that allows you to interact with text generation AIs and chat/roleplay with the characters you or the community create.
 
 !!!info
-SillyTavern is just a UI; you will need to connect it to a backend: [KoboldAI](https://docs.alpindale.dev/local-installation-(gpu)/kobold/) or [TextGen WebUI](https://docs.alpindale.dev/local-installation-(gpu)/oobabooga/).
+SillyTavern is just a UI; you will need to connect it to a backend: [KoboldAI](https://docs.pygmalion.chat/local-installation-(gpu)/kobold/) or [TextGen WebUI](https://docs.pygmalion.chat/local-installation-(gpu)/oobabooga/).
 !!!
 
 <!-- ![](/static/SillyTavern.PNG) -->
@@ -20,7 +20,7 @@ SillyTavern is just a UI; you will need to connect it to a backend: [KoboldAI](h
 #### API Menu
 ![API](../static/st-api.png)
 
-This is where you select the API you wish to connect SillyTavern to. The currently supported APIs are: [KoboldAI](https://docs.alpindale.dev/local-installation-(gpu)/kobold/), [Kobold Horde](https://docs.alpindale.dev/cloud-installation/horde/), Oobabooga's [TextGen WebUI](https://docs.alpindale.dev/local-installation-(gpu)/oobabooga/), [NovelAI](https://novelai.net), [OpenAI](https://platform.openai.com), and [Poe](https://poe.com). **Pygmalion is only accessible through KoboldAI, Kobold Horde, and Oobabooga.** Instructions for acquring the API Key for those two are provided in their respective pages - SillyTavern itself offers guides for acquiring your API key for the other three.
+This is where you select the API you wish to connect SillyTavern to. The currently supported APIs are: [KoboldAI](https://docs.pygmalion.chat/local-installation-(gpu)/kobold/), [Kobold Horde](https://docs.pygmalion.chat/cloud-installation/horde/), Oobabooga's [TextGen WebUI](https://docs.pygmalion.chat/local-installation-(gpu)/oobabooga/), [NovelAI](https://novelai.net), [OpenAI](https://platform.openai.com), and [Poe](https://poe.com). **Pygmalion is only accessible through KoboldAI, Kobold Horde, and Oobabooga.** Instructions for acquring the API Key for those two are provided in their respective pages - SillyTavern itself offers guides for acquiring your API key for the other three.
 
 #### Advanced Formatting
 ![Advanced Formatting](../static/st-adv.png)
@@ -30,7 +30,7 @@ This is where you'll find various options for a more intimate control over the m
 #### World Selector
 ![World Info Selector](../static/st-ws.png)
 
-You can load your World Info and Soft Prompt file here. For a more in-depth explanation, refer to our [Soft Prompt](https://docs.alpindale.dev/pygmalion-extras/soft-prompt/) and [World Info](https://docs.alpindale.dev/settingsandparams/#wi-depth-world-info) pages. You can also click on the Question Mark next to each option in ST for a detailed overview.
+You can load your World Info and Soft Prompt file here. For a more in-depth explanation, refer to our [Soft Prompt](https://docs.pygmalion.chat/pygmalion-extras/soft-prompt/) and [World Info](https://docs.pygmalion.chat/settingsandparams/#wi-depth-world-info) pages. You can also click on the Question Mark next to each option in ST for a detailed overview.
 
 #### User Settings
 ![User Settings](../static/st-user.png)
@@ -58,14 +58,14 @@ You can create, upload, and manage your characters here. ST by default comes wit
 #### Presets
 ![Kobold Presets](../static/st-presets.png)
 
-Depending on which API you've selected, you can choose from the multiple presets provided by the ST team. You can also adjust the generation settings here (learn more about those [here](https://docs.alpindale.dev/settingsandparams/)). Keep in mind that all current Pygmalion/Metharme models have a hard-coded context limit of 2048 tokens, so please don't unlock the context size to assign a higher value.
+Depending on which API you've selected, you can choose from the multiple presets provided by the ST team. You can also adjust the generation settings here (learn more about those [here](https://docs.pygmalion.chat/settingsandparams/)). Keep in mind that all current Pygmalion/Metharme models have a hard-coded context limit of 2048 tokens, so please don't unlock the context size to assign a higher value.
 
 ## Installation
 Installing SillyTavern is simple. It supports the following operating systems:
-- [Windows x64](https://docs.alpindale.dev/pygmalion-extras/sillytavern/#windows-installation)
-- [Linux x64](https://docs.alpindale.dev/pygmalion-extras/sillytavern/#linuxmacos-installation)
-- [macOS (Darwin x64)](https://docs.alpindale.dev/pygmalion-extras/sillytavern/#linuxmacos-installation)
-- [Android (aarch64)](https://docs.alpindale.dev/pygmalion-extras/sillytavern/#android-installation)
+- [Windows x64](https://docs.pygmalion.chat/pygmalion-extras/sillytavern/#windows-installation)
+- [Linux x64](https://docs.pygmalion.chat/pygmalion-extras/sillytavern/#linuxmacos-installation)
+- [macOS (Darwin x64)](https://docs.pygmalion.chat/pygmalion-extras/sillytavern/#linuxmacos-installation)
+- [Android (aarch64)](https://docs.pygmalion.chat/pygmalion-extras/sillytavern/#android-installation)
 
 
 ### Windows Installation
@@ -112,7 +112,7 @@ If everything is working, the CMD should look like this and a SillyTavern tab sh
 ![](/static/STcmd.PNG)
 
 !!!warning
-You still have to [connect](https://docs.alpindale.dev/pygmalion-extras/sillytavern/#connect-sillytavern) it to a backend API!
+You still have to [connect](https://docs.pygmalion.chat/pygmalion-extras/sillytavern/#connect-sillytavern) it to a backend API!
 !!!
 
 
@@ -206,7 +206,7 @@ You can run SillyTavern again by simply opening Termux and entering the command 
 ![](/static/STconnect.PNG)
 
 !!!info The API URL
-If you're running KoboldAI locally, all you need to paste in there is `http://localhost:5000/api`. If you're using Google Colab, copy your [remote URL](https://docs.alpindale.dev/cloud-installation/koboldai/#using-the-remote-url-to-connect-sillytavern) instead. If it ends with a `#` or `new_ui`, remove them and replace them with `/api`. If they don't, simply adding `/api` will suffice.
+If you're running KoboldAI locally, all you need to paste in there is `http://localhost:5000/api`. If you're using Google Colab, copy your [remote URL](https://docs.pygmalion.chat/cloud-installation/koboldai/#using-the-remote-url-to-connect-sillytavern) instead. If it ends with a `#` or `new_ui`, remove them and replace them with `/api`. If they don't, simply adding `/api` will suffice.
 !!!
 
 

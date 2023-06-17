@@ -16,12 +16,12 @@ If the model above doesn't work for any reason, you can download the old one ins
 
 ## 7B model
 
-You will need to obtain [your copy](https://docs.alpindale.dev/pygmalion-7b/#merging-the-weights) of Pygmalion 7B by merging the original LLaMA (converted to HF format) with the XORed files in the [PygmalionAI/pygmalion-7b](https://huggingface.co/PygmalionAI/pygmalion-7b) repo. You will then have to convert the model to GGML format, and then quantize it down to 4bit/5bit. 
+You will need to obtain [your copy](https://docs.pygmalion.chat/pygmalion-7b/#merging-the-weights) of Pygmalion 7B by merging the original LLaMA (converted to HF format) with the XORed files in the [PygmalionAI/pygmalion-7b](https://huggingface.co/PygmalionAI/pygmalion-7b) repo. You will then have to convert the model to GGML format, and then quantize it down to 4bit/5bit. 
 
 ### Linux
 
 #### Requirements
-- [`git`](https://docs.alpindale.dev/tools/git)
+- [`git`](https://docs.pygmalion.chat/tools/git)
 - `python`
 #### Converstion
 1. Obtain the merged weights.
@@ -173,8 +173,8 @@ Now open [http://localhost:5001](http://localhost:5001) on your browser.
 ***
 ## Connecting to Tavern
 
-You can connect Pygmalion C++ to Tavern the same way you would the regular KoboldAI. There's a guide included [here](https://docs.alpindale.dev/pygmalion-extras/sillytavern/).
+You can connect Pygmalion C++ to Tavern the same way you would the regular KoboldAI. There's a guide included [here](https://docs.pygmalion.chat/pygmalion-extras/sillytavern/).
 
 ## Connecting to Agnaistic
 
-You can connect Pygmalion C++ to Agnaistic the same way you would the regular KoboldAI. There's a guide included [here](https://docs.alpindale.dev/pygmalion-extras/agnaistic/).
+You can connect Pygmalion C++ to Agnaistic the same way you would the regular KoboldAI. There's a guide included [here](https://docs.pygmalion.chat/pygmalion-extras/agnaistic/).
