@@ -32,4 +32,4 @@ npx retypeapp watch
 
 ***
 
-Please regularly update with `git pull`. This is still a WIP so updates are expected at a daily basis.
+Please regularly update with `git pull`. This is still a WIP so updates are often expected.
