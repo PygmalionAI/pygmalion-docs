@@ -1,6 +1,6 @@
 ## Pygmalion Documentation
 
-**You can find the website at [docs.pygmalion.chat](http://docs.pygmalion.chat)**
+**You can find the website at [docs.pygmalion.chat](https://docs.pygmalion.chat)**
 
 Running the docs on your PC locally:
 
