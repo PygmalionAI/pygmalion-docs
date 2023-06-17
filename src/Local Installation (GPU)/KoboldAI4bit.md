@@ -16,8 +16,8 @@ Use the Table of Contents to navigate.
 
 Please make sure you :
 
-- Have read the [Overview](https://docs.alpindale.dev/local-installation-(gpu)/overview/#overview) and Setting up your GPU pages first. 
-- Have Git installed, tutorial [here](https://docs.alpindale.dev/tools/git/#whats-git-and-do-i-need-it).
+- Have read the [Overview](https://docs.pygmalion.chat/local-installation-(gpu)/overview/#overview) and Setting up your GPU pages first. 
+- Have Git installed, tutorial [here](https://docs.pygmalion.chat/tools/git/#whats-git-and-do-i-need-it).
 - Don't have a `B:` Drive (Windows only)
 
 
@@ -60,7 +60,7 @@ First you want to clone the Kobold-4bit repository:
 git clone https://github.com/0cc4m/KoboldAI -b latestgptq --recurse-submodules
 ``` 
 !!!warning
-Make sure you've read the [git installation guide](https://docs.alpindale.dev/tools/git/).
+Make sure you've read the [git installation guide](https://docs.pygmalion.chat/tools/git/).
 !!!
 
 It shouldn't take more than a few seconds to clone it.
@@ -114,7 +114,7 @@ In your Kobold folder, navigate to the `models` folder.
 
 ![](/static/KoboldAI-4bit-8.PNG)
 
-Right click on the models folder and select "Open in Terminal". You may download a model now using [git](https://docs.alpindale.dev/tools/git) clone commands.
+Right click on the models folder and select "Open in Terminal". You may download a model now using [git](https://docs.pygmalion.chat/tools/git) clone commands.
 There are two models to choose from. If you run
 ```bash
 git lfs clone https://huggingface.co/OccamRazor/pygmalion-6b-gptq-4bit
@@ -154,7 +154,7 @@ Pick the model we just downloaded, then click on load !
 ![](/static/4Bit-Load.PNG)
 
 !!!success
-The model will now be loaded and be ready to be use, if you want to use it with SillyTavern or Agnaistic, please go [here](https://docs.alpindale.dev/pygmalion-extras/sillytavern/#connect-sillytavern),  or the [Agnaistic Guide](https://docs.alpindale.dev/pygmalion-extras/agnaistic/) here.
+The model will now be loaded and be ready to be use, if you want to use it with SillyTavern or Agnaistic, please go [here](https://docs.pygmalion.chat/pygmalion-extras/sillytavern/#connect-sillytavern),  or the [Agnaistic Guide](https://docs.pygmalion.chat/pygmalion-extras/agnaistic/) here.
 !!!
 
 
@@ -186,7 +186,7 @@ chmod +x install_requirements.sh \
 This is a 2.5GB download.
 !!!
 
-3. Navigate to your Kobold folder and right click on the models folder. Choose Actions -> Open Terminal Here. As the steps for downloading a model are the same for Windows, you may refer to this part of the guide: [Downloading the model](https://docs.alpindale.dev/local-installation-(gpu)/koboldai4bit/#downloading-the-model).
+3. Navigate to your Kobold folder and right click on the models folder. Choose Actions -> Open Terminal Here. As the steps for downloading a model are the same for Windows, you may refer to this part of the guide: [Downloading the model](https://docs.pygmalion.chat/local-installation-(gpu)/koboldai4bit/#downloading-the-model).
 
 !!!danger Rename the model file!
 The model needs to be named either `4bit.pt`/`4bit.safetensors` or `4bit-128g.pt`/`4bit-128g.safetensors` to work. Make sure you properly rename it. 

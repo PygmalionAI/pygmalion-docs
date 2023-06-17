@@ -79,7 +79,7 @@ Then you can launch Oobabooga normally and then select the LoRA from the "Parame
 
 ### KoboldAI
 
-To use a LoRA with KoboldAI, you will need to merge the LoRA with the base model first. First, grab the LoRA you want from the [Discord Server](https://discord.com/invite/pygmalionai). You can use [`git lfs`](https://docs.alpindale.dev/tools/git) to download the LoRA. Place the downloaded LoRA (if you're on Windows, the default download path is `C:\Users\username\`) inside KoboldAI's `models` folder. 
+To use a LoRA with KoboldAI, you will need to merge the LoRA with the base model first. First, grab the LoRA you want from the [Discord Server](https://discord.com/invite/pygmalionai). You can use [`git lfs`](https://docs.pygmalion.chat/tools/git) to download the LoRA. Place the downloaded LoRA (if you're on Windows, the default download path is `C:\Users\username\`) inside KoboldAI's `models` folder. 
 
 Then grab the merge script from [here](https://github.com/AlpinDale/lora-merge/blob/main/merge.py) and place it in the `models` folder of your KoboldAI directory.
 
@@ -93,7 +93,7 @@ Now, you can load the new model from the `pygmalion-7b-alpaca-lora` folder, or w
 
 ### koboldcpp
 
-Using LoRAs with [koboldcpp](https://docs.alpindale.dev/local-installation-(cpu)/pygcpp/) requires converting the LoRA to the ggml format first. To do this, grab the LoRA you want from the [Discord Server](https://discord.com/invite/pygmalionai). You can use [`git lfs`](https://docs.alpindale.dev/tools/git) to download the LoRA.
+Using LoRAs with [koboldcpp](https://docs.pygmalion.chat/local-installation-(cpu)/pygcpp/) requires converting the LoRA to the ggml format first. To do this, grab the LoRA you want from the [Discord Server](https://discord.com/invite/pygmalionai). You can use [`git lfs`](https://docs.pygmalion.chat/tools/git) to download the LoRA.
 
 Download [the lora-to-ggml script](https://github.com/ggerganov/llama.cpp/blob/master/convert-lora-to-ggml.py) from the llama.cpp repo, and place as the LoRA folder, but not inside it.
 

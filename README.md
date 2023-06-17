@@ -1,6 +1,6 @@
-## Pygmalion Docs
+## Pygmalion Documentation
 
-**You can find the website at [docs.alpindale.dev](https://docs.alpindale.dev)**
+**You can find the website at [docs.pygmalion.chat](http://docs.pygmalion.chat)**
 
 Running the docs on your PC locally:
 
@@ -32,4 +32,4 @@ npx retypeapp watch
 
 ***
 
-Please regularly update with `git pull`. This is still a WIP so updates are expected at an hourly basis.
+Please regularly update with `git pull`. This is still a WIP so updates are expected at a daily basis.

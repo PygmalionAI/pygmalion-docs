@@ -43,7 +43,7 @@ Once it's finished loading, click on the logs button to view your remote url:
 This process can take up to 3 minutes, so it's advised to close and re-open the logs window until the url shows up at the end.
 !!!
 
-Now, paste the URL in a browser tab and you're ready to use Kobold! You can load Pygmalion 6B by clicking on `Models` on the top-left corner of the screen, selecting the `Chat models` section, selecting Pygmalion 6B, and then clicking on `Load`. This will download the model for you. Keep in mind that the download is 16GB, but if you've chosen a machine with a fast download speed, it shouldn't take long. The steps should be familiar for users running locally, so you can also refer to the [Local installation guide for Kobold](https://docs.alpindale.dev/local-installation-(gpu)/kobold/).
+Now, paste the URL in a browser tab and you're ready to use Kobold! You can load Pygmalion 6B by clicking on `Models` on the top-left corner of the screen, selecting the `Chat models` section, selecting Pygmalion 6B, and then clicking on `Load`. This will download the model for you. Keep in mind that the download is 16GB, but if you've chosen a machine with a fast download speed, it shouldn't take long. The steps should be familiar for users running locally, so you can also refer to the [Local installation guide for Kobold](https://docs.pygmalion.chat/local-installation-(gpu)/kobold/).
 
 !!!success You're done!
 You're now ready to use PygmalionAI! Make sure you delete (or stop, if you don't mind paying for the hourly storage charges of 0.8 cents/hr) your instance so you won't be billed when you're not using your instance. If you delete the instance, you'll have to go through the process of setting it up again, but stopping and resuming should pick up from where you left off. 
@@ -51,8 +51,8 @@ You're now ready to use PygmalionAI! Make sure you delete (or stop, if you don't
 
 ## Connecting your instance to TavernAI
 
-You can easily use TavernAI along with Kobold. Follow the instructions in the [Tavern guide](https://docs.alpindale.dev/pygmalion-extras/sillytavern/) but instead of inputting `localhost:5000/api`, use your `trycloudflare.com` link. Assuming your URL was `https://pieces-strictly-transparency-luther.trycloudflare.com/new_ui`, you would paste it as `https://pieces-strictly-transparency-luther.trycloudflare.com/api` inside Tavern. Note that the `new_ui` part is removed and replaced with `/api`. 
+You can easily use TavernAI along with Kobold. Follow the instructions in the [Tavern guide](https://docs.pygmalion.chat/pygmalion-extras/sillytavern/) but instead of inputting `localhost:5000/api`, use your `trycloudflare.com` link. Assuming your URL was `https://pieces-strictly-transparency-luther.trycloudflare.com/new_ui`, you would paste it as `https://pieces-strictly-transparency-luther.trycloudflare.com/api` inside Tavern. Note that the `new_ui` part is removed and replaced with `/api`. 
 
 ## Connecting your instance to Agnaistic
 
-You can easily use Agnaistic along with Kobold. Follow the instructions in the [Agnaistic Guide](https://docs.alpindale.dev/pygmalion-extras/agnaistic/) but instead of inputting `localhost:5000/`, use your `trycloudflare.com` link. Assuming your URL was `https://pieces-strictly-transparency-luther.trycloudflare.com/new_ui`, you would paste it as `https://pieces-strictly-transparency-luther.trycloudflare.com` inside Agnaistic. Note that the `new_ui` part is removed. 
+You can easily use Agnaistic along with Kobold. Follow the instructions in the [Agnaistic Guide](https://docs.pygmalion.chat/pygmalion-extras/agnaistic/) but instead of inputting `localhost:5000/`, use your `trycloudflare.com` link. Assuming your URL was `https://pieces-strictly-transparency-luther.trycloudflare.com/new_ui`, you would paste it as `https://pieces-strictly-transparency-luther.trycloudflare.com` inside Agnaistic. Note that the `new_ui` part is removed. 

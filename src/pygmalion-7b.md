@@ -21,7 +21,7 @@ This model is based on Meta's LLaMA 7B and 13B, fine-tuned with the regular Pygm
 This is an experimental model with a new prompt format used during training. It is capable of Chatting, RolePlaying, and Storytelling all at once. The prompting format is entirely different from the Chat Models, so Tavern will likely *not work*. 
 
 !!!warning The exact transformers commit might be incorrect!
-I'm not sure exactly which commit we used for converting the original weights - just make sure your converted hashes match the ones [here](https://docs.alpindale.dev/pygmalion-7b/#file-hashes)
+I'm not sure exactly which commit we used for converting the original weights - just make sure your converted hashes match the ones [here](https://docs.pygmalion.chat/pygmalion-7b/#file-hashes)
 !!!
 
 ## Merging the weights
@@ -53,7 +53,7 @@ python3.10 -m venv xor_venv
 source xor_venv/bin/activate
 ```
 !!!danger The exact transformers commit might be incorrect!
-I'm not sure exactly which commit we used for converting the original weights - just make sure your converted hashes match the ones [here](https://docs.alpindale.dev/pygmalion-7b/#file-hashes). If you find it's incorrect, please submit a PR or an [issue](https://github.com/AlpinDale/pygmalion-docs/issues){target="_blank"} with the correct commit hash.
+I'm not sure exactly which commit we used for converting the original weights - just make sure your converted hashes match the ones [here](https://docs.pygmalion.chat/pygmalion-7b/#file-hashes). If you find it's incorrect, please submit a PR or an [issue](https://github.com/AlpinDale/pygmalion-docs/issues){target="_blank"} with the correct commit hash.
 !!!
 
 3. Clone transformers and switch to the tested version:

@@ -6,13 +6,13 @@ title: Agnaistic
 Agnaistic is a user interface you can install on your computer (or use the [production version](https://agnai.chat)) that allows you to interact with text generation AIs and chat/roleplay with the characters you or the community create. Agnaistic is forked from the official Pygmalion website UI, [Galatea UI](https://github.com/PygmalionAI/galatea-ui).
 
 !!!info
-Agnaistic is just a UI; you will need to connect it to a backend: [KoboldAI](https://docs.alpindale.dev/local-installation-(gpu)/kobold/) or [TextGen WebUI](https://docs.alpindale.dev/local-installation-(gpu)/oobabooga/).
+Agnaistic is just a UI; you will need to connect it to a backend: [KoboldAI](https://docs.pygmalion.chat/local-installation-(gpu)/kobold/) or [TextGen WebUI](https://docs.pygmalion.chat/local-installation-(gpu)/oobabooga/).
 !!!
 
 ![](../static/Agnaistic.png)
 
-- [Usage](https://docs.alpindale.dev/pygmalion-extras/agnaistic/#usage)
-- [Installation](https://docs.alpindale.dev/pygmalion-extras/agnaistic/#installation)
+- [Usage](https://docs.pygmalion.chat/pygmalion-extras/agnaistic/#usage)
+- [Installation](https://docs.pygmalion.chat/pygmalion-extras/agnaistic/#installation)
 
 # Usage
 
@@ -32,7 +32,7 @@ On the left side of your screen (or upon clicking the burger menu if on mobile/l
 - Memory
   - List of all memory books you have downloaded. You can edit, download, and delete them here.
 - Invites
-  - If another Agnaistic user has invited you to a [group chat](https://docs.alpindale.dev/pygmalion-extras/agnaistic/#group-chat) this is where the invite will appear.
+  - If another Agnaistic user has invited you to a [group chat](https://docs.pygmalion.chat/pygmalion-extras/agnaistic/#group-chat) this is where the invite will appear.
 - Settings
   - Where you can change various settings about adapters, how the UI looks, how images are generated, and various settings about STT/TTS.
 - Presets
@@ -49,10 +49,10 @@ On the left side of your screen (or upon clicking the burger menu if on mobile/l
 Adapters/Services are synonymous with the term "backend" in these pygmalion docs, Agnaistic supports 
 - Horde
 - Novel AI
-- [KoboldAI](https://docs.alpindale.dev/local-installation-(gpu)/kobold/)
+- [KoboldAI](https://docs.pygmalion.chat/local-installation-(gpu)/kobold/)
 - OpenAI, 
 - Scale
-- [TextGen WebUI](https://docs.alpindale.dev/local-installation-(gpu)/oobabooga/)
+- [TextGen WebUI](https://docs.pygmalion.chat/local-installation-(gpu)/oobabooga/)
 - Claude
 - Goose ai
 
@@ -80,9 +80,9 @@ If you click the context menu you can turn on auto reply for a character. Only o
 
 # Installation
 Self hosting Agnaistic is simple. You have a couple of options:
-- [NPM](https://docs.alpindale.dev/pygmalion-extras/agnaistic/#npm-installation)
-- [Docker](https://docs.alpindale.dev/pygmalion-extras/agnaistic/#docker-installation)
-- [Manually](https://docs.alpindale.dev/pygmalion-extras/agnaistic/#manual-installation)
+- [NPM](https://docs.pygmalion.chat/pygmalion-extras/agnaistic/#npm-installation)
+- [Docker](https://docs.pygmalion.chat/pygmalion-extras/agnaistic/#docker-installation)
+- [Manually](https://docs.pygmalion.chat/pygmalion-extras/agnaistic/#manual-installation)
 
 ### NPM Installation
 

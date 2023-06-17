@@ -15,12 +15,12 @@ This key will be permanently yours. It's as important as a password, so never gi
 
 ## How to use Pygmalion on the Horde
 
-Pygmalion is a popular model, so you'll always find at least a few workers (people hosting the model for the public) on the Horde. You can either use the official [Kobold Horde website](https://lite.koboldai.net), but it's recommended to use a UI such as [SillyTavern](https://docs.alpindale.dev/pygmalion-extras/sillytavern/) or [Agnaistic](https://docs.alpindale.dev/pygmalion-extras/agnaistic/). 
+Pygmalion is a popular model, so you'll always find at least a few workers (people hosting the model for the public) on the Horde. You can either use the official [Kobold Horde website](https://lite.koboldai.net), but it's recommended to use a UI such as [SillyTavern](https://docs.pygmalion.chat/pygmalion-extras/sillytavern/) or [Agnaistic](https://docs.pygmalion.chat/pygmalion-extras/agnaistic/). 
 
 
 ### SillyTavern
 
-Follow the installation instructions [here](https://docs.alpindale.dev/pygmalion-extras/sillytavern/). Once you launch SillyTavern, click on the **red plug** icon, choose **KoboldAI** from the "API" drop-down menu, check the "**Use Horde**" option, paste your Horde API Key in the "**API Key**" input box, and then select your desired model from the models list. 
+Follow the installation instructions [here](https://docs.pygmalion.chat/pygmalion-extras/sillytavern/). Once you launch SillyTavern, click on the **red plug** icon, choose **KoboldAI** from the "API" drop-down menu, check the "**Use Horde**" option, paste your Horde API Key in the "**API Key**" input box, and then select your desired model from the models list. 
 ![](../static/horde-tavern.png)
 You're done! You can now start chatting. Import a character by opening "Character Management", clicking on the "Import Character from File" button, and selecting your character. Character cards can be acquired from the [Discord](https://discord.com/invite/pygmalionai) or the unofficial [booru](https://booru.plus/+pygmalion).
 
@@ -45,7 +45,7 @@ Alternatively, you can ask other users to transfer kudos for you.
 
 ## How to host Pygmalion on the Horde
 
-You'll need to run Pygmalion with [KoboldAI](https://docs.alpindale.dev/local-installation-(gpu)/kobold/). The [4bit KoboldAI](https://docs.alpindale.dev/local-installation-(gpu)/koboldai4bit/) will also work fine. Make sure you're in the New UI (you can access it by adding `/new_ui` at the end of your Kobold URL or clicking on the `Try New UI` button). Load the model you want to host, head over to "Settings" and set your Horde Worker's name (arbitrary name) and the Horde API Key (this will be the API key you get when registering). 
+You'll need to run Pygmalion with [KoboldAI](https://docs.pygmalion.chat/local-installation-(gpu)/kobold/). The [4bit KoboldAI](https://docs.pygmalion.chat/local-installation-(gpu)/koboldai4bit/) will also work fine. Make sure you're in the New UI (you can access it by adding `/new_ui` at the end of your Kobold URL or clicking on the `Try New UI` button). Load the model you want to host, head over to "Settings" and set your Horde Worker's name (arbitrary name) and the Horde API Key (this will be the API key you get when registering). 
 ![](../static/horde-kobold1.png)
 
 Then head over to home, and toggle the "Share with Horde" switch. 

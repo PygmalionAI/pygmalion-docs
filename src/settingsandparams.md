@@ -4,7 +4,7 @@ icon: gear
 title: Settings and Parameters
 ---
 
-You'll find a list of all settings in [KoboldAI](https://docs.alpindale.dev/pygmalion-docs/local-installation-(gpu)/kobold/), Oobabooga's [Text Generation WebUI](https://docs.alpindale.dev/pygmalion-docs/local-installation-(gpu)/oobabooga/), [SillyTavern](https://docs.alpindale.dev/pygmalion-extras/sillytavern) and [Agnaistic](https://docs.alpindale.dev/pygmalion-extras/agnaistic/). Please use the Table of Contents to navigate through this page.
+You'll find a list of all settings in [KoboldAI](https://docs.pygmalion.chat/pygmalion-docs/local-installation-(gpu)/kobold/), Oobabooga's [Text Generation WebUI](https://docs.pygmalion.chat/pygmalion-docs/local-installation-(gpu)/oobabooga/), [SillyTavern](https://docs.pygmalion.chat/pygmalion-extras/sillytavern) and [Agnaistic](https://docs.pygmalion.chat/pygmalion-extras/agnaistic/). Please use the Table of Contents to navigate through this page.
 
 !!!info Work in Progress
 Currently you'll only find a list of settings in KoboldAI. The other UIs will be added soon but they're more or less the same.
