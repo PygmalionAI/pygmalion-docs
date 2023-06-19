@@ -140,11 +140,11 @@ Install NodeJS by running the following command:
 ```bash
 nvm install node
 ```
-
+<!--
 #### Installation (with `npx`)
 
 Run `npx sillytavern@latest`. You can re-open it anytime by running the command again. Omit the `@latest` part of the command to not auto-pull the latest update as that might overwrite all your previous characters and chatlogs. 
-
+-->
 
 #### Installation (manual)
 
