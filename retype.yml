@@ -15,7 +15,7 @@ meta:
   title: " - Pygmalion AI"
 
 edit:
-  repo: github.com/AlpinDale/pygmalion-docs
+  repo: github.com/PygmalionAI/pygmalion-docs
   base: /src
 
 links:
