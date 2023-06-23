@@ -10,11 +10,10 @@ Running the docs on your PC locally:
 
 ##### Install the requirements (Windows):
 - Open PowerShell (Win10) or Terminal (Win11)
-- `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser`
-- `irm get.scoop.sh | iex`
-- `scoop install git`
-- `scoop bucket add extras`
-- `scoop install nodejs`
+- Install NodeJS: `winget install -e --id OpenJS.NodeJS`
+- Install Git: `winget install -e --id Git.Git`
+- Restart PowerShell/Terminal
+
 
 ##### Install the requirements (Linux)
 - All package managers have both `git` and `nodejs`.
@@ -23,7 +22,9 @@ Running the docs on your PC locally:
 
 - Clone the repo:
 ```bash
-git clone https://github.com/AlpinDale/pygmalion-docs && cd pygmalion-docs
+git clone https://github.com/AlpinDale/pygmalion-docs
+
+cd pygmalion-docs
 ```
 - Run the docs using `retypeapp`
 ```bash
