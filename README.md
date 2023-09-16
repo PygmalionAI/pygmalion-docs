@@ -22,7 +22,7 @@ Running the docs on your PC locally:
 
 - Clone the repo:
 ```bash
-git clone https://github.com/AlpinDale/pygmalion-docs
+git clone https://github.com/PygmalionAI/pygmalion-docs
 
 cd pygmalion-docs
 ```
